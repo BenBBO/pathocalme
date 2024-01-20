@@ -1,5 +1,4 @@
 "use client"
-import Image from "next/image";
 import { motion } from "framer-motion"
 
 
@@ -14,39 +13,20 @@ export default function Home() {
   return (
     <>
       <div>
-        {/* <section id="intro" className="h-screen flex items-center justify-center text-center bg-green-200" data-scroll-section>
-          <div className="container px-5 mx-auto flex flex-col items-center justify-center">
-            <Image
-              src="/images/logo.png"
-              alt="Logo"
-              width={400}
-              height={400}
-              className="relative "
-            />
-            <div>
-              <h2 className="font-bold">Nous découvrir</h2>
-              <div className="relative inline-flex items-center justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </section> */}
         <section className="bg-contain bg-center bg-no-repeat bg-[url('/images/logo.png')] bg-gray-700 bg-blend-multiply">
           <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
             <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Path'O Calme</h1>
             <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Venez partager vos émotions naturellement.</p>
-            <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0"             
+            <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0"
             >
               <a href="#" className="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
                 Nous découvrir
-                <motion.span className="px-2"  transition={{
-                y: transitionValues
-              }}
-              animate={{
-                y: ["0rem", "0.5rem","0rem"]
-              }}>
+                <motion.span className="px-2" transition={{
+                  y: transitionValues
+                }}
+                  animate={{
+                    y: ["0rem", "0.5rem", "0rem"]
+                  }}>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
                   </svg>
@@ -83,7 +63,58 @@ export default function Home() {
           </div> */}
 
         </section>
-        <section id="about-section" className="py-40 bg-green-50" >...</section>
+        <section className="grid lg:grid-cols-2 2xl:grid-cols-4 grid-cols-1 gap-20 bg-green-50 p-20">
+          <article className="mx-auto max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group" style={{ backgroundImage: "url('/images/nature.png')" }}>
+            <div className="p-5 bg-black bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 hover:bg-opacity-75 transform duration-300">
+              <h1 className="text-white text-3xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+                Nature
+              </h1>
+              <div className="w-16 h-2 bg-yellow-500 rounded-full mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+              </div>
+              <p className="opacity-0 text-white text-xl group-hover:opacity-80 transform duration-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, beatae
+              </p>
+            </div>
+          </article>
+
+          <article className="mx-auto max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group" style={{ backgroundImage: "url('/images/animation.png')" }}>
+            <div className="p-5 bg-black bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 hover:bg-opacity-75 transform duration-300">
+              <h1 className="text-white text-3xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+                Animation
+              </h1>
+              <div className="w-16 h-2 bg-orange-500 rounded-full mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+              </div>
+              <p className="opacity-0 text-white text-xl group-hover:opacity-80 transform duration-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, beatae!
+              </p>
+            </div>
+          </article>
+
+          <article className="mx-auto max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group" style={{ backgroundImage: "url('/images/mediation.png')" }}>
+            <div className="p-5 bg-black bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 hover:bg-opacity-75 transform duration-300">
+              <h1 className="text-white text-3xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+                Mediation
+              </h1>
+              <div className="w-16 h-2 bg-red-500 rounded-full mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+              </div>
+              <p className="opacity-0 text-white text-xl group-hover:opacity-80 transform duration-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, beatae!
+              </p>
+            </div>
+          </article>
+          <article className="mx-auto max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group" style={{ backgroundImage: "url('/images/pension.png')" }}>
+            <div className="p-5 bg-black bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 hover:bg-opacity-75 transform duration-300">
+              <h1 className="text-white text-3xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+                Pension/Garderie
+              </h1>
+              <div className="w-16 h-2 bg-green-500 rounded-full mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
+              </div>
+              <p className="opacity-0 text-white text-xl group-hover:opacity-80 transform duration-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, beatae!
+              </p>
+            </div>
+          </article>
+        </section>
         <section id="office" className="py-20">...</section>
         <section id="services" className="relative py-60 bg-green-50" >...</section>
         <section id="case-studies" className="text-center" >...</section>
