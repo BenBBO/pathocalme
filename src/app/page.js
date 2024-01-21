@@ -63,7 +63,7 @@ export default function Home() {
           </div> */}
 
         </section>
-        <section className="grid lg:grid-cols-2 2xl:grid-cols-4 grid-cols-1 gap-20 bg-green-50 p-20">
+        <section className="grid lg:grid-cols-2 2xl:grid-cols-4 grid-cols-1 gap-10 bg-green-50 p-20">
           <article className="mx-auto max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group" style={{ backgroundImage: "url('/images/nature.png')" }}>
             <div className="p-5 bg-black bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 hover:bg-opacity-75 transform duration-300">
               <h1 className="text-white text-3xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300">
