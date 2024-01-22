@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <>
-      <div>
+      <div id="intro">
         <section className="bg-contain bg-center bg-no-repeat bg-[url('/images/logo.png')] bg-gray-700 bg-blend-multiply">
           <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
             <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Path'O Calme</h1>
@@ -51,17 +51,6 @@ export default function Home() {
               </div>
             </div>
           </motion.div>
-          {/* <div className="max-w-md bg-white border rounded-lg shadow">
-            <a href="#">
-              <img className="rounded-t-lg w-full object-cover" src="/images/test.jpg" alt="" />
-            </a>            
-          </div>
-          <div className="p-5 bg-gray-200 col-span-2">
-            <h2 className="text-6xl">Barbara Bouillet</h2>
-            <p className="py-5 text-xl">Je vous acceuille à <strong>Trept</strong></p>
-            <p></p>
-          </div> */}
-
         </section>
         <section className="grid lg:grid-cols-2 2xl:grid-cols-4 grid-cols-1 gap-10 bg-green-50 p-20">
           <article className="mx-auto max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group" style={{ backgroundImage: "url('/images/nature.png')" }}>
@@ -115,39 +104,12 @@ export default function Home() {
             </div>
           </article>
         </section>
-        <section id="office" className="py-20">...</section>
-        <section id="services" className="relative py-60 bg-green-50" >...</section>
-        <section id="case-studies" className="text-center" >...</section>
-        <section id="clients-section" className="py-40" >...</section>
-        <section id="contact" className="py-80 border-t-2 border-solid border-gray-50" >...</section>
-        <section className="h-screen flex items-center justify-center text-center bg-green-200" >...</section>
-        <a className="back-to-top fixed bottom-24 right-4 text-red-500 hover:text-red-600 focus:text-red-600 transition opacity-0 invisible" href="#intro" role="button" aria-label="Back to top">
+        <a className="back-to-top fixed bottom-24 right-4 text-red-500 hover:text-red-600 focus:text-red-600" href="#intro" role="button" aria-label="Back to top">
           <svg aria-hidden="true" xmlns="https://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
             <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.58l5.995 5.988-1.416 1.414-4.579-4.574-4.59 4.574-1.416-1.414 6.006-5.988z" />
           </svg>
         </a>
       </div>
-      {/* <div className="container mx-auto px-4">
-        <h1>Hello word</h1>
-        <p>This is a content to make our page longer</p>
-        <div className="w-full h-screen bg-green-300"></div>
-        <p>
-          What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
-          and typesetting industry. Lorem Ipsum has been the industrys standard
-          dummy text ever since the 1500s, when an unknown printer took a galley
-          of type and scrambled it to make a type specimen book. It has survived
-          not only five centuries, but also the leap into electronic
-          typesetting, remaining essentially unchanged. It was popularised in
-          the 1960s with the release of Letraset sheets containing Lorem Ipsum
-          passages, and more recently with desktop publishing software like
-          Aldus PageMaker including versions of Lorem Ipsum. Why do we use it?
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using Content here, content here, making it
-          look like readable English.
-        </p>
-      </div> */}
     </>
   );
 }
