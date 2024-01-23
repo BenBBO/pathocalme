@@ -1,7 +1,14 @@
 "use client";
 import { useEffect, useState } from "react";
-
+import { Cookie } from 'next/font/google'
 import Link from "next/link";
+
+const cookie = Cookie({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '400'
+});
+
 const Logo = () => {
   //update the size of the logo when the size of the screen changes
   const [width, setWidth] = useState(0);
@@ -32,7 +39,7 @@ const Logo = () => {
   }, []);
   return (
     <>
-      <Link href="/" className="block text-yellow-400 text-2xl">
+      <Link href="/" className={`${cookie.className} block text-yellow-400 text-5xl`}>
         Path'O Calme
         {/* <Image
           src="/images/logo.png"

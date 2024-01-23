@@ -5,7 +5,7 @@ import Logo from "./Logo";
 const Navbar = ({ toggle }) => {
   return (
     <>
-      <div className="w-full h-20 bg-emerald-800 sticky top-0 z-10">
+      <div className="w-full h-20 bg-secondary sticky top-0 z-10">
         <div className="container mx-auto px-4 h-full">
           <div className="flex justify-between items-center h-full">
             <Logo />
@@ -40,6 +40,11 @@ const Navbar = ({ toggle }) => {
               <li>
                 <Link href="/mediation">
                   <p>Mediation</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="/equipe">
+                  <p>L'équipe</p>
                 </Link>
               </li>
             </ul>
