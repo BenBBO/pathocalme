@@ -41,13 +41,6 @@ const Logo = () => {
     <>
       <Link href="/" className={`${cookie.className} block text-yellow-400 text-5xl`}>
         Path&apos;O Calme
-        {/* <Image
-          src="/images/logo.png"
-          alt="Logo"
-          width={width < 1024 ? "150" : "250"}
-          height={width < 1024 ? "45" : "74"}
-          className="relative"
-        /> */}
       </Link>
     </>
   );

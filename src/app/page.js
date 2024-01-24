@@ -52,7 +52,7 @@ export default function Home() {
             whileInView={{ opacity: 1 }}>
             <div className="md:flex">
               <div className="md:shrink-0">
-                <img className="h-80 w-full object-cover md:h-full md:w-80" src="images/test.jpg" alt="Modern building architecture" />
+                <img className="h-80 w-full object-cover md:h-full md:w-80" src="/images/test.jpg" alt="Modern building architecture" />
               </div>
               <div className="p-8">
                 <div className="uppercase tracking-wide text-lg text-indigo-500 font-semibold">Barbara Bouillet</div>
