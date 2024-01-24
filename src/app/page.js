@@ -1,6 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
 import { Clicker_Script } from 'next/font/google'
+import { useRouter } from "next/navigation"
 
 const cookie = Clicker_Script({
   subsets: ['latin'],
@@ -9,6 +10,8 @@ const cookie = Clicker_Script({
 })
 
 export default function Home() {
+
+  const router = useRouter();
 
   const transitionValues = {
     duration: 2,
@@ -60,7 +63,10 @@ export default function Home() {
           </motion.div>
         </section>
         <section className="grid lg:grid-cols-2 2xl:grid-cols-4 grid-cols-1 gap-10 bg-primary p-8 md:p-20">
-          <article className="mx-auto w-full shadow-xl bg-cover bg-center min-h-150 transform duration-500 md:hover:-translate-y-2 cursor-pointer group" style={{ backgroundImage: "url('/images/nature.png')" }}>
+
+          <article className="mx-auto w-full shadow-xl bg-cover bg-center min-h-150 transform duration-500 md:hover:-translate-y-2 cursor-pointer group"
+            style={{ backgroundImage: "url('/images/nature.png')" }}
+            onClick={() => router.push('/nature')}>
             <div className="p-5 bg-black bg-opacity-75 md:bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 md:hover:bg-opacity-75 transform duration-300">
               <h1 className="text-white text-3xl mb-5 md:transform md:translate-y-20 md:group-hover:translate-y-0 duration-300">
                 Nature
@@ -73,7 +79,9 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="mx-auto w-full shadow-xl bg-cover bg-center min-h-150 transform duration-500 md:hover:-translate-y-2 cursor-pointer group" style={{ backgroundImage: "url('/images/animation.png')" }}>
+          <article className="mx-auto w-full shadow-xl bg-cover bg-center min-h-150 transform duration-500 md:hover:-translate-y-2 cursor-pointer group"
+            style={{ backgroundImage: "url('/images/animation.png')" }}
+            onClick={() => router.push('/animation')}>
             <div className="p-5 bg-black bg-opacity-75 md:bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 md:hover:bg-opacity-75 transform duration-300">
               <h1 className="text-white text-3xl mb-5 md:transform md:translate-y-20 md:group-hover:translate-y-0 duration-300">
                 Animation
@@ -86,7 +94,9 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="mx-auto w-full shadow-xl bg-cover bg-center min-h-150 transform duration-500 md:hover:-translate-y-2 cursor-pointer group" style={{ backgroundImage: "url('/images/mediation.png')" }}>
+          <article className="mx-auto w-full shadow-xl bg-cover bg-center min-h-150 transform duration-500 md:hover:-translate-y-2 cursor-pointer group"
+            style={{ backgroundImage: "url('/images/mediation.png')" }}
+            onClick={() => router.push('/mediation')}>
             <div className="p-5 bg-black bg-opacity-75 md:bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 md:hover:bg-opacity-75 transform duration-300">
               <h1 className="text-white text-3xl mb-5 md:transform md:translate-y-20 md:group-hover:translate-y-0 duration-300">
                 Mediation

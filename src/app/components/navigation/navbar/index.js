@@ -1,8 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import Logo from "./Logo";
+import { usePathname } from "next/navigation";
 
 const Navbar = ({ toggle }) => {
+
+  const pathname = usePathname();
+
   return (
     <>
       <div className="w-full h-20 bg-secondary sticky top-0 z-10">
@@ -28,22 +32,22 @@ const Navbar = ({ toggle }) => {
             </button>
             <ul className="hidden md:flex gap-x-6 text-white ">
               <li>
-                <Link href="/nature">
+                <Link href="/nature" className={pathname == "/nature" ? "active" : ""}>
                   <p>Nature</p>
                 </Link>
               </li>
               <li>
-                <Link href="/animation">
+                <Link href="/animation" className={pathname == "/animation" ? "active" : ""}>
                   <p>Animation</p>
                 </Link>
               </li>
               <li>
-                <Link href="/mediation">
+                <Link href="/mediation" className={pathname == "/mediation" ? "active" : ""}>
                   <p>Mediation</p>
                 </Link>
               </li>
               <li>
-                <Link href="/equipe">
+                <Link href="/equipe" className={pathname == "/equipe" ? "active" : ""}>
                   <p>L'équipe</p>
                 </Link>
               </li>
