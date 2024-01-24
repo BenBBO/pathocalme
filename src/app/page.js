@@ -25,8 +25,8 @@ export default function Home() {
         <section className="bg-contain bg-center bg-no-repeat bg-[url('/images/logo.png')] bg-gray-700 bg-blend-multiply">
           <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
             <p className={`${cookie.className} mb-2 text-2xl font-normal text-gray-300 lg:text-3xl sm:px-16 lg:px-48`}>La mini-ferme</p>
-            <h1 className={`${cookie.className} mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-6xl lg:text-7xl`}>Path'O Calme</h1>
-            <p className={`${cookie.className} mb-8 text-2xl font-normal text-gray-300 lg:text-3xl sm:px-16 lg:px-48`}>Médiation par l'animal</p>
+            <h1 className={`${cookie.className} mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-6xl lg:text-7xl`}>Path&apos;O Calme</h1>
+            <p className={`${cookie.className} mb-8 text-2xl font-normal text-gray-300 lg:text-3xl sm:px-16 lg:px-48`}>Médiation par l&apos;animal</p>
             <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0"
             >
               <a href="#" className="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
@@ -56,7 +56,7 @@ export default function Home() {
               </div>
               <div className="p-8">
                 <div className="uppercase tracking-wide text-lg text-indigo-500 font-semibold">Barbara Bouillet</div>
-                <a href="#" className="block mt-1 text-xl leading-tight font-medium text-black hover:underline">Formée par l'institu Français de Zoothérpie à Velanne</a>
+                <a href="#" className="block mt-1 text-xl leading-tight font-medium text-black hover:underline">Formée par l&apos;institut Français de Zoothérpie à Velanne</a>
                 <p className="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p>
               </div>
             </div>
@@ -104,7 +104,7 @@ export default function Home() {
               <div className="w-16 h-2 bg-red-500 rounded-full mb-5 transform md:translate-y-20 md:group-hover:translate-y-0 duration-300">
               </div>
               <p className="md:opacity-0 text-white text-xl md:group-hover:opacity-80 transform duration-500 h-20">
-                Formée par l'institut Français de Zoothérapie à Velanne
+                Formée par l&apos;institut Français de Zoothérapie à Velanne
               </p>
             </div>
           </article>

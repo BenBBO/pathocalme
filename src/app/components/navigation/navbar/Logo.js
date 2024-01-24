@@ -40,7 +40,7 @@ const Logo = () => {
   return (
     <>
       <Link href="/" className={`${cookie.className} block text-yellow-400 text-5xl`}>
-        Path'O Calme
+        Path&apos;O Calme
         {/* <Image
           src="/images/logo.png"
           alt="Logo"
