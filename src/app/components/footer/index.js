@@ -56,7 +56,7 @@ const Footer = () => {
                             <p className="text-xs uppercase tracking-wide text-gray-500 mb-2">Venir nous voir</p>
 
                             <p className="mt-6 space-y-4 text-sm">
-                                <span className="block text-sm">La mini ferme des PATH'O CALME</span>
+                                <span className="block text-sm">La mini ferme des PATH&apos;O CALME</span>
                                 <span className="block text-sm">185 Rte de Bourgoin</span>
                                 <span className="block text-sm">38460 Trept</span>
                                 <a href="https://maps.app.goo.gl/56bzLyiwiwL3FCNK9" className="block text-sm text-gray-700 transition hover:opacity-75" target="_blank">
@@ -73,7 +73,7 @@ const Footer = () => {
                 <div className="mt-4 border-t border-gray-100 pt-4">
                     <div className="sm:flex sm:items-center sm:justify-between">
                         <p className="mt-2 text-xs text-gray-500 sm:mt-0">
-                            &copy; 2024. Path'O calme.
+                            &copy; 2024. Path&apos;O calme.
                         </p>
                     </div>
                 </div>
