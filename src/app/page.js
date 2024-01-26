@@ -6,6 +6,8 @@ import babImage from "../../public/images/bab.jpg";
 import logoImage from "../../public/images/logo.png";
 import natureImage from "../../public/images/nature.png";
 import animationImage from "../../public/images/animation.png";
+import mediationImage from "../../public/images/mediation.png";
+import pensionImage from "../../public/images/pension.png";
 
 
 const cookie = Clicker_Script({
@@ -101,7 +103,7 @@ export default function Home() {
           </article>
 
           <article className="mx-auto w-full shadow-xl bg-cover bg-center min-h-150 transform duration-500 md:hover:-translate-y-2 cursor-pointer group"
-            style={{ backgroundImage: "url('/images/mediation.png')" }}
+            style={{ backgroundImage: `url(${mediationImage.src})` }}
             onClick={() => router.push('/mediation')}>
             <div className="p-5 bg-black bg-opacity-75 md:bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 md:hover:bg-opacity-75 transform duration-300">
               <h1 className="text-white text-3xl mb-5 md:transform md:translate-y-20 md:group-hover:translate-y-0 duration-300">
@@ -114,7 +116,9 @@ export default function Home() {
               </p>
             </div>
           </article>
-          <article className="mx-auto w-full shadow-xl bg-cover bg-center min-h-150 transform duration-500 md:hover:-translate-y-2 cursor-pointer group" style={{ backgroundImage: "url('/images/pension.png')" }}>
+          <article className="mx-auto w-full shadow-xl bg-cover bg-center min-h-150 transform duration-500 md:hover:-translate-y-2 cursor-pointer group"
+            style={{ backgroundImage: `url(${pensionImage.src})` }}>
+
             <div className="p-5 bg-black bg-opacity-75 md:bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 md:hover:bg-opacity-75 transform duration-300">
               <h1 className="text-white text-3xl mb-5 md:transform md:translate-y-20 md:group-hover:translate-y-0 duration-300">
                 Pension / Garderie
