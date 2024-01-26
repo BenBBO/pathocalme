@@ -3,7 +3,7 @@ const Footer = () => {
         <footer className="bg-white lg:grid lg:grid-cols-4">
             <div className="relative block h-32 lg:col-span-2 lg:h-full">
                 <img
-                    src="/images/logo.png"
+                    src="images/logo.png"
                     alt=""
                     className="absolute inset-0 h-full w-full object-contain"
                 />
