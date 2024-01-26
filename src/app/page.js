@@ -1,7 +1,12 @@
 "use client"
-import { motion } from "framer-motion"
-import { Clicker_Script } from 'next/font/google'
-import { useRouter } from "next/navigation"
+import { motion } from "framer-motion";
+import { Clicker_Script } from "next/font/google";
+import { useRouter } from "next/navigation";
+import babImage from "../../public/images/bab.jpg";
+import logoImage from "../../public/images/logo.png";
+import natureImage from "../../public/images/nature.png";
+import animationImage from "../../public/images/animation.png";
+
 
 const cookie = Clicker_Script({
   subsets: ['latin'],
@@ -22,7 +27,8 @@ export default function Home() {
   return (
     <>
       <div id="intro">
-        <section className="bg-contain bg-center bg-no-repeat bg-[url('/images/logo.png')] bg-gray-700 bg-blend-multiply">
+        <section className="bg-contain bg-center bg-no-repeat bg-gray-700 bg-blend-multiply"
+          style={{ backgroundImage: `url(${logoImage.src})` }}>
           <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
             <p className={`${cookie.className} mb-2 text-2xl font-normal text-gray-300 lg:text-3xl sm:px-16 lg:px-48`}>La mini-ferme</p>
             <h1 className={`${cookie.className} mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-6xl lg:text-7xl`}>Path&apos;O Calme</h1>
@@ -52,7 +58,7 @@ export default function Home() {
             whileInView={{ opacity: 1 }}>
             <div className="md:flex">
               <div className="md:shrink-0">
-                <img className="h-80 w-full object-cover md:h-full md:w-80" src="/images/test.jpg" alt="Modern building architecture" />
+                <img className="h-80 w-full object-cover md:h-full md:w-80" src="images/bab.jpg" alt="Modern building architecture" />
               </div>
               <div className="p-8">
                 <div className="uppercase tracking-wide text-lg text-indigo-500 font-semibold">Barbara Bouillet</div>
@@ -65,7 +71,7 @@ export default function Home() {
         <section className="grid lg:grid-cols-2 2xl:grid-cols-4 grid-cols-1 gap-10 bg-primary p-8 md:p-20">
 
           <article className="mx-auto w-full shadow-xl bg-cover bg-center min-h-150 transform duration-500 md:hover:-translate-y-2 cursor-pointer group"
-            style={{ backgroundImage: "url('/images/nature.png')" }}
+            style={{ backgroundImage: `url(${natureImage.src})` }}
             onClick={() => router.push('/nature')}>
             <div className="p-5 bg-black bg-opacity-75 md:bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 md:hover:bg-opacity-75 transform duration-300">
               <h1 className="text-white text-3xl mb-5 md:transform md:translate-y-20 md:group-hover:translate-y-0 duration-300">
@@ -80,7 +86,7 @@ export default function Home() {
           </article>
 
           <article className="mx-auto w-full shadow-xl bg-cover bg-center min-h-150 transform duration-500 md:hover:-translate-y-2 cursor-pointer group"
-            style={{ backgroundImage: "url('/images/animation.png')" }}
+            style={{ backgroundImage: `url(${animationImage.src})` }}
             onClick={() => router.push('/animation')}>
             <div className="p-5 bg-black bg-opacity-75 md:bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 md:hover:bg-opacity-75 transform duration-300">
               <h1 className="text-white text-3xl mb-5 md:transform md:translate-y-20 md:group-hover:translate-y-0 duration-300">
