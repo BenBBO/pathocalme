@@ -76,22 +76,22 @@ export default function Home() {
             imageUrl={natureImage.src}
             onClick={() => router.push('/nature')}
             description="Découverte et respect du monde animal et végétal"
-            color="green" />
+            color="rgb(34 197 94)" />
           <Prestation title="Animation"
             imageUrl={animationImage.src}
             onClick={() => router.push('/animation')}
             description="Diplomée du BAFA"
-            color="red" />
+            color="rgb(239 68 68)" />
           <Prestation title="Médiation"
             imageUrl={mediationImage.src}
             onClick={() => router.push('/animation')}
             description="Formée par l&apos;institut Français de Zoothérapie à Velanne"
-            color="orange" />
+            color="rgb(249 115 22)" />
           <Prestation title="Pension / Garderie"
             imageUrl={pensionImage.src}
             onClick={() => router.push('/404')}
             description="A venir"
-            color="blue" />
+            color="rgb(14 165 233)" />
         </section>
         <a className="back-to-top fixed bottom-24 right-4 text-red-500 hover:text-red-600 focus:text-red-600" href="#intro" role="button" aria-label="Back to top">
           <svg aria-hidden="true" xmlns="https://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">

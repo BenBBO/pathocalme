@@ -7,7 +7,8 @@ const Prestation = ({ imageUrl, onClick, title, description, color }) => {
                 <h1 className="text-white text-3xl mb-5 md:transform md:translate-y-20 md:group-hover:translate-y-0 duration-300">
                     {title}
                 </h1>
-                <div className={`w-16 h-2 bg-${color}-500 rounded-full mb-5 transform md:translate-y-20 md:group-hover:translate-y-0 duration-300`}>
+                <div className={`w-16 h-2 rounded-full mb-5 transform md:translate-y-20 md:group-hover:translate-y-0 duration-300`}
+                    style={{ backgroundColor: color }}>
                 </div>
                 <p className="md:opacity-0 text-white text-xl md:group-hover:opacity-80 transform duration-500 h-20">
                     {description}
