@@ -14,6 +14,7 @@ const Footer = () => {
                     <div>
                         <p>
                             <span className="text-xs uppercase tracking-wide text-gray-500 mb-2"> Nous contacter </span>
+                            <span className="block text-xl font-medium text-gray-900 sm:text-xl"> Barbara BOUILLET </span>
 
                             <a href="tel:0652867160" className="block text-xl font-medium text-gray-900 hover:opacity-75 sm:text-xl">
                                 06 52 86 71 60

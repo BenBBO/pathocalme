@@ -2,7 +2,8 @@
 import { motion } from "framer-motion";
 import { Clicker_Script } from "next/font/google";
 import { useRouter } from "next/navigation";
-import babImage from "../../public/images/bab.jpg";
+import Prestation from './components/prestation';
+
 import logoImage from "../../public/images/logo.png";
 import natureImage from "../../public/images/nature.png";
 import animationImage from "../../public/images/animation.png";
@@ -71,65 +72,26 @@ export default function Home() {
           </motion.div>
         </section>
         <section className="grid lg:grid-cols-2 2xl:grid-cols-4 grid-cols-1 gap-10 bg-primary p-8 md:p-20">
-
-          <article className="mx-auto w-full shadow-xl bg-cover bg-center min-h-150 transform duration-500 md:hover:-translate-y-2 cursor-pointer group"
-            style={{ backgroundImage: `url(${natureImage.src})` }}
-            onClick={() => router.push('/nature')}>
-            <div className="p-5 bg-black bg-opacity-75 md:bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 md:hover:bg-opacity-75 transform duration-300">
-              <h1 className="text-white text-3xl mb-5 md:transform md:translate-y-20 md:group-hover:translate-y-0 duration-300">
-                Nature
-              </h1>
-              <div className="w-16 h-2 bg-green-500 rounded-full mb-5 transform md:translate-y-20 md:group-hover:translate-y-0 duration-300">
-              </div>
-              <p className="md:opacity-0 text-white text-xl md:group-hover:opacity-80 transform duration-500 h-20">
-                Découverte et respect du monde animal et végétal
-              </p>
-            </div>
-          </article>
-
-          <article className="mx-auto w-full shadow-xl bg-cover bg-center min-h-150 transform duration-500 md:hover:-translate-y-2 cursor-pointer group"
-            style={{ backgroundImage: `url(${animationImage.src})` }}
-            onClick={() => router.push('/animation')}>
-            <div className="p-5 bg-black bg-opacity-75 md:bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 md:hover:bg-opacity-75 transform duration-300">
-              <h1 className="text-white text-3xl mb-5 md:transform md:translate-y-20 md:group-hover:translate-y-0 duration-300">
-                Animation
-              </h1>
-              <div className="w-16 h-2 bg-orange-500 rounded-full mb-5 transform md:translate-y-20 md:group-hover:translate-y-0 duration-300">
-              </div>
-              <p className="md:opacity-0 text-white text-xl md:group-hover:opacity-80 transform duration-500 h-20">
-                Diplomée du BAFA
-              </p>
-            </div>
-          </article>
-
-          <article className="mx-auto w-full shadow-xl bg-cover bg-center min-h-150 transform duration-500 md:hover:-translate-y-2 cursor-pointer group"
-            style={{ backgroundImage: `url(${mediationImage.src})` }}
-            onClick={() => router.push('/mediation')}>
-            <div className="p-5 bg-black bg-opacity-75 md:bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 md:hover:bg-opacity-75 transform duration-300">
-              <h1 className="text-white text-3xl mb-5 md:transform md:translate-y-20 md:group-hover:translate-y-0 duration-300">
-                Mediation
-              </h1>
-              <div className="w-16 h-2 bg-red-500 rounded-full mb-5 transform md:translate-y-20 md:group-hover:translate-y-0 duration-300">
-              </div>
-              <p className="md:opacity-0 text-white text-xl md:group-hover:opacity-80 transform duration-500 h-20">
-                Formée par l&apos;institut Français de Zoothérapie à Velanne
-              </p>
-            </div>
-          </article>
-          <article className="mx-auto w-full shadow-xl bg-cover bg-center min-h-150 transform duration-500 md:hover:-translate-y-2 cursor-pointer group"
-            style={{ backgroundImage: `url(${pensionImage.src})` }}>
-
-            <div className="p-5 bg-black bg-opacity-75 md:bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 md:hover:bg-opacity-75 transform duration-300">
-              <h1 className="text-white text-3xl mb-5 md:transform md:translate-y-20 md:group-hover:translate-y-0 duration-300">
-                Pension / Garderie
-              </h1>
-              <div className="w-16 h-2 bg-blue-500 rounded-full mb-5 transform md:translate-y-20 md:group-hover:translate-y-0 duration-300">
-              </div>
-              <p className="md:opacity-0 text-white text-xl md:group-hover:opacity-80 transform duration-500 h-20">
-                A venir
-              </p>
-            </div>
-          </article>
+          <Prestation title="Nature"
+            imageUrl={natureImage.src}
+            onClick={() => router.push('/nature')}
+            description="Découverte et respect du monde animal et végétal"
+            color="green" />
+          <Prestation title="Animation"
+            imageUrl={animationImage.src}
+            onClick={() => router.push('/animation')}
+            description="Diplomée du BAFA"
+            color="red" />
+          <Prestation title="Médiation"
+            imageUrl={mediationImage.src}
+            onClick={() => router.push('/animation')}
+            description="Formée par l&apos;institut Français de Zoothérapie à Velanne"
+            color="orange" />
+          <Prestation title="Pension / Garderie"
+            imageUrl={pensionImage.src}
+            onClick={() => router.push('/404')}
+            description="A venir"
+            color="blue" />
         </section>
         <a className="back-to-top fixed bottom-24 right-4 text-red-500 hover:text-red-600 focus:text-red-600" href="#intro" role="button" aria-label="Back to top">
           <svg aria-hidden="true" xmlns="https://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
