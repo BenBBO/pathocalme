@@ -125,7 +125,7 @@ export default function Nature() {
               Tout un programme <strong>PECCRAM</strong> reconnu et approuvé par de nombreux institus.
               Il permet de protéger les enfants contre les morsures de chien, de comprendre leur communication, d&apos;appliquer des gestes et des postures indispensables, d&apos;être responsabilisé face aux chiens.
             </p>
-            <p className="py-10 italic">De 3 ans à 12 ans. Possibilité de s'adapter</p>
+            <p className="py-10 italic">De 3 ans à 12 ans. Possibilité de s&apos;adapter</p>
           </div>
         </div>
       </div>
