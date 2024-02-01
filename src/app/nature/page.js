@@ -1,5 +1,3 @@
-import preventionRespectImage from "../../../public/images/preventionRespect.png";
-
 export default function Nature() {
   return (<>
     <section className="bg-nature py-14">
@@ -14,7 +12,7 @@ export default function Nature() {
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Tout être vivant mérite respect</h2>
           <p className="mb-4">Chaque être communique différement, mais cela veut-il dire que certains êtres ne ressentent rien ?</p>
           <p className="mb-4">Tout être utilise ses 5 sens plus ou moins développés pour survivre dans la nature, mais comment ?</p>
-          <p className="mb-4">Des programmes sont développés afin d'améliorer les connaissances pour mieux comprendre et respecter les êtres vivants</p>
+          <p className="mb-4">Des programmes sont développés afin d&apos;améliorer les connaissances pour mieux comprendre et respecter les êtres vivants</p>
           <div className="mx-auto mb-8 flex flex-col md:flex-row md:justify-around xl:justify-start">
             <p className="mx-auto mb-4 flex items-center md:mx-0 md:mb-2 lg:mb-0 xl:mr-20 font-semibold">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
@@ -55,7 +53,7 @@ export default function Nature() {
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="inline-block w-8 h-8 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
               <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
             </svg>
-            <p className="leading-relaxed text-lg">On ne voit bien qu'avec le coeur, l'essentiel est invisible pour les yeux.</p>
+            <p className="leading-relaxed text-lg">On ne voit bien qu&apos;avec le coeur, l&apos;essentiel est invisible pour les yeux.</p>
             <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-4 mb-4"></span>
             <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">Le renard au Petit Prince</h2>
           </div>
@@ -81,8 +79,8 @@ export default function Nature() {
 
             <p className="text-base font-light leading-relaxed md:leading-loose">
               Grâce à <strong>L214</strong>, un programme complet pédagogique et spécial scolaire est développé.
-              Les enfants comprennent que l'animal est un <strong>être vivant sensible</strong>, ils deviennent responsables en connaissant les êtres qui nous entourent.
-              Tout ceci s'ouvre à une vraie discussion, des échanges pour <strong>s'interroger</strong> et <strong>respecter</strong>.
+              Les enfants comprennent que l&apos;animal est un <strong>être vivant sensible</strong>, ils deviennent responsables en connaissant les êtres qui nous entourent.
+              Tout ceci s&apos;ouvre à une vraie discussion, des échanges pour <strong>s&apos;interroger</strong> et <strong>respecter</strong>.
             </p>
             <p className="py-10 italic">A partir de 9 ans </p>
           </div>
@@ -96,7 +94,7 @@ export default function Nature() {
 
             <p className="text-base font-light leading-relaxed md:leading-loose">
               Parceque sans eux nous ne sommes rien.
-              Un programme simple, ludique grâce à des figurines et des vrais insectes aide à mieux les connaître, les étudier et permet à tout âge d'être fasciner afin de les respected
+              Un programme simple, ludique grâce à des figurines et des vrais insectes aide à mieux les connaître, les étudier et permet à tout âge d&apos;être fasciner afin de les respecter
             </p>
             <p className="py-10 italic">A partir de 3 ans </p>
           </div>
@@ -125,7 +123,7 @@ export default function Nature() {
 
             <p className="text-base font-light leading-relaxed md:leading-loose">
               Tout un programme <strong>PECCRAM</strong> reconnu et approuvé par de nombreux institus.
-              Il permet de protéger les enfants contre les morsures de chien, de comprendre leur communication, d'appliquer des gestes et des postures indispensables, d'être responsabilisé face aux chiens.
+              Il permet de protéger les enfants contre les morsures de chien, de comprendre leur communication, d&apos;appliquer des gestes et des postures indispensables, d&apos;être responsabilisé face aux chiens.
             </p>
             <p className="py-10 italic">De 3 ans à 12 ans. Possibilité de s'adapter</p>
           </div>
