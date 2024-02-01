@@ -87,7 +87,7 @@ export default function Home() {
             onClick={() => router.push('/animation')}
             description="Formée par l&apos;institut Français de Zoothérapie à Velanne"
             color="rgb(249 115 22)" />
-          <Prestation title="Pension / Garderie"
+          <Prestation title="Pension"
             imageUrl={pensionImage.src}
             onClick={() => router.push('/404')}
             description="A venir"
