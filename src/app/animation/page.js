@@ -16,7 +16,7 @@ export default function Animation() {
         <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Rejoignez nous à la mini-ferme</h1>
         <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Située à Trept en Isère, entrez dans un parc de 3000m² arborés.
           Evoluez au milieu des animaux, entouré de différentes familles : caprin, porcin, gallinacé, lagomorphe, rongeur, réptile, insecte.
-          Différentes activités sont proposées tout au long de l'année afin de s'émerveiller pour mieux respecter.</p>
+          Différentes activités sont proposées tout au long de l&apos;année afin de s&apos;émerveiller pour mieux respecter.</p>
       </div>
     </section>
 
