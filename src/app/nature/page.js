@@ -1,3 +1,6 @@
+"use client"
+import { motion } from "framer-motion";
+
 export default function Nature() {
   return (<>
     <section className="bg-nature py-14">
@@ -61,8 +64,11 @@ export default function Nature() {
       </section>
     </section>
 
-    <section className="py-14 bg-nature text-dark">
-      <div className="px-4 mx-auto max-w-screen-xl">
+    <motion.section className="py-14 bg-nature text-dark"
+      initial={{ opacity: 0 }}
+      transition={{ duration: 2 }}
+      whileInView={{ opacity: 1 }}>
+      <div className="px-4 mx-auto max-w-screen-xl grid  gap-10">
         <div className="flex flex-col items-center gap-8 md:gap-10 md:flex-row">
           <div className="h-96 w-full md:order-2 md:w-1/2">
             <div className="w-full h-full mx-auto overflow-hidden md:max-w-xl">
@@ -87,7 +93,7 @@ export default function Nature() {
         </div>
 
         <div className="flex flex-col items-center gap-8 md:gap-10 md:flex-row">
-          <div className="w-full md:w-1/2 md:order-2">
+          <div className="w-full md:w-1/2 order-2 md:order-2">
             <h4 className="text-xl font-semibold tracking-widest uppercase">Prévention respect des minuscules de notre jardin</h4>
 
             <span className="block w-20 h-0.5 my-4 bg-dark md:my-6"></span>
@@ -129,11 +135,11 @@ export default function Nature() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
     <section className="text-gray-600 body-font bg-slate-200 py-14">
       <div className="container px-5 py-4 mx-auto max-w-screen-xl">
         <h1 className="text-xl font-semibold tracking-widest uppercase">Renseignez vous : </h1>
-        <div className="gap-16 items-center py-8 px-4 mx-auto lg:grid lg:grid-cols-4 lg:py-16 lg:px-6">
+        <div className="gap-16 items-center py-8 px-4 mx-auto grid lg:grid-cols-4 lg:py-16 lg:px-6">
           <a href="https://www.fimaccanin.fr/" target="_blank">
             <img loading="lazy" src="images/fimac.png" className="object-cover w-full h-full" alt="Fimac canin" />
           </a>
