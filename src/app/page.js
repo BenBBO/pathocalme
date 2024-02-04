@@ -38,7 +38,7 @@ export default function Home() {
             <p className={`${cookie.className} mb-8 text-2xl font-normal text-gray-300 lg:text-3xl sm:px-16 lg:px-48`}>Médiation par l&apos;animal</p>
             <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0"
             >
-              <a href="#" className="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+              <a href="#about" className="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
                 Nous découvrir
                 <motion.span className="px-2" transition={{
                   y: transitionValues
@@ -54,7 +54,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="p-8 md:p-20 grid">
+        <section className="p-8 md:p-20 grid" id="about">
           <motion.div className="w-full mx-auto bg-white rounded-xl shadow-md overflow-hidden"
             initial={{ opacity: 0 }}
             transition={{ duration: 2 }}

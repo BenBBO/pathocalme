@@ -16,7 +16,8 @@ module.exports = {
         primary: '#E6EAD2',
         secondary: '#636946',
         nature: '#fdeed7',
-        'text-nature': '#54731f'
+        'text-nature': '#54731f',
+        animation : "#ffebf7"
       },
     },
   },
