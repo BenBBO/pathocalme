@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 
 
-const AnimationCard = ({ imageUrl }) => {
+const AnimationCard = ({ imageUrl, title, description, footerLeft, footerRight, limite }) => {
     return <>
         <div className="group relative h-96 overflow-hidden rounded-lg bg-white">
 
@@ -10,14 +10,20 @@ const AnimationCard = ({ imageUrl }) => {
             <div className=" h-full w-full"
             >
                 <img className="h-4/6 w-full object-cover" src={imageUrl} alt="" />
-                <motion.div className="absolute left-0 grid grid-col h-1/2 bg-white w-full justify-center "
+                <motion.div className="absolute pt-2 left-0 grid grid-col h-1/2 bg-white w-full justify-center content-between"
                     initial={{ bottom: -50 }}
                     transition={{ duration: 1 }}
                     whileInView={{ bottom: 0 }}
                 >
-                    <h1 className="mb-2 px-8 text-center font-serif text-xl font-semibold text-rose-500">Atelier éveil bébé</h1>
-                    <p className="px-8 text-center">Le développement en pleine nature est important à cette âge pour explorer, grandir à son rythme et être accompagné</p>
-                    <p className="bg-slate-200 py-4"></p>
+                    <div className="px-2 text-center">
+                        <h1 className="font-serif text-xl font-semibold text-rose-500">{title}</h1>
+                        <h2 className="text-center italic font-light text-sm">Sur réservation - {limite}</h2>
+                    </div>
+                    <p className="px-2 text-center text-sm">{description}</p>
+                    <p className="border-t-2 py-2 px-2 grid grid-cols-2 italic font-bold text-xs content-center">
+                        <span>{footerLeft}</span>
+                        <span>{footerRight}</span>
+                    </p>
                 </motion.div>
                 {/* <h1 className="mt-4 px-4 text-center font-serif text-xl font-semibold text-rose-500">Portugal's Hot Baloon Festival</h1>
                 <p className="mt-1 px-4 text-center text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, saepe.</p> */}

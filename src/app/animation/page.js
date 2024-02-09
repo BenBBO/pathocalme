@@ -21,9 +21,19 @@ export default function Animation() {
       </div>
     </section>
     <section className="bg-animation py-14">
-      <div className="grid gap-16 items-center px-4 mx-auto max-w-screen-xl grid-cols-1 lg:grid-cols-3">
-        <AnimationCard imageUrl={animationBebe.src} />
-        <AnimationCard imageUrl={animationBebe.src} />
+      <div className="grid gap-8 items-center px-4 mx-auto max-w-screen-xl grid-cols-1 lg:grid-cols-3">
+        <AnimationCard imageUrl={animationBebe.src}
+          title={"Atelier éveil bébé (45 min)"}
+          description={"Le développement en pleine nature est important à cette âge pour explorer, grandir à son rythme et être accompagné"}
+          footerLeft={"de 9 mois à 1 an"}
+          limite={"limité à 5 enfants"}
+          footerRight={"10€/enfant + 1 accompagnant"} />
+        <AnimationCard imageUrl={animationBebe.src}
+          title={"Atelier des nounous (1h)"}
+          description={"Grâce aux animaux et accompagnés des professionnels de la petite enfance, les enfants peuvent se rencontrer, échanger, prendre conscience de ce qui les entoure pour mieux appréhender leur corps."}
+          footerLeft={"20€/nounou (3 enfants)"}
+          limite={"limité à 15 enfants"}
+          footerRight={"5€/enfant supplémentaire"} />
         <AnimationCard imageUrl={animationBebe.src} />
         <AnimationCard imageUrl={animationBebe.src} />
         <AnimationCard imageUrl={animationBebe.src} />
