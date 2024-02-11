@@ -2,9 +2,9 @@
 import { motion } from "framer-motion";
 
 
-const AnimationCard = ({ imageUrl, title, description, footerLeft, footerRight, limite }) => {
+const AnimationCard = ({ imageUrl, title, description, footerLeft, footerRight, limite, age }) => {
     return <>
-        <div className="group relative h-96 overflow-hidden rounded-lg bg-white">
+        <div className="group relative h-128 overflow-hidden rounded-lg bg-white">
 
             {/* transition-all duration-300 ease-in-out group-hover:-top-96 absolute left-0 top-0 */}
             <div className=" h-full w-full"
@@ -20,9 +20,10 @@ const AnimationCard = ({ imageUrl, title, description, footerLeft, footerRight, 
                         <h2 className="text-center italic font-light text-sm">Sur réservation - {limite}</h2>
                     </div>
                     <p className="px-2 text-center text-sm">{description}</p>
+                    <p className="text-center text-sm">{age}</p>
                     <p className="border-t-2 py-2 px-2 grid grid-cols-2 italic font-bold text-xs content-center">
-                        <span>{footerLeft}</span>
-                        <span>{footerRight}</span>
+                        <span className="text-left">{footerLeft}</span>
+                        <span className="text-right">{footerRight}</span>
                     </p>
                 </motion.div>
                 {/* <h1 className="mt-4 px-4 text-center font-serif text-xl font-semibold text-rose-500">Portugal's Hot Baloon Festival</h1>

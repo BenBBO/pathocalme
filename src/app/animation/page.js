@@ -1,7 +1,9 @@
 import miniferme from "../../../public/images/miniferme.png";
 import AnimationCard from '../components/animationCards';
 
-import animationBebe from "../../../public/images/animation_bebe.png"
+import animationBebe from "../../../public/images/animation_bebe.png";
+import acceuilNounou from "../../../public/images/acceuil_nounou.png";
+import petitSoigneur from "../../../public/images/petit_soigneur.png"
 
 export default function Animation() {
   return (<>
@@ -25,16 +27,23 @@ export default function Animation() {
         <AnimationCard imageUrl={animationBebe.src}
           title={"Atelier éveil bébé (45 min)"}
           description={"Le développement en pleine nature est important à cette âge pour explorer, grandir à son rythme et être accompagné"}
-          footerLeft={"de 9 mois à 1 an"}
+          age={"de 9 mois à 1 an"}
           limite={"limité à 5 enfants"}
           footerRight={"10€/enfant + 1 accompagnant"} />
-        <AnimationCard imageUrl={animationBebe.src}
-          title={"Atelier des nounous (1h)"}
+        <AnimationCard imageUrl={acceuilNounou.src}
+          title={"Acceuil des nounous (1h)"}
           description={"Grâce aux animaux et accompagnés des professionnels de la petite enfance, les enfants peuvent se rencontrer, échanger, prendre conscience de ce qui les entoure pour mieux appréhender leur corps."}
           footerLeft={"20€/nounou (3 enfants)"}
           limite={"limité à 15 enfants"}
+          age={"de 0 à 5 ans"}
           footerRight={"5€/enfant supplémentaire"} />
-        <AnimationCard imageUrl={animationBebe.src} />
+        <AnimationCard imageUrl={petitSoigneur.src}
+          title={"Atelier petit soigneur (2h)"}
+          description={"Apprendre en s'amusant à prendre soin d'un animal afin de devenir responsable, de le connaître dans tous ses détails et passer un moment avec lui. Lors de l'acceuil d'un animal dans le foyer, toute la famille peut se former et avoir son 'certificat de capacité à prendre soin d'un animal'"}
+          age={"À partir de 5 ans"}
+          footerLeft={"18€/participant"}
+          limite={"limité à 6 enfants"}
+          footerRight={"60€/famille"} />
         <AnimationCard imageUrl={animationBebe.src} />
         <AnimationCard imageUrl={animationBebe.src} />
         <AnimationCard imageUrl={animationBebe.src} />
