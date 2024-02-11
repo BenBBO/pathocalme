@@ -19,6 +19,9 @@ module.exports = {
         'text-nature': '#54731f',
         animation : "#ffebf7"
       },
+      spacing: {
+        '128': '32rem',
+      }
     },
   },
   plugins: [],
