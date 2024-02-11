@@ -17,10 +17,9 @@ const AnimationCard = ({ imageUrl, title, description, footerLeft, footerRight, 
                 >
                     <div className="px-2 text-center">
                         <h1 className="font-serif text-xl font-semibold text-rose-500">{title}</h1>
-                        <h2 className="text-center italic font-light text-sm">Sur réservation - {limite}</h2>
+                        <h2 className="text-center italic font-light text-sm">{age} - {limite}</h2>
                     </div>
                     <p className="px-2 text-center text-sm">{description}</p>
-                    <p className="text-center text-sm">{age}</p>
                     <p className="border-t-2 py-2 px-2 grid grid-cols-2 italic font-bold text-xs content-center">
                         <span className="text-left">{footerLeft}</span>
                         <span className="text-right">{footerRight}</span>
