@@ -84,7 +84,7 @@ export default function Home() {
             color="rgb(239 68 68)" />
           <Prestation title="Médiation"
             imageUrl={mediationImage.src}
-            onClick={() => router.push('/animation')}
+            onClick={() => router.push('/mediation')}
             description="Formée par l&apos;institut Français de Zoothérapie à Velanne"
             color="rgb(249 115 22)" />
           <Prestation title="Pension"
