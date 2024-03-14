@@ -83,13 +83,15 @@ export default function Mediation() {
             </div>
 
             <div className="w-full md:w-1/2 md:order-1">
-              <h4 className="text-xl font-semibold tracking-widest uppercase">Prévention contre les morsures de chien</h4>
+              <h4 className="text-xl font-semibold tracking-widest uppercase">Adapté a vos besoins</h4>
 
               <span className="block w-20 h-0.5 my-4 bg-dark md:my-6"></span>
 
               <p className="text-base font-light leading-relaxed md:leading-loose">
-                Tout un programme <strong>PECCRAM</strong> reconnu et approuvé par de nombreux institus.
-                Il permet de protéger les enfants contre les morsures de chien, de comprendre leur communication, d&apos;appliquer des gestes et des postures indispensables, d&apos;être responsabilisé face aux chiens.
+                <strong>De 45 minutes à 1h30</strong> - En fonction de l&apos;âge, des situations, des objectifs et du nombre de personnes
+              </p>
+              <p className="text-base font-light leading-relaxed md:leading-loose">
+                <strong>De 1 à 3 personnes</strong> - Pour privilégier le lien entre l&apos;animal et le bénéficiaire ainsi qu&apos;une attention particulièrement intense de l&apos;intervenant afin d&apos;allier des échanges et de développer la connexion établie.
               </p>
               <p className="py-10 italic">De 3 ans à 12 ans. Possibilité de s&apos;adapter</p>
             </div>

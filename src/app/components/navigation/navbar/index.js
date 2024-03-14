@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Logo from "./Logo";
 import { usePathname } from "next/navigation";
+import styles from './navbar.module.css'
 
 const Navbar = ({ toggle }) => {
 
@@ -30,24 +31,24 @@ const Navbar = ({ toggle }) => {
                 />
               </svg>
             </button>
-            <ul className="hidden md:flex gap-x-6 text-white ">
+            <ul className="hidden md:flex items-center gap-x-6 text-white">
               <li>
-                <Link href="/nature" className={pathname == "/nature" ? "active" : ""}>
+                <Link href="/nature" className={pathname == "/nature" ? styles.active : ""}>
                   <p>Nature</p>
                 </Link>
               </li>
               <li>
-                <Link href="/animation" className={pathname == "/animation" ? "active" : ""}>
+                <Link href="/animation" className={pathname == "/animation" ? styles.active : ""}>
                   <p>Animation</p>
                 </Link>
               </li>
               <li>
-                <Link href="/mediation" className={pathname == "/mediation" ? "active" : ""}>
+                <Link href="/mediation" className={pathname == "/mediation" ? styles.active : ""}>
                   <p>Mediation</p>
                 </Link>
               </li>
               <li>
-                <Link href="/equipe" className={pathname == "/equipe" ? "active" : ""}>
+                <Link href="/equipe" className={pathname == "/equipe" ? styles.active : ""}>
                   <p>L&apos;équipe</p>
                 </Link>
               </li>
