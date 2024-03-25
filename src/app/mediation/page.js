@@ -10,7 +10,7 @@ export default function Mediation() {
 
 
       <section className="py-14 bg-white text-dark">
-        <div className="px-4 mx-auto max-w-screen-xl grid  gap-10">
+        <div className="px-4 mx-auto max-w-screen-xl grid gap-10">
           <div className="flex flex-col items-center gap-8 md:gap-10 md:flex-row">
             <div className="h-96 w-full md:order-2 md:w-1/2">
               <div className="w-full h-full mx-auto overflow-hidden md:max-w-xl">
@@ -77,7 +77,7 @@ export default function Mediation() {
             <div className="h-96 w-full md:order-2 md:w-1/2">
               <div className="w-full h-full mx-auto overflow-hidden md:max-w-xl">
                 <div className="h-full">
-                  <img loading="lazy" src="images/preventionMorsure.png" className="object-cover w-full h-full" alt="pantry meal image" />
+                  <img loading="lazy" src="images/mediation_besoin.png" className="object-cover w-full h-full" alt="pantry meal image" />
                 </div>
               </div>
             </div>
@@ -93,9 +93,25 @@ export default function Mediation() {
               <p className="text-base font-light leading-relaxed md:leading-loose">
                 <strong>De 1 à 3 personnes</strong> - Pour privilégier le lien entre l&apos;animal et le bénéficiaire ainsi qu&apos;une attention particulièrement intense de l&apos;intervenant afin d&apos;allier des échanges et de développer la connexion établie.
               </p>
-              <p className="py-10 italic">De 3 ans à 12 ans. Possibilité de s&apos;adapter</p>
+              <div className="grid grid-cols-2 gap-10 content-center py-2">
+                <div className="flex flex-col gap-4 place-items-center">
+                  <img loading="lazy" src="images/ferme.png" alt="Ferme" />
+                  <span><strong>À la mini-ferme</strong></span>
+                </div>
+                <div className="flex flex-col gap-4 place-items-center">
+                  <img loading="lazy" src="images/appartement.png" alt="Etabilssement spécialisé" />
+                  <span><strong>En établissement spécialisé</strong></span>
+                </div>
+
+              </div>
+              <p className="py-10 italic">Tarif sur devis</p>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="bg-mediation py-14">
+        <div className="container px-5 py-4 mx-auto max-w-screen-xl">
+          <h1 className="text-xl font-semibold tracking-widest uppercase">Nos animaux : </h1>
         </div>
       </section>
 
