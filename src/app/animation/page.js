@@ -71,9 +71,6 @@ export default function Animation() {
           footerRight={"140€"} />
       </div>
     </section>
-
-
-
   </>
   )
 }

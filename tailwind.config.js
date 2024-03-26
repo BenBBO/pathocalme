@@ -17,7 +17,8 @@ module.exports = {
         secondary: '#636946',
         nature: '#fdeed7',
         'text-nature': '#54731f',
-        animation : "#ffebf7"
+        animation : "#ffebf7",
+        mediation:'#e9edd6'
       },
       spacing: {
         '128': '32rem',
