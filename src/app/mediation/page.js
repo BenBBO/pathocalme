@@ -7,7 +7,7 @@ export default function Mediation() {
       <section className="bg-mediation py-14">
         <div className="px-4 mx-auto max-w-screen-xl text-center py-10 lg:py-8">
           <h1 className={`mb-4 text-4xl font-extrabold tracking-tight leading-none text-text-nature md:text-6xl lg:text-7xl`}>Médiation par l&apos;animal</h1>
-          <p className={`mb-8 text-2xl font-normal text-gray-300 text-text-nature lg:text-3xl sm:px-16 lg:px-48`}>formée par l'institut français de Zoothérapie à Velanne</p>
+          <p className={`mb-8 text-2xl font-normal text-gray-300 text-text-nature lg:text-3xl sm:px-16 lg:px-48`}>formée par l&apos;institut français de Zoothérapie à Velanne</p>
         </div>
       </section>
 
@@ -29,13 +29,13 @@ export default function Mediation() {
               <span className="block w-20 h-0.5 my-4 bg-dark md:my-6"></span>
 
               <p className="text-base font-light leading-relaxed md:leading-loose mb-4">
-                La médiation par l'animal est une <strong>technique thérapeutique individuelle ou en petit groupe</strong> qui permet un lien en triangulation entre l&apos;intervenant professionnel, le bénéficiaire et l&apos;animal.
+                La médiation par l&apos;animal est une <strong>technique thérapeutique individuelle ou en petit groupe</strong> qui permet un lien en triangulation entre l&apos;intervenant professionnel, le bénéficiaire et l&apos;animal.
               </p>
               <p className="text-base font-light leading-relaxed md:leading-loose mb-4">
                 Elle consiste à faire intervenir un animal <strong>soigneusement sélectionné et entraîné.</strong>
               </p>
               <p className="text-base font-light leading-relaxed md:leading-loose mb-4">
-                Elle s&apos;effectue sous la responsabilité d'un <strong>intervenant en médiation</strong> par l&apos;animal formé pour cette séance.
+                Elle s&apos;effectue sous la responsabilité d&apos;un <strong>intervenant en médiation</strong> par l&apos;animal formé pour cette séance.
               </p>
             </div>
           </div>
@@ -51,11 +51,11 @@ export default function Mediation() {
                   <li>
                     Aide aux devoirs (école primaire)
                   </li><li>
-                    Accompagnement pour des personnes en situation d'isolement
+                    Accompagnement pour des personnes en situation d&apos;isolement
                   </li><li>
                     Déplacement en EHPAD
                   </li><li>
-                    Accueil de personne atteinte de handicap physique/ intellectuel
+                    Accueil de personne atteinte de handicap physique / intellectuel
                   </li><li>
                     Les situations de trop plein, burn out
                   </li><li>
