@@ -1,3 +1,6 @@
+"use client"
+import { motion } from "framer-motion";
+
 export default function Mediation() {
   return (
     <>
@@ -43,7 +46,7 @@ export default function Mediation() {
 
               <span className="block w-20 h-0.5 my-4 bg-dark md:my-6"></span>
 
-              <p className="text-base font-light leading-relaxed md:leading-loose">
+              <div className="text-base font-light leading-relaxed md:leading-loose">
                 <ul className="max-w-md ml-4 space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
                   <li>
                     Aide aux devoirs (école primaire)
@@ -61,7 +64,7 @@ export default function Mediation() {
                     ...
                   </li></ul>
 
-              </p>
+              </div>
 
             </div>
             <div className="h-96 w-full md:order-1 md:w-1/2">
@@ -104,16 +107,67 @@ export default function Mediation() {
                 </div>
 
               </div>
-              <p className="py-10 italic">Tarif sur devis</p>
+              <p className="py-4 italic">Tarif sur devis</p>
             </div>
           </div>
         </div>
       </section>
-      <section className="bg-mediation py-14">
-        <div className="container px-5 py-4 mx-auto max-w-screen-xl">
+      <motion.section className="bg-mediation py-14"
+        initial={{ opacity: 0 }}
+        transition={{ duration: 2 }}
+        whileInView={{ opacity: 1 }}>
+        <div className="container px-5 mx-auto max-w-screen-xl">
           <h1 className="text-xl font-semibold tracking-widest uppercase">Nos animaux : </h1>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 py-4">
+            <div className="grid gap-4">
+              <div>
+                <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/animaux/lapin.png" alt="lapin" />
+              </div>
+              <div>
+                <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/animaux/cochon_dinde.png" alt="cochon d&apos;inde" />
+              </div>
+              <div>
+                <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/animaux/chat.png" alt="chat" />
+              </div>
+            </div>
+            <div className="grid gap-4">
+              <div>
+                <img className="h-auto max-w-full rounded-lg"  loading="lazy" src="images/animaux/poussin.png" alt="poussin" />
+              </div>
+              <div>
+                <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/animaux/copains.png" alt="copains" />
+              </div>
+              <div>
+                <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/animaux/gratte.png" alt="gratte" />
+              </div>
+            </div>
+            <div className="grid gap-4">
+              <div>
+                <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/animaux/ponpon.png" alt="ponpon" />
+              </div>
+              <div>
+                <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/animaux/poule.png" alt="poule" />
+              </div>
+              <div>
+                <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/animaux/hamster.png" alt="hamster" />
+              </div>
+            </div>
+            <div className="grid gap-4">
+              <div>
+                <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/animaux/chien.png" alt="chien" />
+              </div>
+              <div>
+                <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/animaux/chevreau.png" alt="chevreau" />
+              </div>
+              <div>
+                <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/animaux/lapin2.png" alt="lapin2" />
+              </div>
+            </div>
+          </div>
+
         </div>
-      </section>
+      </motion.section>
 
     </>
   )
