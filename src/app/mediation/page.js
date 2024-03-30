@@ -117,8 +117,7 @@ export default function Mediation() {
         transition={{ duration: 2 }}
         whileInView={{ opacity: 1 }}>
         <div className="container px-5 mx-auto max-w-screen-xl">
-          <h1 className="text-xl font-semibold tracking-widest uppercase">Nos animaux : </h1>
-
+          <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Nos animaux</h1>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 py-4">
             <div className="grid gap-4">
               <div>
@@ -133,7 +132,7 @@ export default function Mediation() {
             </div>
             <div className="grid gap-4">
               <div>
-                <img className="h-auto max-w-full rounded-lg"  loading="lazy" src="images/animaux/poussin.png" alt="poussin" />
+                <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/animaux/poussin.png" alt="poussin" />
               </div>
               <div>
                 <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/animaux/copains.png" alt="copains" />

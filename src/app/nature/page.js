@@ -137,8 +137,8 @@ export default function Nature() {
       </div>
     </motion.section>
     <section className="text-gray-600 body-font bg-slate-200 py-14">
-      <div className="container px-5 py-4 mx-auto max-w-screen-xl">
-        <h1 className="text-xl font-semibold tracking-widest uppercase">Renseignez vous : </h1>
+      <div className="container px-5 mx-auto max-w-screen-xl">
+        <h1 className="text-2xl font-semibold tracking-widest uppercase text-center">Renseignez vous</h1>
         <div className="gap-16 items-center py-8 px-4 mx-auto grid lg:grid-cols-4 lg:py-16 lg:px-6">
           <a href="https://www.fimaccanin.fr/" target="_blank">
             <img loading="lazy" src="images/fimac.png" className="object-cover w-full h-full" alt="Fimac canin" />
