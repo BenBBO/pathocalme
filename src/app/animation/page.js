@@ -29,6 +29,7 @@ export default function Animation() {
       </div>
     </section>
     <section className="bg-animation py-14">
+      <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Animations</h1>
       <div className="grid gap-8 items-center px-4 mx-auto max-w-screen-xl grid-cols-1 lg:grid-cols-3">
         <AnimationCard imageUrl={animationBebe.src}
           title={"Atelier éveil bébé (45 min)"}

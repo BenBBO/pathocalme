@@ -54,7 +54,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="p-8 md:p-20 grid" id="about">
+        <section className="p-8 md:p-14 grid" id="about">
           <motion.div className="w-full mx-auto bg-white rounded-xl shadow-md overflow-hidden"
             initial={{ opacity: 0 }}
             transition={{ duration: 2 }}
@@ -71,27 +71,37 @@ export default function Home() {
             </div>
           </motion.div>
         </section>
-        <section className="grid lg:grid-cols-2 2xl:grid-cols-4 grid-cols-1 gap-10 bg-primary p-8 md:p-20">
-          <Prestation title="Nature"
-            imageUrl={natureImage.src}
-            onClick={() => router.push('/nature')}
-            description="Découverte et respect du monde animal et végétal"
-            color="rgb(34 197 94)" />
-          <Prestation title="Animation"
-            imageUrl={animationImage.src}
-            onClick={() => router.push('/animation')}
-            description="Diplomée du BAFA"
-            color="rgb(239 68 68)" />
-          <Prestation title="Médiation"
-            imageUrl={mediationImage.src}
-            onClick={() => router.push('/mediation')}
-            description="Formée par l&apos;institut Français de Zoothérapie à Velanne"
-            color="rgb(249 115 22)" />
-          <Prestation title="Pension"
-            imageUrl={pensionImage.src}
-            onClick={() => router.push('/404')}
-            description="A venir"
-            color="rgb(14 165 233)" />
+        <section className=" bg-primary p-8 md:p-14">
+          <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Nos services</h1>
+          <div className="grid lg:grid-cols-2 2xl:grid-cols-4 grid-cols-1 gap-10">
+            <Prestation title="Nature"
+              imageUrl={natureImage.src}
+              onClick={() => router.push('/nature')}
+              description="Découverte et respect du monde animal et végétal"
+              color="rgb(34 197 94)" />
+            <Prestation title="Animation"
+              imageUrl={animationImage.src}
+              onClick={() => router.push('/animation')}
+              description="Diplomée du BAFA"
+              color="rgb(239 68 68)" />
+            <Prestation title="Médiation"
+              imageUrl={mediationImage.src}
+              onClick={() => router.push('/mediation')}
+              description="Formée par l&apos;institut Français de Zoothérapie à Velanne"
+              color="rgb(249 115 22)" />
+            <Prestation title="Pension"
+              imageUrl={pensionImage.src}
+              onClick={() => router.push('/404')}
+              description="A venir"
+              color="rgb(14 165 233)" />
+          </div>
+        </section>
+        <section className="p-8 bg-event">
+          <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Évenements à venir</h1>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/animation_avril1.jpg" alt="lapin" />
+            <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/animation_avril2.jpg" alt="lapin" />
+          </div>
         </section>
         <a className="back-to-top fixed bottom-24 right-4 text-red-500 hover:text-red-600 focus:text-red-600" href="#intro" role="button" aria-label="Back to top">
           <svg aria-hidden="true" xmlns="https://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
