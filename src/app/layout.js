@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import Navigation from "./components/navigation";
 import './globals.css'
 import Footer from './components/footer';
+import { Analytics } from '@vercel/analytics/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
         <Navigation />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   )
