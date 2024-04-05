@@ -1,24 +1,33 @@
-   <xml version="1.0" encoding="UTF-8">
-   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-     <url>
-       <loc>https://www.pathocalme.fr</loc>
-       <lastmod>2024-04-04</lastmod>
-     </url>
-     <url>
-       <loc>https://www.pathocalme.fr/nature</loc>
-       <lastmod>2024-04-04</lastmod>
-     </url>
-     <url>
-       <loc>https://www.pathocalme.fr/animation</loc>
-       <lastmod>2024-04-04</lastmod>
-     </url>
-     <url>
-       <loc>https://www.pathocalme.fr/mediation</loc>
-       <lastmod>2024-04-04</lastmod>
-     </url>
-     <url>
-       <loc>https://www.pathocalme.fr/equipe</loc>
-       <lastmod>2024-04-04</lastmod>
-     </url>
-   </urlset>
-   </xml>
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+<url>
+  <loc>http://pathocalme.fr/nature</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-05</lastmod>
+</url>
+<url>
+  <loc>http://pathocalme.fr/animation</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-05</lastmod>
+</url>
+<url>
+  <loc>http://pathocalme.fr/mediation</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-05</lastmod>
+</url>
+<url>
+  <loc>http://pathocalme.fr/equipe</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-05</lastmod>
+</url>
+<url>
+  <loc>http://pathocalme.fr/</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-05</lastmod>
+</url>
+<url>
+  <loc>http://pathocalme.fr/tel:0652867160</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-05</lastmod>
+</url>
+</urlset>
