@@ -48,7 +48,7 @@ export default function Animation() {
           title={"Atelier petit soigneur (2h)"}
           description={"Apprendre en s'amusant à prendre soin d'un animal afin de devenir responsable, de le connaître dans tous ses détails et passer un moment avec lui. Lors de l'acceuil d'un animal dans le foyer, toute la famille peut se former et avoir son 'certificat de capacité à prendre soin d'un animal'"}
           age={"À partir de 5 ans"}
-          footerLeft={"18€/participant"}
+          footerLeft={"20€/participant"}
           limite={"limité à 6 enfants"}
           footerRight={"60€/famille"} />
         <AnimationCard imageUrl={nourrissage.src}

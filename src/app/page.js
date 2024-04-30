@@ -98,9 +98,8 @@ export default function Home() {
         </section>
         <section className="p-8 bg-event">
           <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Évenements à venir</h1>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-            <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/animation_avril1.jpg" alt="lapin" />
-            <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/animation_avril2.jpg" alt="lapin" />
+          <div className="grid grid-cols-1 gap-10 place-items-center">
+            <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/programme mai.jpg" alt="programme" />
           </div>
         </section>
         <a className="back-to-top fixed bottom-24 right-4 text-red-500 hover:text-red-600 focus:text-red-600" href="#intro" role="button" aria-label="Back to top">
