@@ -27,7 +27,8 @@ const Footer = () => {
                         <ul className="mt-8 space-y-1 text-sm text-gray-700">
                             <li className="text-xs uppercase tracking-wide text-gray-500 mb-2">Horaires</li>
                             <li>Du Mardi au Samedi: 9h30 - 18h30</li>
-                            <li>Fermé le Dimanche et Lundi</li>
+                            <li>Dimanche matin</li>
+                            <li>Fermé le Dimanche après-midi et Lundi</li>
                         </ul>
                         <a
                             href="https://www.facebook.com/PathOCalme"
