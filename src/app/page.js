@@ -101,13 +101,13 @@ export default function Home() {
 
           <blockquote className="p-4 my-4 border-s-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-gray-800">
             <p className="text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white">
-              <b>La mini ferme sera en repos jusqu'au 2 septembre.</b>
+              <b>La mini ferme sera en repos jusqu&apos;au 2 septembre.</b>
               <br />
-              Je serai au commande de The labyrinthe de maïs en collaboration avec Archi'Frais durant les 2 mois d'été dans ma caravane food truck !
+              Je serai au commande de <b>The labyrinthe de maïs</b> en collaboration avec <b>Archi&apos;Frais</b> durant les 2 mois d&apos;été dans ma caravane food truck !
               <br />
               Merci à Yann et Mickael pour leur aide et leur soutient dans la création du quiz intérieur et du dessin du labyrinthe
               <p className="mt-8">
-                Plus d'informations :
+                Plus d&apos;informations :
                 <ul className="max-w-md space-y-1 list-disc list-inside ml-8">
                   <li>
                     <a href="https://www.facebook.com/share/v/LXVsHyoaPDbzW8t9/" target="_blank">Facebook du labyrinthe</a>
