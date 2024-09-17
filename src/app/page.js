@@ -56,9 +56,11 @@ export default function Home() {
         </section>
         <section className="p-8 bg-event">
           <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Évenements à venir</h1>
-          <div className="grid grid-cols-1 gap-10 place-items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/planning_septembre.jpg" alt="programme" />
             <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/planning.jpg" alt="programme" />
           </div>
+
         </section>
         <section className="p-8 md:p-14 grid" id="about">
           <motion.div className="w-full mx-auto bg-white rounded-xl shadow-md overflow-hidden"
@@ -102,7 +104,7 @@ export default function Home() {
               color="rgb(14 165 233)" />
           </div>
         </section>
-       
+
         <a className="back-to-top fixed bottom-24 right-4 text-red-500 hover:text-red-600 focus:text-red-600" href="#intro" role="button" aria-label="Back to top">
           <svg aria-hidden="true" xmlns="https://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
             <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.58l5.995 5.988-1.416 1.414-4.579-4.574-4.59 4.574-1.416-1.414 6.006-5.988z" />
