@@ -54,6 +54,12 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className="p-8 bg-event">
+          <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Évenements à venir</h1>
+          <div className="grid grid-cols-1 gap-10 place-items-center">
+            <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/planning.jpg" alt="programme" />
+          </div>
+        </section>
         <section className="p-8 md:p-14 grid" id="about">
           <motion.div className="w-full mx-auto bg-white rounded-xl shadow-md overflow-hidden"
             initial={{ opacity: 0 }}
@@ -96,38 +102,7 @@ export default function Home() {
               color="rgb(14 165 233)" />
           </div>
         </section>
-        <section className="p-8 bg-event">
-          <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Évenements à venir</h1>
-
-          <blockquote className="p-4 my-4 border-s-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-gray-800">
-            <p className="text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white">
-              <b>La mini ferme sera en repos jusqu&apos;au 2 septembre.</b>
-              <br />
-              Je serai au commande de <b>The labyrinthe de maïs</b> en collaboration avec <b>Archi&apos;Frais</b> durant les 2 mois d&apos;été dans ma caravane food truck !
-              <br />
-              Merci à Yann et Mickael pour leur aide et leur soutient dans la création du quiz intérieur et du dessin du labyrinthe
-              <p className="mt-8">
-                Plus d&apos;informations :
-                <ul className="max-w-md space-y-1 list-disc list-inside ml-8">
-                  <li>
-                    <a href="https://www.facebook.com/share/v/LXVsHyoaPDbzW8t9/" target="_blank">Facebook du labyrinthe</a>
-                  </li>
-                  <li>
-                    <a href="https://the-labyrinthe.archi-frais.fr/" target="_blank">Site du labyrinthe</a>
-                  </li>
-                </ul>
-              </p>
-            </p>
-
-
-          </blockquote>
-          <div className="grid grid-cols-1 gap-10 place-items-center">
-            <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/labyrinthe.jpg" alt="programme" />
-          </div>
-          <div className="grid grid-cols-1 gap-10 place-items-center">
-            <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/babLabyrinthe.jpg" alt="programme" />
-          </div>
-        </section>
+       
         <a className="back-to-top fixed bottom-24 right-4 text-red-500 hover:text-red-600 focus:text-red-600" href="#intro" role="button" aria-label="Back to top">
           <svg aria-hidden="true" xmlns="https://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
             <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.58l5.995 5.988-1.416 1.414-4.579-4.574-4.59 4.574-1.416-1.414 6.006-5.988z" />
