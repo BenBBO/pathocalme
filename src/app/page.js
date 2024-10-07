@@ -57,8 +57,10 @@ export default function Home() {
         <section className="p-8 bg-event">
           <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Évenements à venir</h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-            <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/planning_septembre.jpg" alt="programme" />
-            <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/planning.jpg" alt="programme" />
+            <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/planning_octobre1.jpg" alt="programme" />
+            <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/planning_octobre2.jpg" alt="programme" />
+            <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/planning_octobre3.jpg" alt="programme" />
+            <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/planning_octobre4.jpg" alt="programme" />
           </div>
 
         </section>
