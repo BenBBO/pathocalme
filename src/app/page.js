@@ -56,6 +56,16 @@ export default function Home() {
         </section>
         <section className="p-8 bg-event">
           <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Évenements à venir</h1>
+          <div className="grid grid-cols-1 gap-10">
+            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/evenement_halloween.jpg" alt="programme" />
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/evenement_vacance_octobre.jpg" alt="programme" />
+            <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/evenement_vacance_octobre2.jpg" alt="programme" />
+          </div>
+        </section>
+        <section className="p-8 bg-event">
+          <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Planning mensuel</h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/planning_octobre1.jpg" alt="programme" />
             <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/planning_octobre2.jpg" alt="programme" />
