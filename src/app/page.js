@@ -54,7 +54,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="p-8 bg-event">
+        {/* <section className="p-8 bg-event">
           <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Évenements à venir</h1>
           <div className="grid grid-cols-1 gap-10">
             <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/evenement_halloween.jpg" alt="programme" />
@@ -63,14 +63,13 @@ export default function Home() {
             <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/evenement_vacance_octobre.jpg" alt="programme" />
             <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/evenement_vacance_octobre2.jpg" alt="programme" />
           </div>
-        </section>
+        </section> */}
         <section className="p-8 bg-event">
           <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Planning mensuel</h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-            <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/planning_octobre1.jpg" alt="programme" />
-            <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/planning_octobre2.jpg" alt="programme" />
-            <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/planning_octobre3.jpg" alt="programme" />
-            <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/planning_octobre4.jpg" alt="programme" />
+            <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/planning_novembre1.jpg" alt="programme" />
+            <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/planning_novembre2.jpg" alt="programme" />
+            <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/planning_novembre3.jpg" alt="programme" />
           </div>
 
         </section>
