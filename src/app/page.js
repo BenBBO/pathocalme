@@ -59,7 +59,7 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-10">
             <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/lettre noel.jpg" alt="programme" />
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-10">
             <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/animaux1.jpg" alt="programme" />
             <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/animaux2.jpg" alt="programme" />
             <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/animaux3.jpg" alt="programme" />
