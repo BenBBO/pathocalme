@@ -67,12 +67,6 @@ export default function Home() {
           </div>
         </section>
         <section className="p-8 bg-event">
-          <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Planning mensuel</h1>
-          <div className="grid grid-cols-1 gap-10">
-            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/planning decembre.jpg" alt="programme" />
-          </div>
-        </section>
-        <section className="p-8 bg-event">
           <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Offrez un bon cadeau à la mini-ferme</h1>
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
             <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/boncadeau1.jpg" alt="programme" />
@@ -84,6 +78,13 @@ export default function Home() {
             <img className="h-auto max-w-full rounded-lg" loading="lazy" src="images/boncadeau7.jpg" alt="programme" />
           </div>
         </section>
+        <section className="p-8 bg-event">
+          <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Planning mensuel</h1>
+          <div className="grid grid-cols-1 gap-10">
+            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/planning decembre.jpg" alt="programme" />
+          </div>
+        </section>
+
         <section className="p-8 md:p-14 grid" id="about">
           <motion.div className="w-full mx-auto bg-white rounded-xl shadow-md overflow-hidden"
             initial={{ opacity: 0 }}
