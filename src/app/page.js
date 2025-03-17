@@ -56,7 +56,7 @@ export default function Home() {
         </section>
         <section className="p-8 bg-event">
           <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Planning mensuel</h1>
-          <div className="grid grid-cols-1  lg:grid-cols-2  gap-10">
+          <div className="grid grid-cols-1 gap-10">
             <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/programme_mars.jpg" alt="programme" />
           </div>
         </section>
