@@ -59,12 +59,6 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-10">
             <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/planning_juin.jpg" alt="programme" />
           </div>
-        </section>        
-        <section className="p-8 bg-event">
-          <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Évenements à venir</h1>
-          <div className="grid grid-cols-1 gap-10">
-            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/animation paques.jpg" alt="programme" />
-          </div>
         </section>
         <section className="p-8 md:p-14 grid" id="about">
           <motion.div className="w-full mx-auto bg-white rounded-xl shadow-md overflow-hidden"
