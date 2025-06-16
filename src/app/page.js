@@ -59,6 +59,14 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-10">
             <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/planning_juin.jpg" alt="programme" />
           </div>
+          <div className="grid grid-cols-1  lg:grid-cols-2  gap-10">
+            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/Juillet 1.jpg" alt="programme" />
+            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/Juillet 2.jpg" alt="programme" />
+          </div>
+          <div className="grid grid-cols-1  lg:grid-cols-2  gap-10">
+            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/Juillet 3.jpg" alt="programme" />
+            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/Aout.jpg" alt="programme" />
+          </div>
         </section>
         <section className="p-8 md:p-14 grid" id="about">
           <motion.div className="w-full mx-auto bg-white rounded-xl shadow-md overflow-hidden"
