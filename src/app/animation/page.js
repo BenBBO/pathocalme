@@ -8,6 +8,12 @@ import nourrissage from "../../../public/images/nourrissage.png";
 import visiteAnimaux from "../../../public/images/visite_animaux.png";
 import anniversaire from "../../../public/images/anniversaire.png";
 
+export const metadata = {
+  title: "Animations pour enfants",
+  description: "Découvrez nos animations pour enfants à la mini-ferme Path'O Calme près de Bourgoin-Jallieu : ateliers éveil bébé, accueil nounous, petit soigneur, nourrissage, visites des animaux et privatisation de la ferme.",
+  keywords: ["animations enfants", "ferme pédagogique", "Bourgoin-Jallieu", "Trept", "Isère", "atelier bébé", "anniversaire ferme", "BAFA"],
+};
+
 export default function Animation() {
   return (<>
     <section className="bg-animation py-14">
