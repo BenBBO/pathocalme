@@ -5,72 +5,72 @@ const animals = [
   {
     name: "Apollon",
     description: "Le cochon costaud qui adore les gratouilles",
-    images: ["images/animaux/cochon_dinde.png", "images/animaux/gratte.png"],
+    images: ["images/equipe/appolon1.jpg", "images/equipe/appolon2.jpg"],
   },
   {
     name: "T'choupi",
     description: "Le roi des conneries élevé au biberon, il croit qu'il est un humain",
-    images: ["images/animaux/poussin.png", "images/animaux/copains.png"],
+    images: ["images/equipe/Tchoupi.jpg"],
   },
   {
     name: "Malin",
     description: "Le lapin qui sait réclamer des câlins",
-    images: ["images/animaux/lapin.png", "images/animaux/lapin2.png"],
+    images: ["images/equipe/Malin.jpg"],
   },
   {
     name: "Pouik",
     description: "Élevée par son humaine, elle aime manger avec vous un petit bout de sandwich",
-    images: ["images/animaux/ponpon.png"],
+    images: ["images/equipe/Pouik1.jpg", "images/equipe/Pouik2.jpg"],
   },
   {
     name: "Câline",
     description: "La poule aussi douce que gentille",
-    images: ["images/animaux/poule.png"],
+    images: ["images/equipe/Caline.jpg"],
   },
   {
     name: "Zazou",
     description: "Fils d'Umi, que rien ne dérange et qui prend la vie comme un long fleuve tranquille",
-    images: ["images/animaux/chevreau.png"],
+    images: ["images/equipe/Zazou1.jpg", "images/equipe/Zazou2.jpg"],
   },
   {
     name: "Olaf",
     description: "Trop gentil, il vous lave dès que possible avec sa langue",
-    images: ["images/animaux/chien.png"],
+    images: ["images/equipe/Olaf1.jpg", "images/equipe/Olaf2.jpg"],
   },
   {
     name: "Zoom",
     description: "La chatte qui file plus vite que son ombre",
-    images: ["images/animaux/chat.png"],
+    images: ["images/equipe/Zoom.jpg"],
   },
   {
     name: "Rasta",
     description: "Aussi cool qu'adorable",
-    images: ["images/animaux/copains.png"],
+    images: ["images/equipe/Rasta1.jpg", "images/equipe/Rasta2.jpg"],
   },
   {
     name: "Tagada",
     description: "Il donne des coups de tête aux autres pour avoir les plus grosses caresses",
-    images: ["images/animaux/chevreau.png"],
+    images: ["images/equipe/Tagada.jpg"],
   },
   {
     name: "Gros Coco",
     description: "Né à la ferme, il saura vous impressionner par sa douceur",
-    images: ["images/animaux/poussin.png"],
+    images: ["images/equipe/GrosCoco1.jpg", "images/equipe/GrosCoco2.jpg"],
   },
   {
     name: "Szwen",
     description: "Tellement sensible que même les gouttes d'eau le dérangent",
-    images: ["images/animaux/hamster.png"],
+    images: ["images/equipe/Szwen .jpg"],
   },
   {
     name: "Canail",
     description: "Qui aime trop les feuillages",
-    images: ["images/animaux/lapin2.png"],
+    images: ["images/equipe/Canail.jpg"],
   },
   {
     name: "Lustucru",
     description: "Répond à son appel pour manger, sauf lors de son hibernation",
-    images: ["images/animaux/hamster.png"],
+    images: ["images/equipe/Lustucru.jpg"],
   },
 ];
 
