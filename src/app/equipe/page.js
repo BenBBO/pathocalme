@@ -1,5 +1,6 @@
 "use client"
-import { motion } from "framer-motion";
+import { useState, useEffect, useCallback } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const animals = [
   {
@@ -74,9 +75,119 @@ const animals = [
   },
 ];
 
+// Flatten all images into a single list for gallery navigation
+const allPhotos = animals.flatMap((animal) =>
+  animal.images.map((src) => ({ src, name: animal.name, description: animal.description }))
+);
+
+function Lightbox({ photoIndex, onClose, onPrev, onNext }) {
+  const photo = allPhotos[photoIndex];
+
+  useEffect(() => {
+    const handleKey = (e) => {
+      if (e.key === "Escape") onClose();
+      if (e.key === "ArrowLeft") onPrev();
+      if (e.key === "ArrowRight") onNext();
+    };
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, [onClose, onPrev, onNext]);
+
+  return (
+    <AnimatePresence>
+      <motion.div
+        className="fixed inset-0 z-50 flex items-center justify-center bg-black/90"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        onClick={onClose}
+      >
+        {/* Close button */}
+        <button
+          className="absolute top-4 right-4 text-white text-4xl font-bold hover:text-gray-300 z-10"
+          onClick={onClose}
+          aria-label="Fermer"
+        >
+          &times;
+        </button>
+
+        {/* Prev button */}
+        <button
+          className="absolute left-4 text-white text-5xl font-bold hover:text-gray-300 z-10 select-none"
+          onClick={(e) => { e.stopPropagation(); onPrev(); }}
+          aria-label="Photo précédente"
+        >
+          &#8249;
+        </button>
+
+        {/* Image + caption */}
+        <div
+          className="flex flex-col items-center max-w-4xl max-h-screen px-16"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <img
+            src={photo.src}
+            alt={photo.name}
+            className="max-h-[80vh] max-w-full object-contain rounded-xl shadow-2xl"
+          />
+          <div className="mt-4 text-center">
+            <h2 className="text-2xl font-bold text-white">{photo.name}</h2>
+            <p className="text-gray-300 mt-1">{photo.description}</p>
+            <p className="text-gray-500 text-sm mt-2">{photoIndex + 1} / {allPhotos.length}</p>
+          </div>
+        </div>
+
+        {/* Next button */}
+        <button
+          className="absolute right-4 text-white text-5xl font-bold hover:text-gray-300 z-10 select-none"
+          onClick={(e) => { e.stopPropagation(); onNext(); }}
+          aria-label="Photo suivante"
+        >
+          &#8250;
+        </button>
+      </motion.div>
+    </AnimatePresence>
+  );
+}
+
 export default function Equipe() {
+  const [lightboxIndex, setLightboxIndex] = useState(null);
+
+  const openLightbox = useCallback((photoIndex) => {
+    setLightboxIndex(photoIndex);
+  }, []);
+
+  const closeLightbox = useCallback(() => setLightboxIndex(null), []);
+
+  const prevPhoto = useCallback(() => {
+    setLightboxIndex((i) => (i - 1 + allPhotos.length) % allPhotos.length);
+  }, []);
+
+  const nextPhoto = useCallback(() => {
+    setLightboxIndex((i) => (i + 1) % allPhotos.length);
+  }, []);
+
+  // Build a lookup: animal name + image index → flat photo index
+  const getPhotoIndex = (animalName, imageIndex) => {
+    let count = 0;
+    for (const animal of animals) {
+      if (animal.name === animalName) return count + imageIndex;
+      count += animal.images.length;
+    }
+    return 0;
+  };
+
   return (
     <>
+      {lightboxIndex !== null && (
+        <Lightbox
+          photoIndex={lightboxIndex}
+          onClose={closeLightbox}
+          onPrev={prevPhoto}
+          onNext={nextPhoto}
+        />
+      )}
+
       <section className="bg-primary py-14">
         <div className="px-4 mx-auto max-w-screen-xl text-center py-10 lg:py-8">
           <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-secondary md:text-6xl lg:text-7xl">
@@ -100,15 +211,16 @@ export default function Equipe() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
               >
-                <div className={`grid gap-0.5 ${animal.images.length > 1 ? "grid-cols-2" : "grid-cols-1"} h-80`}>
+                <div className={`grid gap-0.5 ${animal.images.length > 1 ? "grid-cols-2" : "grid-cols-1"} h-[28rem]`}>
                   {animal.images.map((src, i) => (
                     <img
                       key={i}
                       src={src}
                       alt={animal.name}
                       loading="lazy"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover cursor-pointer hover:brightness-90 transition-[filter]"
                       style={animal.objectPosition ? { objectPosition: animal.objectPosition } : undefined}
+                      onClick={() => openLightbox(getPhotoIndex(animal.name, i))}
                     />
                   ))}
                 </div>

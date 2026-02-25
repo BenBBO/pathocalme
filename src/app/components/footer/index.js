@@ -27,7 +27,7 @@ const Footer = () => {
                         <ul className="mt-8 space-y-1 text-sm text-gray-700">
                             <li className="text-xs uppercase tracking-wide text-gray-500 mb-2">Horaires</li>
                             <li>Du Mardi au Samedi: 9h30 - 18h30</li>
-                            <li>Dimanche matin</li>
+                            <li>Dimanche 9h30 - 13h30</li>
                             <li>Fermé le Dimanche après-midi et Lundi</li>
                         </ul>
                         <a
@@ -53,7 +53,7 @@ const Footer = () => {
                             <p className="text-xs uppercase tracking-wide text-gray-500 mb-2">Venir nous voir</p>
 
                             <p className="mt-6 space-y-4 text-sm">
-                                <span className="block text-sm">La mini ferme des PATH&apos;O CALME</span>
+                                <span className="block text-sm">La mini ferme PATH&apos;O CALME</span>
                                 <span className="block text-sm">185 Rte de Bourgoin</span>
                                 <span className="block text-sm">38460 Trept</span>
                                 <a href="https://maps.app.goo.gl/56bzLyiwiwL3FCNK9" className="grid justify-center lg:block text-sm text-gray-700 transition hover:opacity-75" target="_blank">
