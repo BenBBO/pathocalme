@@ -15,8 +15,7 @@ const animals = [
   {
     name: "Malin",
     description: "Le lapin qui sait réclamer des câlins",
-    images: ["images/equipe/Malin.jpg"],
-    objectPosition: "center top",
+    images: ["images/equipe/Malin.jpg"]    
   },
   {
     name: "Pouik",
@@ -41,8 +40,7 @@ const animals = [
   {
     name: "Zoom",
     description: "La chatte qui file plus vite que son ombre",
-    images: ["images/equipe/Zoom.jpg"],
-    objectPosition: "center top",
+    images: ["images/equipe/Zoom.jpg"]
   },
   {
     name: "Rasta",
@@ -62,8 +60,7 @@ const animals = [
   {
     name: "Szwen",
     description: "Tellement sensible que même les gouttes d'eau le dérangent",
-    images: ["images/equipe/Szwen .jpg"],
-    objectPosition: "center 65%",
+    images: ["images/equipe/Szwen .jpg"]
   },
   {
     name: "Canail",
@@ -73,8 +70,7 @@ const animals = [
   {
     name: "Lustucru",
     description: "Répond à son appel pour manger, sauf lors de son hibernation",
-    images: ["images/equipe/Lustucru.jpg"],
-    objectPosition: "center 35%",
+    images: ["images/equipe/Lustucru.jpg"]
   },
 ];
 
