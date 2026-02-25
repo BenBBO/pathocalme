@@ -22,11 +22,11 @@ export default function Pension() {
       {/* Mode selector banners */}
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="bg-secondary text-white flex items-center justify-center py-6 px-4 gap-3">
-          <span className="text-3xl">🏡</span>
+          <span className="text-3xl" aria-hidden="true">🏡</span>
           <span className="text-xl font-semibold tracking-wider uppercase">À la ferme</span>
         </div>
         <div className="bg-text-nature text-white flex items-center justify-center py-6 px-4 gap-3">
-          <span className="text-3xl">🚗</span>
+          <span className="text-3xl" aria-hidden="true">🚗</span>
           <span className="text-xl font-semibold tracking-wider uppercase">À votre domicile</span>
         </div>
       </div>
@@ -41,7 +41,7 @@ export default function Pension() {
       >
         <div className="px-4 mx-auto max-w-screen-xl">
           <div className="flex items-center gap-3 mb-10 justify-center">
-            <span className="text-4xl">🏡</span>
+            <span className="text-4xl" aria-hidden="true">🏡</span>
             <h2 className="text-3xl font-extrabold text-secondary tracking-tight">À la ferme</h2>
           </div>
 
@@ -83,7 +83,7 @@ export default function Pension() {
               transition={{ duration: 0.2 }}
             >
               <div className="bg-secondary px-6 py-5">
-                <span className="text-4xl block mb-1">🐾</span>
+                <span className="text-4xl block mb-1" aria-hidden="true">🐾</span>
                 <h3 className="text-xl font-bold text-white">Pension NACS</h3>
                 <p className="text-green-100 text-sm mt-1">Intérieure — accessoires &amp; nourriture à votre charge</p>
               </div>
@@ -113,7 +113,7 @@ export default function Pension() {
               transition={{ duration: 0.2 }}
             >
               <div className="bg-secondary px-6 py-5">
-                <span className="text-4xl block mb-1">🌿</span>
+                <span className="text-4xl block mb-1" aria-hidden="true">🌿</span>
                 <h3 className="text-xl font-bold text-white">Animaux d&apos;extérieur</h3>
                 <p className="text-green-100 text-sm mt-1">Par box — accessoires &amp; nourriture à votre charge</p>
               </div>
@@ -139,7 +139,7 @@ export default function Pension() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            <span className="text-3xl flex-shrink-0">💉</span>
+            <span className="text-3xl flex-shrink-0" aria-hidden="true">💉</span>
             <div>
               <h3 className="font-semibold text-secondary text-base mb-1">Soins</h3>
               <p className="text-gray-600 text-sm">
@@ -164,7 +164,7 @@ export default function Pension() {
       >
         <div className="px-4 mx-auto max-w-screen-xl">
           <div className="flex items-center gap-3 mb-10 justify-center">
-            <span className="text-4xl">🚗</span>
+            <span className="text-4xl" aria-hidden="true">🚗</span>
             <h2 className="text-3xl font-extrabold text-text-nature tracking-tight">À votre domicile</h2>
           </div>
 
@@ -176,7 +176,7 @@ export default function Pension() {
             >
               {/* Card header */}
               <div className="bg-text-nature px-8 py-6 flex items-center gap-4">
-                <span className="text-5xl">🏠</span>
+                <span className="text-5xl" aria-hidden="true">🏠</span>
                 <div>
                   <h3 className="text-2xl font-bold text-white">Pets sitting</h3>
                   <p className="text-green-100 text-sm">Maximum 20 minutes sur place</p>
