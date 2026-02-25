@@ -98,8 +98,8 @@ export default function Home() {
               color="rgb(249 115 22)" />
             <Prestation title="Pension"
               imageUrl={pensionImage.src}
-              onClick={() => router.push('/404')}
-              description="A venir"
+              onClick={() => router.push('/pension')}
+              description="Pension pour chats et NACS"
               color="rgb(14 165 233)" />
           </div>
         </section>
