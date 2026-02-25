@@ -90,30 +90,30 @@ export default function Equipe() {
 
       <section className="bg-white py-12 px-4">
         <div className="mx-auto max-w-screen-xl">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {animals.map((animal, index) => (
               <motion.div
                 key={animal.name}
-                className="bg-primary rounded-2xl shadow-md overflow-hidden flex flex-col"
+                className="rounded-2xl shadow-lg overflow-hidden relative"
                 initial={{ opacity: 0, y: 30 }}
                 transition={{ duration: 0.6, delay: index * 0.05 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
               >
-                <div className={`grid gap-1 ${animal.images.length > 1 ? "grid-cols-2" : "grid-cols-1"}`}>
+                <div className={`grid gap-0.5 ${animal.images.length > 1 ? "grid-cols-2" : "grid-cols-1"} h-80`}>
                   {animal.images.map((src, i) => (
                     <img
                       key={i}
                       src={src}
                       alt={animal.name}
                       loading="lazy"
-                      className="w-full h-48 object-cover"
+                      className="w-full h-full object-cover"
                     />
                   ))}
                 </div>
-                <div className="p-6 flex flex-col flex-1">
-                  <h2 className="text-2xl font-bold text-secondary mb-2">{animal.name}</h2>
-                  <p className="text-gray-600 text-base leading-relaxed">{animal.description}</p>
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 via-black/40 to-transparent px-5 pt-12 pb-5">
+                  <h2 className="text-2xl font-bold text-white drop-shadow">{animal.name}</h2>
+                  <p className="text-sm text-gray-200 leading-snug mt-1 drop-shadow">{animal.description}</p>
                 </div>
               </motion.div>
             ))}
