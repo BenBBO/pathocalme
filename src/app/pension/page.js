@@ -54,7 +54,7 @@ export default function Pension() {
               transition={{ duration: 0.2 }}
             >
               <div className="bg-secondary px-6 py-5">
-                <span className="text-4xl block mb-1">🐱</span>
+                <span className="text-4xl block mb-1" aria-hidden="true">🐱</span>
                 <h3 className="text-xl font-bold text-white">Pension pour chat</h3>
                 <p className="text-green-100 text-sm mt-1">Intérieur &amp; extérieur sécurisé</p>
               </div>
