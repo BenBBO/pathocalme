@@ -19,6 +19,7 @@ module.exports = {
         'text-nature': '#54731f',
         animation: "#ffebf7",
         mediation: '#e9edd6',
+        pension: '#e0f2fe',
         event: '#f2e7e5'
       },
       spacing: {

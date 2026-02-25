@@ -42,6 +42,11 @@ const Sidebar = ({ isOpen, toggle }) => {
                         </Link>
                     </li>
                     <li>
+                        <Link href="/pension" onClick={toggle}>
+                            <p>Pension</p>
+                        </Link>
+                    </li>
+                    <li>
                         <Link href="/equipe" onClick={toggle}>
                             <p>L&apos;équipe</p>
                         </Link>
