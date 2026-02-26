@@ -61,19 +61,42 @@ export default function Home() {
             <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/Fevrier2.jpg" alt="programme" />
           </div>
         </section>
-        <section className="p-8 md:p-14 grid" id="about">
-          <motion.div className="w-full mx-auto bg-white rounded-xl shadow-md overflow-hidden"
-            initial={{ opacity: 0 }}
-            transition={{ duration: 2 }}
-            whileInView={{ opacity: 1 }}>
+        <section className="p-8 md:p-14" id="about">
+          <motion.div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden"
+            initial={{ opacity: 0, y: 30 }}
+            transition={{ duration: 1.5 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}>
             <div className="md:flex">
               <div className="md:shrink-0">
-                <img className="h-80 w-full object-cover md:h-full md:w-80" src="images/bab.jpg" alt="Modern building architecture" />
+                <img className="h-72 w-full object-cover md:h-full md:w-80" src="images/bab.jpg" alt="Barbara Bouillet" />
               </div>
-              <div className="p-8">
-                <div className="uppercase tracking-wide text-lg text-indigo-500 font-semibold">Barbara Bouillet</div>
-                <a href="#" className="block mt-1 text-xl leading-tight font-medium text-black hover:underline">Formée par l&apos;institut Français de Zoothérpie à Velanne</a>
-                <p className="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p>
+              <div className="p-6 md:p-8 flex flex-col justify-center">
+                <div className="uppercase tracking-wide text-lg text-secondary font-semibold">Barbara Bouillet</div>
+                <p className="mt-1 text-sm text-secondary/70 font-medium italic">Diplômée du BAFA &middot; Formée à la médiation par l&apos;animal</p>
+                <div className="mt-4 space-y-3 text-slate-600 text-sm leading-relaxed">
+                  <p>
+                    Je m&apos;appelle Barbara et j&apos;ai pris racine en Isère grâce à ma mini ferme Path&apos;O Calme, un lieu simple, vrai, profondément naturel... Où l&apos;animal est un allié précieux pour se reconnecter à l&apos;essentiel. C&apos;est un espace de vie entre partage et bienveillance où les humains et les animaux peuvent se rencontrer autrement, à ciel ouvert. Depuis toujours, le vivant me lie et me guide.
+                  </p>
+                  <p>
+                    Diplômée du BAFA et formée à la médiation par l&apos;animal, j&apos;ai choisi de mêler mes compétences pédagogiques à ma passion pour les animaux. Ensemble, nous proposons des expériences sensibles pleines de respect, d&apos;émerveillement et de liens. Ces expériences sont proposées autant pour les enfants, les familles, les adultes avec chacune de leur fragilité.
+                  </p>
+                  <p>
+                    Chaque jour, je prends soin de mes animaux, j&apos;anime des ateliers, je prépare des médiations, j&apos;accueille les visiteurs, je crée des moments où l&apos;on peut ralentir, observer, écouter. Je travaille avec mes animaux, ils sont mes partenaires, mes amis, mes médiateurs, de véritables alliés dans cette aventure naturelle et sensible. Chez eux, ils vous accueillent comme êtres à part entière, tous ont un prénom, une histoire et leur propre caractère.
+                  </p>
+                  <p>
+                    À travers Path&apos;O Calme, j&apos;ai voulu offrir un cadre sécurisant et vivant où l&apos;on peut apprendre à respecter, à comprendre, et à ressentir pour partager ses émotions. Un lieu à taille humaine rythmé par les saisons, les émotions et les découvertes.
+                  </p>
+                  <p className="font-medium text-secondary/80 italic">
+                    Rencontrons-nous, créons du lien, prenons le temps autant que nécessaire afin de se reconnecter à l&apos;essentiel.
+                  </p>
+                  <p>
+                    Ici, je m&apos;investis avec le cœur tout en restant fidèle à mes valeurs. Si je peux grâce à ce lieu transmettre un peu de douceur, d&apos;émerveillement et de respect alors j&apos;ai atteint ce pourquoi je me lève chaque matin.
+                  </p>
+                  <p className="font-semibold text-secondary text-center mt-2">
+                    Respectons la vie sans hiérarchie.
+                  </p>
+                </div>
               </div>
             </div>
           </motion.div>
