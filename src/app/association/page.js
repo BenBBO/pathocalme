@@ -1,5 +1,6 @@
 "use client"
 import { motion } from "framer-motion";
+import AdoptionCarousel from "../components/adoptionCarousel";
 
 const fadeUp = {
   initial: { opacity: 0, y: 40 },
@@ -264,15 +265,15 @@ export default function Association() {
         <div className="px-4 mx-auto max-w-screen-xl">
           <div className="flex flex-col md:flex-row gap-10 items-stretch">
 
-            {/* Left — photo placeholder */}
+            {/* Left — adoption carousel */}
             <motion.div
-              className="md:w-1/2 rounded-2xl overflow-hidden bg-association flex items-center justify-center min-h-64 association-photos-adoption"
+              className="md:w-1/2 rounded-2xl overflow-hidden min-h-64 association-photos-adoption"
               initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7 }}
               viewport={{ once: true }}
             >
-              <p className="text-secondary/40 text-sm italic">Photos à venir</p>
+              <AdoptionCarousel />
             </motion.div>
 
             {/* Right — text */}
