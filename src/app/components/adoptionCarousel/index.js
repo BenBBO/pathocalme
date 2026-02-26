@@ -44,7 +44,7 @@ export default function AdoptionCarousel() {
   const current = adoptionImages[index];
 
   return (
-    <div className="relative w-full h-full min-h-64 rounded-2xl overflow-hidden select-none">
+    <div className="relative w-full min-h-64 rounded-2xl overflow-hidden select-none bg-gray-900">
       {/* Slides */}
       <AnimatePresence initial={false} custom={dir}>
         <motion.img
@@ -57,7 +57,7 @@ export default function AdoptionCarousel() {
           animate="center"
           exit="exit"
           transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-contain"
           draggable={false}
         />
       </AnimatePresence>
