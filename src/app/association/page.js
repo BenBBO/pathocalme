@@ -2,17 +2,6 @@
 import { motion } from "framer-motion";
 import AdoptionCarousel from "../components/adoptionCarousel";
 
-const adoptionImages = [
-  { src: "/images/adoption/adoption1.jpg", alt: "Animal de la ferme disponible à l'adoption" },
-  { src: "/images/adoption/adoption2.jpg", alt: "Animal de la ferme disponible à l'adoption" },
-  { src: "/images/adoption/adoption3.jpg", alt: "Animal de la ferme disponible à l'adoption" },
-  { src: "/images/adoption/adoption4.jpg", alt: "Animal de la ferme disponible à l'adoption" },
-  { src: "/images/adoption/adoption5.jpg", alt: "Animal de la ferme disponible à l'adoption" },
-  { src: "/images/adoption/adoption6.jpg", alt: "Animal de la ferme disponible à l'adoption" },
-  { src: "/images/adoption/adoption7.jpg", alt: "Animal de la ferme disponible à l'adoption" },
-  { src: "/images/adoption/adoption8.jpg", alt: "Animal de la ferme disponible à l'adoption" },
-];
-
 const fadeUp = {
   initial: { opacity: 0, y: 40 },
   whileInView: { opacity: 1, y: 0 },
@@ -276,16 +265,16 @@ export default function Association() {
         <div className="px-4 mx-auto max-w-screen-xl">
           <div className="flex flex-col md:flex-row gap-10 items-stretch">
 
-            {/* Left — carousel */}
+            {/* Left — adoption carousel */}
             <motion.div
-              className="md:w-1/2 rounded-2xl overflow-hidden bg-association min-h-80 association-photos-adoption"
+              className="md:w-1/2 rounded-2xl overflow-hidden min-h-64 association-photos-adoption"
               initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7 }}
               viewport={{ once: true }}
               style={{ position: "relative", minHeight: "20rem" }}
             >
-              <AdoptionCarousel images={adoptionImages} />
+              <AdoptionCarousel />
             </motion.div>
 
             {/* Right — text */}

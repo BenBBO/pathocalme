@@ -4,22 +4,33 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const INTERVAL_MS = 3000;
 
+const adoptionImages = [
+  { src: "/images/adoption/adoption1.jpg", alt: "Animal de la ferme disponible à l'adoption" },
+  { src: "/images/adoption/adoption2.jpg", alt: "Animal de la ferme disponible à l'adoption" },
+  { src: "/images/adoption/adoption3.jpg", alt: "Animal de la ferme disponible à l'adoption" },
+  { src: "/images/adoption/adoption4.jpg", alt: "Animal de la ferme disponible à l'adoption" },
+  { src: "/images/adoption/adoption5.jpg", alt: "Animal de la ferme disponible à l'adoption" },
+  { src: "/images/adoption/adoption6.jpg", alt: "Animal de la ferme disponible à l'adoption" },
+  { src: "/images/adoption/adoption7.jpg", alt: "Animal de la ferme disponible à l'adoption" },
+  { src: "/images/adoption/adoption8.jpg", alt: "Animal de la ferme disponible à l'adoption" },
+];
+
 const variants = {
   enter: (dir) => ({ x: dir > 0 ? "100%" : "-100%", opacity: 0 }),
   center: { x: 0, opacity: 1 },
   exit: (dir) => ({ x: dir > 0 ? "-100%" : "100%", opacity: 0 }),
 };
 
-export default function AdoptionCarousel({ images }) {
+export default function AdoptionCarousel() {
   const [[index, dir], setPage] = useState([0, 1]);
 
   const next = useCallback(() => {
-    setPage(([prev]) => [(prev + 1) % images.length, 1]);
-  }, [images.length]);
+    setPage(([prev]) => [(prev + 1) % adoptionImages.length, 1]);
+  }, []);
 
   const prev = useCallback(() => {
-    setPage(([prev]) => [(prev - 1 + images.length) % images.length, -1]);
-  }, [images.length]);
+    setPage(([prev]) => [(prev - 1 + adoptionImages.length) % adoptionImages.length, -1]);
+  }, []);
 
   const goTo = (i) => {
     setPage(([prev]) => [i, i > prev ? 1 : -1]);
@@ -30,10 +41,10 @@ export default function AdoptionCarousel({ images }) {
     return () => clearInterval(id);
   }, [next]);
 
-  const current = images[index];
+  const current = adoptionImages[index];
 
   return (
-    <div className="relative w-full h-full rounded-2xl overflow-hidden select-none">
+    <div className="relative w-full h-full min-h-64 rounded-2xl overflow-hidden select-none">
       {/* Slides */}
       <AnimatePresence initial={false} custom={dir}>
         <motion.img
@@ -69,12 +80,13 @@ export default function AdoptionCarousel({ images }) {
 
       {/* Dot indicators */}
       <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-10 flex gap-2">
-        {images.map((_, i) => (
+        {adoptionImages.map((_, i) => (
           <button
             key={i}
             onClick={() => goTo(i)}
             aria-label={`Aller à l'image ${i + 1}`}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${
+            aria-current={i === index ? "true" : undefined}
+            className={`w-2.5 h-2.5 rounded-full transition-all duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white ${
               i === index ? "bg-white scale-125" : "bg-white/50"
             }`}
           />
