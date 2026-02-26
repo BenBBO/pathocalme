@@ -105,15 +105,28 @@ export default function Association() {
               </div>
             </motion.div>
 
-            {/* Right — photo placeholder */}
+            {/* Right — visite photos */}
             <motion.div
-              className="md:w-1/2 rounded-2xl overflow-hidden bg-primary flex items-center justify-center min-h-64 association-photos-visites"
+              className="md:w-1/2 rounded-2xl overflow-hidden association-photos-visites"
               initial={{ opacity: 0, x: 40 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7 }}
               viewport={{ once: true }}
             >
-              <p className="text-secondary/40 text-sm italic">Photos à venir</p>
+              <div className="grid gap-4">
+                <img
+                  className="h-auto max-w-full rounded-lg"
+                  loading="lazy"
+                  src="/images/visites/visite1.png"
+                  alt="Visite de la ferme - vue de la mini-ferme"
+                />
+                <img
+                  className="h-auto max-w-full rounded-lg"
+                  loading="lazy"
+                  src="/images/visites/visite2.jpg"
+                  alt="Visite de la ferme - activités avec les animaux"
+                />
+              </div>
             </motion.div>
 
           </div>
