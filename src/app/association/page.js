@@ -265,14 +265,13 @@ export default function Association() {
         <div className="px-4 mx-auto max-w-screen-xl">
           <div className="flex flex-col md:flex-row gap-10 items-stretch">
 
-            {/* Left — adoption carousel */}
+            {/* Left — adoption image grid */}
             <motion.div
-              className="md:w-1/2 rounded-2xl overflow-hidden min-h-64 association-photos-adoption"
+              className="md:w-1/2 association-photos-adoption"
               initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7 }}
               viewport={{ once: true }}
-              style={{ position: "relative", minHeight: "20rem" }}
             >
               <AdoptionCarousel />
             </motion.div>
