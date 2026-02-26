@@ -57,6 +57,11 @@ const Navbar = ({ toggle }) => {
                   <p>L&apos;équipe</p>
                 </Link>
               </li>
+              <li>
+                <Link href="/association" className={pathname == "/association" ? styles.active : ""}>
+                  <p>Association</p>
+                </Link>
+              </li>
             </ul>
             <div className="hidden md:block">
             </div>
