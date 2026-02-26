@@ -113,15 +113,15 @@ export default function Association() {
               transition={{ duration: 0.7 }}
               viewport={{ once: true }}
             >
-              <div className="grid gap-4">
+              <div className="grid grid-cols-2 gap-2 h-full min-h-64">
                 <img
-                  className="h-auto max-w-full rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                   loading="lazy"
                   src="/images/visites/visite1.png"
                   alt="Visite de la ferme - vue de la mini-ferme"
                 />
                 <img
-                  className="h-auto max-w-full rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                   loading="lazy"
                   src="/images/visites/visite2.jpg"
                   alt="Visite de la ferme - activités avec les animaux"
