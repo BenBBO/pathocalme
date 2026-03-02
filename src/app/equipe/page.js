@@ -50,7 +50,7 @@ const animals = [
   },
   {
     name: "Tagada",
-    description: "Il donne des coups de tête aux autres pour avoir les plus grosses caresses",
+    description: "Elle donne des coups de tête aux autres pour avoir les plus grosses caresses",
     images: ["images/equipe/Tagada.jpg"],
   },
   {

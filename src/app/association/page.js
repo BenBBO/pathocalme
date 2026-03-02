@@ -91,7 +91,7 @@ export default function Association() {
                 <span className="block w-12 h-1 rounded-full bg-amber-300 mb-5"></span>
                 <p className="text-green-100 leading-relaxed">
                   Chaque visite finance <strong className="text-white">directement</strong> le repas
-                  et les soins de nos animaux. En réservant, vous devenez acteur du bien-être de notre
+                  et les soins de nos animaux. En réservant par <a href="tel:0652867160" className="text-white underline underline-offset-2">téléphone au 06 52 86 71 60</a>, vous devenez acteur du bien-être de notre
                   famille à pattes.
                 </p>
               </div>

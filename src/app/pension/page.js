@@ -191,7 +191,7 @@ export default function Pension() {
                   <div className="flex items-end gap-1">
                     <span className="text-6xl font-extrabold text-text-nature">13</span>
                     <span className="text-3xl font-bold text-text-nature mb-1">€</span>
-                    <span className="text-gray-500 mb-2">/ jour</span>
+                    <span className="text-gray-500 mb-2">/ passage</span>
                   </div>
                   <p className="text-sm text-gray-500">+ frais de déplacement</p>
                   <span className="block w-10 h-1 rounded-full bg-text-nature mt-1"></span>
