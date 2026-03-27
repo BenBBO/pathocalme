@@ -5,9 +5,6 @@ import { useRouter } from "next/navigation";
 import Prestation from './components/prestation';
 
 import logoImage from "../../public/images/logo.png";
-import natureImage from "../../public/images/nature.png";
-import animationImage from "../../public/images/animation.png";
-import mediationImage from "../../public/images/mediation.png";
 import pensionImage from "../../public/images/pension.png";
 import associationImage from "../../public/images/miniferme.png";
 import organismeImage from "../../public/images/centre loisirs/centre loisir.jpg";
@@ -113,21 +110,6 @@ export default function Home() {
         <section className=" bg-primary p-8 md:p-14">
           <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Nos services</h1>
           <div className="grid lg:grid-cols-2 2xl:grid-cols-6 grid-cols-1 gap-10">
-            <Prestation title="Nature"
-              imageUrl={natureImage.src}
-              onClick={() => router.push('/nature')}
-              description="Découverte et respect du monde animal et végétal"
-              color="rgb(34 197 94)" />
-            <Prestation title="Animation"
-              imageUrl={animationImage.src}
-              onClick={() => router.push('/animation')}
-              description="Diplomée du BAFA"
-              color="rgb(239 68 68)" />
-            <Prestation title="Médiation"
-              imageUrl={mediationImage.src}
-              onClick={() => router.push('/mediation')}
-              description="Formée par l&apos;institut Français de Zoothérapie à Velanne"
-              color="rgb(249 115 22)" />
             <Prestation title="Famille"
               imageUrl={familleImage.src}
               onClick={() => router.push('/famille')}

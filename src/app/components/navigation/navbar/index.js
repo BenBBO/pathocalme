@@ -33,21 +33,6 @@ const Navbar = ({ toggle }) => {
             </button>
             <ul className="hidden md:flex items-center gap-x-6 text-white">
               <li>
-                <Link href="/nature" className={pathname == "/nature" ? styles.active : ""}>
-                  <p>Nature</p>
-                </Link>
-              </li>
-              <li>
-                <Link href="/animation" className={pathname == "/animation" ? styles.active : ""}>
-                  <p>Animation</p>
-                </Link>
-              </li>
-              <li>
-                <Link href="/mediation" className={pathname == "/mediation" ? styles.active : ""}>
-                  <p>Mediation</p>
-                </Link>
-              </li>
-              <li>
                 <Link href="/famille" className={pathname == "/famille" ? styles.active : ""}>
                   <p>Famille</p>
                 </Link>
