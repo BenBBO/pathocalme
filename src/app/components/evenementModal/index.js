@@ -1,16 +1,12 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { formatEventDate } from "@/utils/dates";
 
 export default function EvenementModal({ evenement, onClose }) {
   const [lightboxIndex, setLightboxIndex] = useState(null);
 
-  const dateObj = new Date(evenement.date + "T00:00:00");
-  const dateFormatted = dateObj.toLocaleDateString("fr-FR", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
+  const dateFormatted = formatEventDate(evenement.date);
 
   const photos = evenement.photos.map((photo, i) => ({
     src: `/images/evenements/${evenement.id}/${photo}`,

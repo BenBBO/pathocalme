@@ -1,13 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
+import { formatEventDate } from "@/utils/dates";
 
 export default function EvenementCard({ evenement, isPast, onClick }) {
-  const dateObj = new Date(evenement.date + "T00:00:00");
-  const dateFormatted = dateObj.toLocaleDateString("fr-FR", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
+  const dateFormatted = formatEventDate(evenement.date);
 
   const miniatureSrc = `/images/evenements/${evenement.id}/${evenement.miniature}`;
 

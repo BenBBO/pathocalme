@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import evenements from "@/data/evenements.json";
 import EvenementCard from "@/app/components/evenementCard";
 import EvenementModal from "@/app/components/evenementModal";
+import { parseEventDate } from "@/utils/dates";
 
 export default function Evenements() {
   const [selectedEvent, setSelectedEvent] = useState(null);
@@ -13,12 +14,12 @@ export default function Evenements() {
     now.setHours(0, 0, 0, 0);
 
     const sorted = [...evenements].sort(
-      (a, b) => new Date(a.date) - new Date(b.date)
+      (a, b) => parseEventDate(a.date) - parseEventDate(b.date)
     );
 
-    const aVenir = sorted.filter((e) => new Date(e.date + "T00:00:00") >= now);
+    const aVenir = sorted.filter((e) => parseEventDate(e.date) >= now);
     const passes = sorted
-      .filter((e) => new Date(e.date + "T00:00:00") < now)
+      .filter((e) => parseEventDate(e.date) < now)
       .reverse();
 
     return { aVenir, passes };
