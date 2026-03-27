@@ -1,4 +1,3 @@
-import miniferme from "../../../public/images/miniferme.png";
 import OrganismeCard from '../components/organismeCard';
 
 import petiteEnfance1 from "../../../public/images/professionnel petite enfance/professionnel petite enfance1.jpg";
@@ -24,32 +23,31 @@ export const metadata = {
 
 export default function Organisme() {
   return (<>
+    {/* Header — same pattern as événements page */}
     <section className="bg-organisme py-14">
       <div className="px-4 mx-auto max-w-screen-xl text-center py-10 lg:py-8">
         <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-text-nature md:text-6xl lg:text-7xl">Organismes</h1>
-        <p className="mb-8 text-2xl font-normal text-text-nature lg:text-3xl sm:px-16 lg:px-48">Animations et médiations pour vos structures</p>
+        <p className="mb-6 text-2xl font-normal text-text-nature lg:text-3xl sm:px-16 lg:px-48">Animations et médiations pour vos structures</p>
+        <div className="text-base text-gray-600 max-w-3xl mx-auto space-y-3">
+          <p>
+            À la ferme, plusieurs animations sont proposées sur place en fonction de votre projet et votre demande. Rencontrons-nous.
+            J&apos;accueille jusqu&apos;à 20 personnes avec accompagnant dans un lieu en plein air. La plupart de mes animaux sont habitués à tous les publics, ils sont doux et ont des comportements adaptés envers les humains petits et grands.
+          </p>
+          <p>
+            Je peux également me déplacer dans vos instituts en fonction de vos demandes et de mes capacités.
+            Mes médiateurs sont approuvés et suivis par un vétérinaire certifié. Ils sont chèvres, poules, chiens, lapins, cochons d&apos;inde, tortues ou insectes inoffensifs.
+          </p>
+          <p className="font-semibold text-text-nature">
+            Toute demande est sur devis + déplacement 30 min max
+          </p>
+        </div>
       </div>
     </section>
-    <section className="bg-cover bg-center bg-no-repeat bg-gray-600 bg-blend-multiply"
-      style={{ backgroundImage: `url(${miniferme.src})` }}>
-      <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56 text-white">
-        <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl">Accueil des organismes à la ferme</h1>
-        <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
-          À la ferme, plusieurs animations sont proposées sur place en fonction de votre projet et votre demande. Rencontrons-nous.
-          J&apos;accueille jusqu&apos;à 20 personnes avec accompagnant dans un lieu en plein air. La plupart de mes animaux sont habitués à tous les publics, ils sont doux et ont des comportements adaptés envers les humains petits et grands.
-        </p>
-        <p className="mb-4 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
-          Je peux également me déplacer dans vos instituts en fonction de vos demandes et de mes capacités.
-          Mes médiateurs sont approuvés et suivis par un vétérinaire certifié. Ils sont chèvres, poules, chiens, lapins, cochons d&apos;inde, tortues ou insectes inoffensifs.
-        </p>
-        <p className="text-2xl underline font-semibold">
-          Toute demande est sur devis + déplacement 30 min max
-        </p>
-      </div>
-    </section>
+
+    {/* Cards grid */}
     <section className="bg-organisme py-14">
-      <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Nos prestations pour les organismes</h1>
-      <div className="grid gap-8 items-start px-4 mx-auto max-w-screen-xl grid-cols-1 lg:grid-cols-2">
+      <h2 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Nos prestations pour les organismes</h2>
+      <div className="grid gap-8 px-4 mx-auto max-w-screen-xl grid-cols-1 lg:grid-cols-2">
         <OrganismeCard
           images={[
             { src: petiteEnfance1.src, alt: "Professionnel petite enfance 1" },
