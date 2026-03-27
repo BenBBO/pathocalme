@@ -58,9 +58,9 @@ export default function Organisme() {
             <strong className="text-text-nature">RAM, MAM, crèches</strong> et <strong className="text-text-nature">nounous indépendantes</strong> — animations adaptées aux tout-petits, jusqu&apos;à <strong className="text-text-nature">20 personnes</strong>. Possibilité de <strong className="text-text-nature">privatiser</strong> la ferme.
           </>}
           description={[
-            "RAM, MAM, CRÈCHES… tout autre institut de la petite enfance, contactez-moi pour parler de votre projet.",
-            "NOUNOUS indépendantes : un tarif spécial est appliqué pour les visites.",
-            "Vous pouvez également privatiser les lieux entre collègues nounous (3 minimums). Jusqu'à 20 personnes, je propose des activités adaptées aux tout-petits.",
+            <>RAM, MAM, CRÈCHES… tout autre institut de la petite enfance, <strong className="text-text-nature">contactez-moi</strong> pour parler de votre projet.</>,
+            <>NOUNOUS indépendantes : un <strong className="text-text-nature">tarif spécial</strong> est appliqué pour les visites.</>,
+            <>Vous pouvez également <strong className="text-text-nature">privatiser les lieux</strong> entre collègues nounous (3 minimums). Jusqu&apos;à <strong className="text-text-nature">20 personnes</strong>, je propose des activités adaptées aux tout-petits.</>,
           ]}
           footer="Durée : 1H30 — 20€ forfait 3 enfants + 1 nounou — 5€/enfant supplémentaire"
         />
@@ -74,9 +74,9 @@ export default function Organisme() {
             <strong className="text-text-nature">IME, EHPAD, EAM, MAS</strong> — animations jusqu&apos;à <strong className="text-text-nature">8 personnes</strong>, médiations jusqu&apos;à <strong className="text-text-nature">4 personnes</strong>. Séances individuelles ou collectives possibles. <strong className="text-text-nature">Sur réservation uniquement</strong>.
           </>}
           description={[
-            "IME, EHPAD, EAM, MAS… tout autre institut accueillant des personnes ayant des troubles ou handicaps, contactez-moi pour me parler de votre projet. Sur place, jusqu'à 8 personnes peuvent venir en animation et pour les médiations, 4 personnes maximum.",
-            "Professionnels indépendants, soulagement des familles : en tant qu'accompagnant, vous pouvez venir aux visites de groupe déjà planifiées (voir sur le planning) UNIQUEMENT SUR RÉSERVATION.",
-            "Vous pouvez également proposer des séances individuelles ou collectives avec pathologie similaire aux familles. Ces séances se feront en collaboration entre vous et moi pour le bénéficiaire.",
+            <>IME, EHPAD, EAM, MAS… tout autre institut accueillant des personnes ayant des troubles ou handicaps, <strong className="text-text-nature">contactez-moi</strong> pour me parler de votre projet. Sur place, jusqu&apos;à <strong className="text-text-nature">8 personnes</strong> peuvent venir en animation et pour les médiations, <strong className="text-text-nature">4 personnes maximum</strong>.</>,
+            <>Professionnels indépendants, soulagement des familles : en tant qu&apos;accompagnant, vous pouvez venir aux visites de groupe déjà planifiées (voir sur le planning) <strong className="text-text-nature">UNIQUEMENT SUR RÉSERVATION</strong>.</>,
+            <>Vous pouvez également proposer des <strong className="text-text-nature">séances individuelles ou collectives</strong> avec pathologie similaire aux familles. Ces séances se feront en <strong className="text-text-nature">collaboration</strong> entre vous et moi pour le bénéficiaire.</>,
           ]}
           footer="SUR DEVIS ET RÉSERVATION"
         />
@@ -89,8 +89,8 @@ export default function Organisme() {
             Accueil jusqu&apos;à <strong className="text-text-nature">15 enfants</strong> maximum. Ateliers adaptés à vos projets, sur <strong className="text-text-nature">demi-journée ou journée complète</strong>.
           </>}
           description={[
-            "Afin de vous accueillir dans les meilleures conditions, jusqu'à 15 enfants maximums seront acceptés.",
-            "En fonction de vos projets d'animations, je peux m'adapter et vous proposer différents ateliers. Possibilité sur une demi-journée ou journée complètes.",
+            <>Afin de vous accueillir dans les meilleures conditions, jusqu&apos;à <strong className="text-text-nature">15 enfants maximums</strong> seront acceptés.</>,
+            <>En fonction de vos projets d&apos;animations, je peux m&apos;adapter et vous proposer différents ateliers. Possibilité sur une <strong className="text-text-nature">demi-journée ou journée complètes</strong>.</>,
           ]}
           footer="SUR DEVIS"
         />
@@ -106,9 +106,9 @@ export default function Organisme() {
             Classes de <strong className="text-text-nature">20 élèves max</strong>, dès <strong className="text-text-nature">3 ans</strong>. Pédagogies ludiques adaptées à vos programmes scolaires. Déplacement possible dans vos classes. Formation <strong className="text-text-nature">PECRAM</strong> (prévention morsures).
           </>}
           description={[
-            "Afin de vous accueillir dans les meilleures conditions, seules les petites classes de 20 élèves maximums seront acceptées. En fonction de vos projets pédagogiques, je peux m'adapter et vous proposer des animations. Possibilité sur une demi-journée ou journée complètes. Je peux également me déplacer dans vos classes avec des animaux et petites bêtes.",
-            "Passionnée, formée et instruite sur les différents animaux, la nature et leur mode de vie, je suis en capacité de transmettre à vos élèves le respect animal, une connaissance simplifiée des animaux, une prévention contre les morsures de chien (PECRAM), la bonne attitude pour apprendre et comprendre les minuscules.",
-            "Des apprentissages à la ferme ou dans votre école avec des pédagogies ludiques adaptées à vos programmes scolaires et ajustées à chaque âge dès 3 ans.",
+            <>Afin de vous accueillir dans les meilleures conditions, seules les petites classes de <strong className="text-text-nature">20 élèves maximums</strong> seront acceptées. En fonction de vos projets pédagogiques, je peux m&apos;adapter et vous proposer des animations. Possibilité sur une <strong className="text-text-nature">demi-journée ou journée complètes</strong>. Je peux également me déplacer dans vos classes avec des animaux et petites bêtes.</>,
+            <>Passionnée, formée et instruite sur les différents animaux, la nature et leur mode de vie, je suis en capacité de transmettre à vos élèves le <strong className="text-text-nature">respect animal</strong>, une connaissance simplifiée des animaux, une <strong className="text-text-nature">prévention contre les morsures de chien (PECRAM)</strong>, la bonne attitude pour apprendre et comprendre les minuscules.</>,
+            <>Des apprentissages à la ferme ou dans votre école avec des <strong className="text-text-nature">pédagogies ludiques</strong> adaptées à vos programmes scolaires et ajustées à chaque âge dès <strong className="text-text-nature">3 ans</strong>.</>,
           ]}
           footer="SUR DEVIS"
         />

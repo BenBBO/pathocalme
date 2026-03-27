@@ -15,8 +15,8 @@ const OrganismeCard = ({ images, title, summary, description, footer }) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
         >
-            {/* Image area — fixed height */}
-            <div className="relative h-56 flex-shrink-0">
+            {/* Image area — 2/3 ratio */}
+            <div className="relative flex-shrink-0" style={{ minHeight: "320px", aspectRatio: "16/9" }}>
                 {/* Main cover image */}
                 <img
                     className="h-full w-full object-cover cursor-pointer"
@@ -48,7 +48,7 @@ const OrganismeCard = ({ images, title, summary, description, footer }) => {
                 )}
             </div>
 
-            {/* Content area — flex-grow to fill remaining space */}
+            {/* Content area */}
             <div className="flex flex-col flex-grow p-5">
                 <h2 className="text-xl font-bold text-secondary text-center mb-3">{title}</h2>
 
@@ -57,11 +57,11 @@ const OrganismeCard = ({ images, title, summary, description, footer }) => {
                     {summary}
                 </div>
 
-                {/* Full description — expandable */}
+                {/* Full description — expandable with distinct background */}
                 <AnimatePresence initial={false}>
                     {expanded && (
                         <motion.div
-                            className="text-sm text-gray-600 space-y-2 leading-relaxed mt-2"
+                            className="text-sm text-gray-700 space-y-2 leading-relaxed mt-3 bg-organisme rounded-xl p-4 border border-secondary/10"
                             initial={{ height: 0, opacity: 0 }}
                             animate={{ height: "auto", opacity: 1 }}
                             exit={{ height: 0, opacity: 0 }}
@@ -74,25 +74,27 @@ const OrganismeCard = ({ images, title, summary, description, footer }) => {
                     )}
                 </AnimatePresence>
 
-                {/* Voir plus / Voir moins button */}
+                {/* Voir plus / Voir moins — centered pill button */}
                 {description && description.length > 0 && (
-                    <button
-                        onClick={() => setExpanded(!expanded)}
-                        className="mt-3 text-sm font-semibold text-secondary hover:text-secondary/80 transition-colors flex items-center gap-1 self-start"
-                        aria-expanded={expanded}
-                    >
-                        {expanded ? "Voir moins" : "Voir plus"}
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className={`h-4 w-4 transition-transform duration-300 ${expanded ? "rotate-180" : ""}`}
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            strokeWidth={2}
+                    <div className="flex justify-center mt-4">
+                        <button
+                            onClick={() => setExpanded(!expanded)}
+                            className="inline-flex items-center gap-1.5 px-5 py-2 text-sm font-semibold rounded-full border-2 border-secondary text-secondary hover:bg-secondary hover:text-white transition-all duration-200"
+                            aria-expanded={expanded}
                         >
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
+                            {expanded ? "Voir moins" : "Voir plus"}
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                className={`h-4 w-4 transition-transform duration-300 ${expanded ? "rotate-180" : ""}`}
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                strokeWidth={2}
+                            >
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </div>
                 )}
 
                 <div className="flex-grow" />
