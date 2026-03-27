@@ -33,23 +33,13 @@ const Navbar = ({ toggle }) => {
             </button>
             <ul className="hidden md:flex items-center gap-x-6 text-white">
               <li>
-                <Link href="/nature" className={pathname == "/nature" ? styles.active : ""}>
-                  <p>Nature</p>
+                <Link href="/famille" className={pathname == "/famille" ? styles.active : ""}>
+                  <p>Famille</p>
                 </Link>
               </li>
               <li>
-                <Link href="/animation" className={pathname == "/animation" ? styles.active : ""}>
-                  <p>Animation</p>
-                </Link>
-              </li>
-              <li>
-                <Link href="/mediation" className={pathname == "/mediation" ? styles.active : ""}>
-                  <p>Mediation</p>
-                </Link>
-              </li>
-              <li>
-                <Link href="/pension" className={pathname == "/pension" ? styles.active : ""}>
-                  <p>Pension</p>
+                <Link href="/organisme" className={pathname == "/organisme" ? styles.active : ""}>
+                  <p>Organisme</p>
                 </Link>
               </li>
               <li>
@@ -58,13 +48,18 @@ const Navbar = ({ toggle }) => {
                 </Link>
               </li>
               <li>
-                <Link href="/equipe" className={pathname == "/equipe" ? styles.active : ""}>
-                  <p>L&apos;équipe</p>
+                <Link href="/pension" className={pathname == "/pension" ? styles.active : ""}>
+                  <p>Pension</p>
                 </Link>
               </li>
               <li>
                 <Link href="/association" className={pathname == "/association" ? styles.active : ""}>
                   <p>Association</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="/equipe" className={pathname == "/equipe" ? styles.active : ""}>
+                  <p>L&apos;équipe</p>
                 </Link>
               </li>
             </ul>

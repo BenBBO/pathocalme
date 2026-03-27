@@ -27,23 +27,13 @@ const Sidebar = ({ isOpen, toggle }) => {
 
                 <ul className="sidebar-nav text-center leading-relaxed text-xl">
                     <li>
-                        <Link href="/nature" onClick={toggle}>
-                            <p>Nature</p>
+                        <Link href="/famille" onClick={toggle}>
+                            <p>Famille</p>
                         </Link>
                     </li>
                     <li>
-                        <Link href="/animation" onClick={toggle}>
-                            <p>Animation</p>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/mediation" onClick={toggle}>
-                            <p>Mediation</p>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/pension" onClick={toggle}>
-                            <p>Pension</p>
+                        <Link href="/organisme" onClick={toggle}>
+                            <p>Organisme</p>
                         </Link>
                     </li>
                     <li>
@@ -52,13 +42,18 @@ const Sidebar = ({ isOpen, toggle }) => {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/equipe" onClick={toggle}>
-                            <p>L&apos;équipe</p>
+                        <Link href="/pension" onClick={toggle}>
+                            <p>Pension</p>
                         </Link>
                     </li>
                     <li>
                         <Link href="/association" onClick={toggle}>
                             <p>Association</p>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/equipe" onClick={toggle}>
+                            <p>L&apos;équipe</p>
                         </Link>
                     </li>
                 </ul>

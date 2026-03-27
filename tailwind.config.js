@@ -17,11 +17,11 @@ module.exports = {
         secondary: '#636946',
         nature: '#fdeed7',
         'text-nature': '#54731f',
-        animation: "#ffebf7",
-        mediation: '#e9edd6',
         pension: '#e0f2fe',
         event: '#f2e7e5',
-        association: '#fdf4e3'
+        association: '#fdf4e3',
+        organisme: '#e8f0e3',
+        famille: '#f0e8f3'
       },
       spacing: {
         '128': '32rem',
