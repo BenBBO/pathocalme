@@ -42,8 +42,8 @@ const Sidebar = ({ isOpen, toggle }) => {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/pension" onClick={toggle}>
-                            <p>Pension</p>
+                        <Link href="/organisme" onClick={toggle}>
+                            <p>Organisme</p>
                         </Link>
                     </li>
                     <li>
@@ -52,13 +52,18 @@ const Sidebar = ({ isOpen, toggle }) => {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/equipe" onClick={toggle}>
-                            <p>L&apos;équipe</p>
+                        <Link href="/pension" onClick={toggle}>
+                            <p>Pension</p>
                         </Link>
                     </li>
                     <li>
                         <Link href="/association" onClick={toggle}>
                             <p>Association</p>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/equipe" onClick={toggle}>
+                            <p>L&apos;équipe</p>
                         </Link>
                     </li>
                 </ul>
