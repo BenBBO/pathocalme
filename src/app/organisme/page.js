@@ -45,7 +45,7 @@ export default function Organisme() {
     </section>
 
     {/* Cards grid */}
-    <section className="bg-organisme py-14">
+    <section className="bg-white py-14">
       <h2 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Nos prestations pour les organismes</h2>
       <div className="grid gap-8 px-4 mx-auto max-w-screen-xl grid-cols-1 lg:grid-cols-2">
         <OrganismeCard
