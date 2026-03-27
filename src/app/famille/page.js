@@ -1,8 +1,8 @@
 import OrganismeCard from '../components/organismeCard';
 
-import visite1 from "../../../public/images/visites/visite1.png";
-import visite2 from "../../../public/images/visites/visite2.jpg";
-import visite3 from "../../../public/images/visites/Visite3.png";
+import visite1 from "../../../public/images/visites/visite1.jpg";
+import visite2 from "../../../public/images/visites/visite2.png";
+import visite3 from "../../../public/images/visites/visites3.jpeg";
 import visites4 from "../../../public/images/visites/visites4.jpeg";
 
 import atelierEveil1 from "../../../public/images/atelier eveil/atelier.jpeg";
@@ -11,7 +11,7 @@ import atelierEveil3 from "../../../public/images/atelier eveil/atelier 3.jpg";
 import atelierEveil4 from "../../../public/images/atelier eveil/atelier 4.jpg";
 import atelierEveil5 from "../../../public/images/atelier eveil/atelier 5.jpg";
 
-import atelierPetit1 from "../../../public/images/atelier petits/atelier petit.jpg";
+import atelierPetit1 from "../../../public/images/atelier petits/atelier petit.png";
 import atelierPetit2 from "../../../public/images/atelier petits/atelier petit 3.jpg";
 import atelierPetit3 from "../../../public/images/atelier petits/atelier petit 4.jpg";
 import atelierPetit4 from "../../../public/images/atelier petits/atelier petit 5.jpg";

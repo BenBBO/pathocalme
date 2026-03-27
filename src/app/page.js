@@ -8,7 +8,7 @@ import logoImage from "../../public/images/logo.png";
 import pensionImage from "../../public/images/pension.png";
 import associationImage from "../../public/images/miniferme.png";
 import organismeImage from "../../public/images/centre loisirs/centre loisir.jpg";
-import familleImage from "../../public/images/visites/visite1.png";
+import familleImage from "../../public/images/visites/visite1.jpg";
 
 
 const cookie = Clicker_Script({
