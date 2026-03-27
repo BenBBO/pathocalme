@@ -20,6 +20,7 @@ Au **clic sur une carte**, une **modale** s'ouvre avec :
 - La description complète
 - Le tarif
 - Le nombre de places maximum (si renseigné)
+- L'affiche de l'événement avec bouton de téléchargement (si renseignée)
 - Une galerie de photos (avec lightbox plein écran au clic sur une photo)
 
 ## Structure des fichiers
@@ -74,7 +75,8 @@ Ouvrir `src/data/evenements.json` et ajouter un objet dans le tableau :
   "tarif": "10€ par enfant",
   "maxPersonnes": 20,
   "miniature": "noel1.jpg",
-  "photos": ["noel1.jpg", "noel2.jpg", "noel3.jpg"]
+  "photos": ["noel1.jpg", "noel2.jpg", "noel3.jpg"],
+  "affiche": "affiche-noel-2026.jpg"
 }
 ```
 
@@ -94,5 +96,6 @@ Commiter les changements et pousser la branche. Le site sera automatiquement red
 | `maxPersonnes`   | `number`   | ❌          | Nombre maximum de participants (affiché uniquement si renseigné)            |
 | `miniature`      | `string`   | ✅          | Nom du fichier image utilisé comme miniature (doit être dans le dossier `public/images/evenements/<id>/`) |
 | `photos`         | `string[]` | ✅          | Liste des noms de fichiers photos (dans le même dossier)                    |
+| `affiche`        | `string`   | ❌          | Nom du fichier de l'affiche (dans le même dossier). Si renseigné, l'affiche est affichée dans la modale avec un bouton de téléchargement |
 
 > **Note :** la classification « à venir » ou « passé » est automatique en fonction de la date du jour.

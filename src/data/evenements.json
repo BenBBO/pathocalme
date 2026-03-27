@@ -27,6 +27,7 @@
     "tarif": "15€ par enfant",
     "maxPersonnes": 30,
     "miniature": "paques1.jpg",
-    "photos": ["paques1.jpg", "paques2.jpg", "paques3.jpg"]
+    "photos": ["paques1.jpg", "paques2.jpg", "paques3.jpg"],
+    "affiche": "affiche-paques-2026.jpg"
   }
 ]
