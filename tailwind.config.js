@@ -22,7 +22,8 @@ module.exports = {
         pension: '#e0f2fe',
         event: '#f2e7e5',
         association: '#fdf4e3',
-        organisme: '#e8f0e3'
+        organisme: '#e8f0e3',
+        famille: '#f0e8f3'
       },
       spacing: {
         '128': '32rem',
