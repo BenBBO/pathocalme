@@ -109,7 +109,7 @@ export default function Home() {
         </section>
         <section className=" bg-primary p-8 md:p-14">
           <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Nos services</h1>
-          <div className="grid lg:grid-cols-2 2xl:grid-cols-6 grid-cols-1 gap-10">
+          <div className="grid lg:grid-cols-2 2xl:grid-cols-4 grid-cols-1 gap-10 justify-items-center">
             <Prestation title="Famille"
               imageUrl={familleImage.src}
               onClick={() => router.push('/famille')}
