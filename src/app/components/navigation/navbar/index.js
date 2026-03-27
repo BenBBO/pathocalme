@@ -48,11 +48,6 @@ const Navbar = ({ toggle }) => {
                 </Link>
               </li>
               <li>
-                <Link href="/pension" className={pathname == "/pension" ? styles.active : ""}>
-                  <p>Pension</p>
-                </Link>
-              </li>
-              <li>
                 <Link href="/organisme" className={pathname == "/organisme" ? styles.active : ""}>
                   <p>Organisme</p>
                 </Link>
@@ -63,13 +58,18 @@ const Navbar = ({ toggle }) => {
                 </Link>
               </li>
               <li>
-                <Link href="/equipe" className={pathname == "/equipe" ? styles.active : ""}>
-                  <p>L&apos;équipe</p>
+                <Link href="/pension" className={pathname == "/pension" ? styles.active : ""}>
+                  <p>Pension</p>
                 </Link>
               </li>
               <li>
                 <Link href="/association" className={pathname == "/association" ? styles.active : ""}>
                   <p>Association</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="/equipe" className={pathname == "/equipe" ? styles.active : ""}>
+                  <p>L&apos;équipe</p>
                 </Link>
               </li>
             </ul>

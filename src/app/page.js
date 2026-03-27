@@ -127,16 +127,16 @@ export default function Home() {
               onClick={() => router.push('/mediation')}
               description="Formée par l&apos;institut Français de Zoothérapie à Velanne"
               color="rgb(249 115 22)" />
-            <Prestation title="Pension"
-              imageUrl={pensionImage.src}
-              onClick={() => router.push('/pension')}
-              description="Pension pour chats et NACS"
-              color="rgb(14 165 233)" />
             <Prestation title="Organisme"
               imageUrl={organismeImage.src}
               onClick={() => router.push('/organisme')}
               description="Animations et médiations pour vos structures"
               color="rgb(22 163 74)" />
+            <Prestation title="Pension"
+              imageUrl={pensionImage.src}
+              onClick={() => router.push('/pension')}
+              description="Pension pour chats et NACS"
+              color="rgb(14 165 233)" />
             <Prestation title="Association"
               imageUrl={associationImage.src}
               onClick={() => router.push('/association')}
