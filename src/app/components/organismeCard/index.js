@@ -1,12 +1,13 @@
 "use client"
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Lightbox from "../lightbox";
 
-const OrganismeCard = ({ images, title, description, footer }) => {
+const OrganismeCard = ({ images, title, summary, description, footer }) => {
     const [lightboxIndex, setLightboxIndex] = useState(null);
+    const [expanded, setExpanded] = useState(false);
 
-    return <>
+    return (<>
         <motion.div
             className="flex flex-col overflow-hidden rounded-2xl bg-white shadow-lg border border-gray-100 h-full"
             initial={{ opacity: 0, y: 30 }}
@@ -50,11 +51,52 @@ const OrganismeCard = ({ images, title, description, footer }) => {
             {/* Content area — flex-grow to fill remaining space */}
             <div className="flex flex-col flex-grow p-5">
                 <h2 className="text-xl font-bold text-secondary text-center mb-3">{title}</h2>
-                <div className="text-sm text-gray-600 space-y-2 leading-relaxed flex-grow">
-                    {description.map((paragraph, index) => (
-                        <p key={index}>{paragraph}</p>
-                    ))}
+
+                {/* Summary — always visible */}
+                <div className="text-sm text-gray-600 leading-relaxed">
+                    {summary}
                 </div>
+
+                {/* Full description — expandable */}
+                <AnimatePresence initial={false}>
+                    {expanded && (
+                        <motion.div
+                            className="text-sm text-gray-600 space-y-2 leading-relaxed mt-2"
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: "auto", opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            transition={{ duration: 0.3 }}
+                        >
+                            {description.map((paragraph, index) => (
+                                <p key={index}>{paragraph}</p>
+                            ))}
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+
+                {/* Voir plus / Voir moins button */}
+                {description && description.length > 0 && (
+                    <button
+                        onClick={() => setExpanded(!expanded)}
+                        className="mt-3 text-sm font-semibold text-secondary hover:text-secondary/80 transition-colors flex items-center gap-1 self-start"
+                        aria-expanded={expanded}
+                    >
+                        {expanded ? "Voir moins" : "Voir plus"}
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className={`h-4 w-4 transition-transform duration-300 ${expanded ? "rotate-180" : ""}`}
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                        >
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                )}
+
+                <div className="flex-grow" />
+
                 {footer && (
                     <p className="border-t border-gray-200 mt-4 pt-3 font-semibold text-sm text-center text-secondary italic">
                         {footer}
@@ -71,7 +113,7 @@ const OrganismeCard = ({ images, title, description, footer }) => {
                 onClose={() => setLightboxIndex(null)}
             />
         )}
-    </>
+    </>)
 }
 
 export default OrganismeCard;
