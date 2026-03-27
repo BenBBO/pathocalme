@@ -53,6 +53,11 @@ const Navbar = ({ toggle }) => {
                 </Link>
               </li>
               <li>
+                <Link href="/evenements" className={pathname == "/evenements" ? styles.active : ""}>
+                  <p>Événements</p>
+                </Link>
+              </li>
+              <li>
                 <Link href="/equipe" className={pathname == "/equipe" ? styles.active : ""}>
                   <p>L&apos;équipe</p>
                 </Link>
