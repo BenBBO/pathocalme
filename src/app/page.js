@@ -10,7 +10,7 @@ import animationImage from "../../public/images/animation.png";
 import mediationImage from "../../public/images/mediation.png";
 import pensionImage from "../../public/images/pension.png";
 import associationImage from "../../public/images/miniferme.png";
-import organismeImage from "../../public/images/professionnel petite enfance/professionnel petite enfance1.jpg";
+import organismeImage from "../../public/images/centre loisirs/centre loisir.jpg";
 
 
 const cookie = Clicker_Script({
