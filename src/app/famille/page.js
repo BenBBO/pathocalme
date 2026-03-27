@@ -49,11 +49,25 @@ export default function Famille() {
             Venez partager des moments uniques en famille au cœur de la ferme, entouré d&apos;animaux bienveillants et en pleine nature.
           </p>
         </div>
+        <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
+          <a href="#enfants-adultes" className="inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold rounded-full bg-secondary text-white hover:bg-text-nature shadow-md hover:shadow-lg transition-all duration-200">
+            Enfants et adultes
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+          <a href="#personnes-fragiles" className="inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold rounded-full bg-secondary text-white hover:bg-text-nature shadow-md hover:shadow-lg transition-all duration-200">
+            Personnes fragiles
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
 
     {/* Section A - Enfants et Adultes */}
-    <section className="bg-white py-14">
+    <section id="enfants-adultes" className="bg-white py-14 scroll-mt-20">
       <h2 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Enfants et adultes</h2>
       <div className="grid gap-8 px-4 mx-auto max-w-screen-xl grid-cols-1 lg:grid-cols-2">
 
@@ -160,7 +174,7 @@ export default function Famille() {
     </section>
 
     {/* Section B - Personnes fragiles */}
-    <section className="bg-famille/50 py-14">
+    <section id="personnes-fragiles" className="bg-famille/50 py-14 scroll-mt-20">
       <h2 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Personnes fragiles</h2>
       <div className="grid gap-8 px-4 mx-auto max-w-screen-xl grid-cols-1 lg:grid-cols-2">
         <div className="lg:col-span-2 max-w-3xl mx-auto w-full">

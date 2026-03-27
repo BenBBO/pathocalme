@@ -11,6 +11,7 @@ import mediationImage from "../../public/images/mediation.png";
 import pensionImage from "../../public/images/pension.png";
 import associationImage from "../../public/images/miniferme.png";
 import organismeImage from "../../public/images/centre loisirs/centre loisir.jpg";
+import familleImage from "../../public/images/visites/visite1.png";
 
 
 const cookie = Clicker_Script({
@@ -127,6 +128,11 @@ export default function Home() {
               onClick={() => router.push('/mediation')}
               description="Formée par l&apos;institut Français de Zoothérapie à Velanne"
               color="rgb(249 115 22)" />
+            <Prestation title="Famille"
+              imageUrl={familleImage.src}
+              onClick={() => router.push('/famille')}
+              description="Activités et prestations pour toute la famille"
+              color="rgb(168 85 247)" />
             <Prestation title="Organisme"
               imageUrl={organismeImage.src}
               onClick={() => router.push('/organisme')}
