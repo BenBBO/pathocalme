@@ -10,6 +10,7 @@ import animationImage from "../../public/images/animation.png";
 import mediationImage from "../../public/images/mediation.png";
 import pensionImage from "../../public/images/pension.png";
 import associationImage from "../../public/images/miniferme.png";
+import organismeImage from "../../public/images/professionnel petite enfance/professionnel petite enfance1.jpg";
 
 
 const cookie = Clicker_Script({
@@ -110,7 +111,7 @@ export default function Home() {
         </section>
         <section className=" bg-primary p-8 md:p-14">
           <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Nos services</h1>
-          <div className="grid lg:grid-cols-2 2xl:grid-cols-5 grid-cols-1 gap-10">
+          <div className="grid lg:grid-cols-2 2xl:grid-cols-6 grid-cols-1 gap-10">
             <Prestation title="Nature"
               imageUrl={natureImage.src}
               onClick={() => router.push('/nature')}
@@ -131,6 +132,11 @@ export default function Home() {
               onClick={() => router.push('/pension')}
               description="Pension pour chats et NACS"
               color="rgb(14 165 233)" />
+            <Prestation title="Organisme"
+              imageUrl={organismeImage.src}
+              onClick={() => router.push('/organisme')}
+              description="Animations et médiations pour vos structures"
+              color="rgb(22 163 74)" />
             <Prestation title="Association"
               imageUrl={associationImage.src}
               onClick={() => router.push('/association')}

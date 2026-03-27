@@ -21,7 +21,8 @@ module.exports = {
         mediation: '#e9edd6',
         pension: '#e0f2fe',
         event: '#f2e7e5',
-        association: '#fdf4e3'
+        association: '#fdf4e3',
+        organisme: '#e8f0e3'
       },
       spacing: {
         '128': '32rem',
