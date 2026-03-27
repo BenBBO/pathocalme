@@ -69,7 +69,7 @@ const Lightbox = ({ images, initialIndex = 0, onClose }) => {
                 <motion.img
                     key={currentIndex}
                     src={images[currentIndex].src}
-                    alt={images[currentIndex].alt || ""}
+                    alt={images[currentIndex].alt || `Image ${currentIndex + 1} sur ${images.length}`}
                     className="max-h-[85vh] max-w-[90vw] object-contain rounded-lg shadow-2xl"
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}

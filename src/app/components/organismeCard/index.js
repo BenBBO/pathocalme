@@ -32,6 +32,7 @@ const OrganismeCard = ({ images, title, description, footer }) => {
                                 onClick={() => setLightboxIndex(index)}
                                 className={`h-12 w-12 flex-shrink-0 rounded-md overflow-hidden border-2 transition-all hover:scale-105 ${index === 0 ? "border-white" : "border-white/50 hover:border-white"}`}
                                 aria-label={`Voir photo ${index + 1}`}
+                                aria-current={index === 0 ? "true" : undefined}
                             >
                                 <img className="h-full w-full object-cover" src={img.src} alt={img.alt || ""} />
                             </button>
