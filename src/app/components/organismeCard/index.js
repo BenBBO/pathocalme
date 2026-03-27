@@ -9,7 +9,7 @@ const OrganismeCard = ({ images, title, summary, description, footer }) => {
 
     return (<>
         <motion.div
-            className="flex flex-col overflow-hidden rounded-2xl bg-white shadow-lg border border-gray-100 h-full"
+            className="flex flex-col overflow-hidden rounded-2xl bg-nature/30 shadow-lg border border-secondary/10 h-full hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 will-change-transform"
             initial={{ opacity: 0, y: 30 }}
             transition={{ duration: 0.8 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -19,11 +19,13 @@ const OrganismeCard = ({ images, title, summary, description, footer }) => {
             <div className="relative flex-shrink-0" style={{ minHeight: "320px", aspectRatio: "16/9" }}>
                 {/* Main cover image */}
                 <img
-                    className="h-full w-full object-cover cursor-pointer"
+                    className="h-full w-full object-cover cursor-pointer transition-transform duration-500 hover:scale-105"
                     src={images[0].src}
                     alt={images[0].alt || title}
                     onClick={() => setLightboxIndex(0)}
                 />
+                {/* Gradient overlay for smooth image-to-content transition */}
+                <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-nature/40 to-transparent pointer-events-none" />
                 {/* Thumbnail strip overlay (if more than 1 image) */}
                 {images.length > 1 && (
                     <div className="absolute bottom-0 left-0 right-0 flex gap-1 p-2 bg-gradient-to-t from-black/60 to-transparent">
@@ -50,10 +52,15 @@ const OrganismeCard = ({ images, title, summary, description, footer }) => {
 
             {/* Content area */}
             <div className="flex flex-col flex-grow p-5">
-                <h2 className="text-xl font-bold text-secondary text-center mb-3">{title}</h2>
+                {/* Title badge */}
+                <div className="flex justify-center -mt-9 mb-3 relative z-10">
+                    <h2 className="text-lg font-bold text-white bg-secondary px-6 py-2 rounded-full shadow-md">
+                        {title}
+                    </h2>
+                </div>
 
                 {/* Summary — always visible */}
-                <div className="text-sm text-gray-600 leading-relaxed">
+                <div className="text-sm text-gray-700 leading-relaxed bg-white rounded-xl p-4 shadow-sm border border-secondary/5">
                     {summary}
                 </div>
 
@@ -61,7 +68,7 @@ const OrganismeCard = ({ images, title, summary, description, footer }) => {
                 <AnimatePresence initial={false}>
                     {expanded && (
                         <motion.div
-                            className="text-sm text-gray-700 space-y-2 leading-relaxed mt-3 bg-organisme rounded-xl p-4 border border-secondary/10"
+                            className="text-sm text-gray-700 space-y-2 leading-relaxed mt-3 bg-organisme rounded-xl p-4 border-l-4 border-text-nature shadow-inner"
                             initial={{ height: 0, opacity: 0 }}
                             animate={{ height: "auto", opacity: 1 }}
                             exit={{ height: 0, opacity: 0 }}
@@ -79,7 +86,7 @@ const OrganismeCard = ({ images, title, summary, description, footer }) => {
                     <div className="flex justify-center mt-4">
                         <button
                             onClick={() => setExpanded(!expanded)}
-                            className="inline-flex items-center gap-1.5 px-5 py-2 text-sm font-semibold rounded-full border-2 border-secondary text-secondary hover:bg-secondary hover:text-white transition-all duration-200"
+                            className="inline-flex items-center gap-1.5 px-5 py-2 text-sm font-semibold rounded-full bg-secondary text-white hover:bg-text-nature shadow-md hover:shadow-lg transition-all duration-200"
                             aria-expanded={expanded}
                         >
                             {expanded ? "Voir moins" : "Voir plus"}
@@ -100,9 +107,11 @@ const OrganismeCard = ({ images, title, summary, description, footer }) => {
                 <div className="flex-grow" />
 
                 {footer && (
-                    <p className="border-t border-gray-200 mt-4 pt-3 font-semibold text-sm text-center text-secondary italic">
-                        {footer}
-                    </p>
+                    <div className="mt-4 bg-secondary/10 rounded-xl px-4 py-3">
+                        <p className="font-semibold text-sm text-center text-secondary italic">
+                            {footer}
+                        </p>
+                    </div>
                 )}
             </div>
         </motion.div>
