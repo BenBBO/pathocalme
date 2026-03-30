@@ -1,8 +1,11 @@
 "use client"
+import { useMemo } from "react";
 import { motion } from "framer-motion";
 import { Clicker_Script } from "next/font/google";
 import { useRouter } from "next/navigation";
 import Prestation from './components/prestation';
+import evenements from "@/data/evenements.json";
+import { parseEventDate, formatEventDate } from "@/utils/dates";
 
 import logoImage from "../../public/images/logo.png";
 import pensionImage from "../../public/images/pension.png";
@@ -20,6 +23,15 @@ const cookie = Clicker_Script({
 export default function Home() {
 
   const router = useRouter();
+
+  const upcomingEvents = useMemo(() => {
+    const now = new Date();
+    now.setHours(0, 0, 0, 0);
+    return [...evenements]
+      .filter((e) => parseEventDate(e.date) >= now)
+      .sort((a, b) => parseEventDate(a.date) - parseEventDate(b.date))
+      .slice(0, 3);
+  }, []);
 
   const transitionValues = {
     duration: 2,
@@ -54,19 +66,95 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="p-8 bg-event">
-          <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Planning vacances de Pâques</h1>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/vacances paques 2.jpg" alt="planning vacances de Pâques" />
-            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/vacances paques.jpg" alt="planning vacances de Pâques 2" />
-          </div>
+        {/* Planning */}
+        <section className="bg-event p-8 md:p-14">
+          <motion.div
+            className="max-w-screen-xl mx-auto"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          >
+            <div className="text-center mb-10">
+              <span className="text-4xl" aria-hidden="true">🗓️</span>
+              <h2 className="text-2xl font-semibold tracking-widest uppercase mt-2">
+                Planning vacances de Pâques
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+              <img className="h-auto max-w-full rounded-lg shadow-md justify-self-center" loading="lazy" src="images/vacances paques 2.jpg" alt="planning vacances de Pâques" />
+              <img className="h-auto max-w-full rounded-lg shadow-md justify-self-center" loading="lazy" src="images/vacances paques.jpg" alt="planning vacances de Pâques 2" />
+            </div>
+          </motion.div>
         </section>
-        <section className="p-8 bg-event">
-          <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Événement</h1>
-          <div className="grid grid-cols-1 lg:grid-cols-1 gap-10">
-            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/affiche paques.jpg" alt="affiche Pâques" />
-          </div>
-        </section>
+
+        {/* Upcoming events */}
+        {upcomingEvents.length > 0 && (
+          <section className="bg-event p-8 md:p-14">
+            <motion.div
+              className="max-w-screen-xl mx-auto"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
+            >
+              <div className="text-center mb-10">
+                <span className="text-4xl" aria-hidden="true">📅</span>
+                <h2 className="text-2xl font-semibold tracking-widest uppercase mt-2">
+                  Prochains événements
+                </h2>
+                <p className="text-gray-600 mt-2 max-w-xl mx-auto">
+                  Retrouvez nos prochaines animations à la ferme&nbsp;!
+                </p>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                {upcomingEvents.map((evt, i) => (
+                  <motion.div
+                    key={evt.id}
+                    className="group cursor-pointer rounded-2xl overflow-hidden shadow-lg bg-white hover:shadow-2xl transition-all duration-300"
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: i * 0.15 }}
+                    whileHover={{ y: -6 }}
+                    onClick={() => router.push("/evenements")}
+                  >
+                    <div className="relative h-48 overflow-hidden">
+                      <img
+                        loading="lazy"
+                        src={`/images/evenements/${evt.id}/${evt.miniature}`}
+                        alt={evt.titre}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                      <span className="absolute top-3 right-3 text-xs font-bold px-3 py-1.5 rounded-full bg-green-600/90 text-white shadow-md backdrop-blur-sm">
+                        À venir
+                      </span>
+                      <div className="absolute bottom-3 left-3 text-white">
+                        <p className="text-lg font-bold drop-shadow-md">{evt.titre}</p>
+                        <p className="text-sm font-medium drop-shadow-md opacity-90">{formatEventDate(evt.date)}</p>
+                      </div>
+                    </div>
+                    <div className="p-4">
+                      <p className="text-sm text-gray-500 line-clamp-2">{evt.description}</p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+              <div className="text-center mt-10">
+                <button
+                  onClick={() => router.push("/evenements")}
+                  className="inline-flex items-center gap-2 bg-secondary text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity shadow-lg"
+                >
+                  Voir tous les événements
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </button>
+              </div>
+            </motion.div>
+          </section>
+        )}
         <section className="p-8 md:p-14" id="about">
           <motion.div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden"
             initial={{ opacity: 0, y: 30 }}
