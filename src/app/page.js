@@ -69,6 +69,28 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* Planning */}
+        <section className="bg-event p-8 md:p-14">
+          <motion.div
+            className="max-w-screen-xl mx-auto"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          >
+            <div className="text-center mb-10">
+              <span className="text-4xl" aria-hidden="true">🗓️</span>
+              <h2 className="text-2xl font-semibold tracking-widest uppercase mt-2">
+                Planning vacances de Pâques
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+              <img className="h-auto max-w-full rounded-lg shadow-md justify-self-center" loading="lazy" src="images/vacances paques 2.jpg" alt="planning vacances de Pâques" />
+              <img className="h-auto max-w-full rounded-lg shadow-md justify-self-center" loading="lazy" src="images/vacances paques.jpg" alt="planning vacances de Pâques 2" />
+            </div>
+          </motion.div>
+        </section>
+
         {/* Upcoming events */}
         {upcomingEvents.length > 0 && (
           <section className="bg-event p-8 md:p-14">

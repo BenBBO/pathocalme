@@ -45,6 +45,43 @@ export default function Evenements() {
         </div>
       </section>
 
+      {/* ─── Planning mensuel ─────────────────────────────────────── */}
+      <motion.section
+        className="bg-event py-10"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
+        <div className="px-4 mx-auto max-w-screen-xl">
+          <div className="flex items-center gap-3 mb-8 justify-center">
+            <span className="text-4xl" aria-hidden="true">
+              🗓️
+            </span>
+            <h2 className="text-3xl font-extrabold text-secondary tracking-tight">
+              Planning mensuel
+            </h2>
+          </div>
+          <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
+            Retrouvez ici le planning des ateliers récurrents, les jours d&apos;ouverture et toutes les activités régulières de la ferme.
+          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <motion.div
+              className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+              whileHover={{ y: -4 }}
+            >
+              <img className="h-auto w-full object-cover" loading="lazy" src="/images/vacances paques 2.jpg" alt="planning vacances de Pâques" />
+            </motion.div>
+            <motion.div
+              className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+              whileHover={{ y: -4 }}
+            >
+              <img className="h-auto w-full object-cover" loading="lazy" src="/images/vacances paques.jpg" alt="planning vacances de Pâques 2" />
+            </motion.div>
+          </div>
+        </div>
+      </motion.section>
+
       {/* ─── Événements à venir ──────────────────────────────────────── */}
       <motion.section
         className="bg-white py-10"
