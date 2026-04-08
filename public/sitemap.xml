@@ -1,28 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?> 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
-<url>
-  <loc>https://pathocalme.fr/</loc>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-04-05</lastmod>
-</url>
-<url>
-  <loc>https://pathocalme.fr/nature</loc>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-04-05</lastmod>
-</url>
-<url>
-  <loc>https://pathocalme.fr/animation</loc>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-04-05</lastmod>
-</url>
-<url>
-  <loc>https://pathocalme.fr/mediation</loc>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-04-05</lastmod>
-</url>
-<url>
-  <loc>https://pathocalme.fr/equipe</loc>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-04-05</lastmod>
-</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://pathocalme.fr/</loc>
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-08</lastmod>
+  </url>
+  <url>
+    <loc>https://pathocalme.fr/famille</loc>
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-08</lastmod>
+  </url>
+  <url>
+    <loc>https://pathocalme.fr/organisme</loc>
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-08</lastmod>
+  </url>
+  <url>
+    <loc>https://pathocalme.fr/evenements</loc>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-04-08</lastmod>
+  </url>
+  <url>
+    <loc>https://pathocalme.fr/pension</loc>
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-08</lastmod>
+  </url>
+  <url>
+    <loc>https://pathocalme.fr/association</loc>
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-08</lastmod>
+  </url>
+  <url>
+    <loc>https://pathocalme.fr/equipe</loc>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-04-08</lastmod>
+  </url>
 </urlset>

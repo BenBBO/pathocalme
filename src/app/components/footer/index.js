@@ -4,7 +4,7 @@ const Footer = () => {
             <div className="relative block h-32 lg:col-span-2 lg:h-full">
                 <img
                     src="images/logo.png"
-                    alt=""
+                    alt="Logo Path'O Calme - Ferme pédagogique"
                     className="absolute inset-0 h-full w-full object-contain"
                 />
             </div>
@@ -70,7 +70,7 @@ const Footer = () => {
                 <div className="mt-4 border-t border-gray-100 pt-4">
                     <div className="sm:flex sm:items-center sm:justify-between">
                         <p className="mt-2 text-xs text-gray-500 sm:mt-0">
-                            &copy; 2024. Path&apos;O calme.
+                            &copy; 2025. Path&apos;O calme.
                         </p>
                     </div>
                 </div>
