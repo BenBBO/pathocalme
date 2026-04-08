@@ -19,6 +19,14 @@ export const metadata = {
   title: "Organismes",
   description: "Découvrez nos prestations pour les organismes : professionnels de la petite enfance, instituts spécialisés, centres de loisirs et écoles. Animations et médiations animales adaptées à vos projets.",
   keywords: ["organismes", "ferme pédagogique", "petite enfance", "instituts spécialisés", "centre de loisirs", "écoles", "médiation animale", "Bourgoin-Jallieu", "Trept", "Isère"],
+  alternates: {
+    canonical: "/organisme",
+  },
+  openGraph: {
+    title: "Organismes — Animations et médiations | Path'O Calme",
+    description: "Prestations pour professionnels de la petite enfance, instituts spécialisés, centres de loisirs et écoles. Animations et médiations animales à la ferme pédagogique Path'O Calme.",
+    url: "https://pathocalme.fr/organisme",
+  },
 };
 
 export default function Organisme() {

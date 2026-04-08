@@ -117,13 +117,13 @@ export default function Association() {
                 <img
                   className="w-full h-full object-cover rounded-lg"
                   loading="lazy"
-                  src="/images/visites/visite1.png"
+                  src="/images/visites/visite1.jpg"
                   alt="Visite de la ferme - vue de la mini-ferme"
                 />
                 <img
                   className="w-full h-full object-cover rounded-lg"
                   loading="lazy"
-                  src="/images/visites/visite2.jpg"
+                  src="/images/visites/visite2.png"
                   alt="Visite de la ferme - activités avec les animaux"
                 />
               </div>

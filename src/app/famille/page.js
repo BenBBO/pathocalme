@@ -34,6 +34,14 @@ export const metadata = {
   title: "Famille",
   description: "Découvrez nos prestations pour les familles : visites des animaux, ateliers éveil bébé, ateliers petits et grands, anniversaires, stages et accompagnement des personnes fragiles.",
   keywords: ["famille", "enfants", "adultes", "ferme pédagogique", "visite animaux", "atelier éveil", "anniversaire", "stages", "personne fragile", "médiation animale", "Bourgoin-Jallieu", "Trept", "Isère"],
+  alternates: {
+    canonical: "/famille",
+  },
+  openGraph: {
+    title: "Famille — Activités et prestations | Path'O Calme",
+    description: "Visites des animaux, ateliers éveil bébé, ateliers petits et grands, anniversaires, stages et accompagnement des personnes fragiles à la ferme pédagogique Path'O Calme.",
+    url: "https://pathocalme.fr/famille",
+  },
 };
 
 export default function Famille() {
