@@ -1,7 +1,30 @@
-"use client"
+"use client";
+import { useState, useMemo } from "react";
 import { motion } from "framer-motion";
+import evenements from "@/data/evenements.json";
+import EvenementCard from "@/app/components/evenementCard";
+import EvenementModal from "@/app/components/evenementModal";
+import { parseEventDate } from "@/utils/dates";
 
 export default function Evenements() {
+  const [selectedEvent, setSelectedEvent] = useState(null);
+
+  const { aVenir, passes } = useMemo(() => {
+    const now = new Date();
+    now.setHours(0, 0, 0, 0);
+
+    const sorted = [...evenements].sort(
+      (a, b) => parseEventDate(a.date) - parseEventDate(b.date)
+    );
+
+    const aVenir = sorted.filter((e) => parseEventDate(e.date) >= now);
+    const passes = sorted
+      .filter((e) => parseEventDate(e.date) < now)
+      .reverse();
+
+    return { aVenir, passes };
+  }, []);
+
   return (
     <>
       {/* Hero */}
@@ -14,15 +37,52 @@ export default function Evenements() {
             Des animations tout au long de l&apos;année&nbsp;!
           </p>
           <p className="text-base text-gray-600 max-w-2xl mx-auto">
-            Tout au long de l&apos;année, Path&apos;O Calme organise des événements
-            spéciaux pour petits et grands&nbsp;: chasses aux œufs à Pâques,
-            activités frissonnantes à Halloween, et moments festifs pour
+            Tout au long de l&apos;année, Path&apos;O Calme organise des
+            événements spéciaux pour petits et grands&nbsp;: chasses aux œufs à
+            Pâques, activités frissonnantes à Halloween, et moments festifs pour
             célébrer les fêtes de fin d&apos;année.
           </p>
         </div>
       </section>
 
-      {/* ─── Pâques ─────────────────────────────────────────────────── */}
+      {/* ─── Planning mensuel ─────────────────────────────────────── */}
+      <motion.section
+        className="bg-event py-10"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
+        <div className="px-4 mx-auto max-w-screen-xl">
+          <div className="flex items-center gap-3 mb-8 justify-center">
+            <span className="text-4xl" aria-hidden="true">
+              🗓️
+            </span>
+            <h2 className="text-3xl font-extrabold text-secondary tracking-tight">
+              Planning mensuel
+            </h2>
+          </div>
+          <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
+            Retrouvez ici le planning des ateliers récurrents, les jours d&apos;ouverture et toutes les activités régulières de la ferme.
+          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <motion.div
+              className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+              whileHover={{ y: -4 }}
+            >
+              <img className="h-auto w-full object-cover" loading="lazy" src="/images/vacances paques 2.jpg" alt="planning vacances de Pâques" />
+            </motion.div>
+            <motion.div
+              className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+              whileHover={{ y: -4 }}
+            >
+              <img className="h-auto w-full object-cover" loading="lazy" src="/images/vacances paques.jpg" alt="planning vacances de Pâques 2" />
+            </motion.div>
+          </div>
+        </div>
+      </motion.section>
+
+      {/* ─── Événements à venir ──────────────────────────────────────── */}
       <motion.section
         className="bg-white py-10"
         initial={{ opacity: 0, y: 30 }}
@@ -31,156 +91,75 @@ export default function Evenements() {
         viewport={{ once: true }}
       >
         <div className="px-4 mx-auto max-w-screen-xl">
-          <div className="flex items-center gap-3 mb-6 justify-center">
-            <span className="text-4xl" aria-hidden="true">🐣</span>
-            <h2 className="text-3xl font-extrabold text-secondary tracking-tight">Pâques</h2>
+          <div className="flex items-center gap-3 mb-8 justify-center">
+            <span className="text-4xl" aria-hidden="true">
+              📅
+            </span>
+            <h2 className="text-3xl font-extrabold text-secondary tracking-tight">
+              Événements à venir
+            </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-start">
-            <div className="md:col-span-1 flex flex-col justify-center">
-              <p className="text-gray-600 leading-relaxed mb-3">
-                Chaque année, à l&apos;occasion de Pâques, la ferme ouvre ses
-                portes pour une journée spéciale&nbsp;: chasse aux œufs dans la
-                nature, rencontre avec les animaux de la ferme et ateliers
-                créatifs pour les enfants.
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                Un moment convivial à partager en famille au cœur de la campagne
-                iséroise&nbsp;!
-              </p>
+          {aVenir.length > 0 ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {aVenir.map((evt) => (
+                <EvenementCard
+                  key={evt.id}
+                  evenement={evt}
+                  isPast={false}
+                  onClick={() => setSelectedEvent(evt)}
+                />
+              ))}
             </div>
-            <div className="md:col-span-2 grid grid-cols-2 sm:grid-cols-3 gap-3">
-              <motion.div
-                className="rounded-xl overflow-hidden shadow-md col-span-2 sm:col-span-1"
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.2 }}
-              >
-                <img
-                  loading="lazy"
-                  src="/images/evenements/paques1.jpg"
-                  alt="Événement de Pâques à Path'O Calme"
-                  className="w-full h-48 object-cover"
-                />
-              </motion.div>
-              <motion.div
-                className="rounded-xl overflow-hidden shadow-md"
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.2 }}
-              >
-                <img
-                  loading="lazy"
-                  src="/images/evenements/paques2.jpg"
-                  alt="Activités de Pâques à la ferme"
-                  className="w-full h-48 object-cover"
-                />
-              </motion.div>
-              <motion.div
-                className="rounded-xl overflow-hidden shadow-md"
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.2 }}
-              >
-                <img
-                  loading="lazy"
-                  src="/images/evenements/paques3.jpg"
-                  alt="Chasse aux œufs de Pâques"
-                  className="w-full h-48 object-cover"
-                />
-              </motion.div>
-            </div>
-          </div>
-        </div>
-      </motion.section>
-
-      {/* ─── Halloween ──────────────────────────────────────────────── */}
-      <motion.section
-        className="bg-primary py-10"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-      >
-        <div className="px-4 mx-auto max-w-screen-xl">
-          <div className="flex items-center gap-3 mb-6 justify-center">
-            <span className="text-4xl" aria-hidden="true">🎃</span>
-            <h2 className="text-3xl font-extrabold text-secondary tracking-tight">Halloween</h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-start">
-            <div className="md:col-span-1 flex flex-col justify-center order-1">
-              <p className="text-gray-600 leading-relaxed mb-3">
-                Frissons garantis à la ferme&nbsp;! Pour Halloween, Path&apos;O
-                Calme se transforme et propose des animations spéciales&nbsp;:
-                parcours mystère, ateliers créatifs sur le thème de l&apos;automne
-                et découverte des animaux nocturnes.
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                Venez déguisés et partagez un moment inoubliable en famille&nbsp;!
-              </p>
-            </div>
-            <div className="md:col-span-2 grid grid-cols-2 gap-3 order-2">
-              <motion.div
-                className="rounded-xl overflow-hidden shadow-md"
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.2 }}
-              >
-                <img
-                  loading="lazy"
-                  src="/images/evenements/Halloween.jpg"
-                  alt="Événement Halloween à Path'O Calme"
-                  className="w-full h-48 object-cover"
-                />
-              </motion.div>
-              <motion.div
-                className="rounded-xl overflow-hidden shadow-md"
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.2 }}
-              >
-                <img
-                  loading="lazy"
-                  src="/images/evenements/Halloween2.jpg"
-                  alt="Activités Halloween à la ferme"
-                  className="w-full h-48 object-cover"
-                />
-              </motion.div>
-            </div>
-          </div>
-        </div>
-      </motion.section>
-
-      {/* ─── Fêtes de fin d'année ───────────────────────────────────── */}
-      <motion.section
-        className="bg-white py-10"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-      >
-        <div className="px-4 mx-auto max-w-screen-xl">
-          <div className="flex items-center gap-3 mb-6 justify-center">
-            <span className="text-4xl" aria-hidden="true">🎄</span>
-            <h2 className="text-3xl font-extrabold text-secondary tracking-tight">Fêtes de fin d&apos;année</h2>
-          </div>
-
-          <motion.div
-            className="bg-event border-l-4 border-secondary rounded-xl p-8 max-w-3xl mx-auto shadow"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.3 }}
-            viewport={{ once: true }}
-          >
-            <p className="text-gray-600 text-lg leading-relaxed mb-4">
-              Pour les fêtes de fin d&apos;année, Path&apos;O Calme organise des
-              moments chaleureux à la ferme&nbsp;: ateliers créatifs sur le
-              thème de Noël, rencontres avec les animaux et goûters festifs
-              pour toute la famille.
+          ) : (
+            <p className="text-center text-gray-500">
+              Aucun événement à venir pour le moment. Restez informés en nous
+              suivant sur nos réseaux sociaux&nbsp;!
             </p>
-            <p className="text-gray-600 text-lg leading-relaxed">
-              Restez informés de nos prochains événements en nous suivant sur
-              nos réseaux sociaux&nbsp;!
-            </p>
-          </motion.div>
+          )}
         </div>
       </motion.section>
+
+      {/* ─── Événements passés ───────────────────────────────────────── */}
+      {passes.length > 0 && (
+        <motion.section
+          className="bg-primary py-10"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
+          <div className="px-4 mx-auto max-w-screen-xl">
+            <div className="flex items-center gap-3 mb-8 justify-center">
+              <span className="text-4xl" aria-hidden="true">
+                🕰️
+              </span>
+              <h2 className="text-3xl font-extrabold text-secondary tracking-tight">
+                Événements passés
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {passes.map((evt) => (
+                <EvenementCard
+                  key={evt.id}
+                  evenement={evt}
+                  isPast={true}
+                  onClick={() => setSelectedEvent(evt)}
+                />
+              ))}
+            </div>
+          </div>
+        </motion.section>
+      )}
+
+      {/* ─── Modal ───────────────────────────────────────────────────── */}
+      {selectedEvent && (
+        <EvenementModal
+          evenement={selectedEvent}
+          onClose={() => setSelectedEvent(null)}
+        />
+      )}
     </>
   );
 }

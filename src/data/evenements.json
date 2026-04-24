@@ -1,0 +1,33 @@
+[
+  {
+    "id": "paques-2025",
+    "titre": "Pâques à la ferme",
+    "date": "2025-04-20",
+    "description": "Chaque année, à l'occasion de Pâques, la ferme ouvre ses portes pour une journée spéciale : chasse aux œufs dans la nature, rencontre avec les animaux de la ferme et ateliers créatifs pour les enfants. Un moment convivial à partager en famille au cœur de la campagne iséroise !",
+    "tarif": "15€ par enfant",
+    "maxPersonnes": 30,
+    "miniature": "paques1.jpg",
+    "photos": ["paques1.jpg", "paques2.jpg", "paques3.jpg"]
+  },
+  {
+    "id": "halloween-2025",
+    "titre": "Halloween à la ferme",
+    "date": "2025-10-31",
+    "description": "Frissons garantis à la ferme ! Pour Halloween, Path'O Calme se transforme et propose des animations spéciales : parcours mystère, ateliers créatifs sur le thème de l'automne et découverte des animaux nocturnes. Venez déguisés et partagez un moment inoubliable en famille !",
+    "tarif": "12€ par enfant",
+    "maxPersonnes": 25,
+    "miniature": "Halloween.jpg",
+    "photos": ["Halloween.jpg", "Halloween2.jpg"]
+  },
+  {
+    "id": "paques-2026",
+    "titre": "Pâques 2026",
+    "date": "2026-04-05",
+    "description": "Retrouvez-nous pour une nouvelle édition de notre chasse aux œufs de Pâques ! Au programme : chasse aux œufs dans la nature, rencontre avec les animaux de la ferme, ateliers créatifs et goûter festif. Un moment convivial à partager en famille !",
+    "tarif": "15€ par enfant",
+    "maxPersonnes": 30,
+    "miniature": "paques1.jpg",
+    "photos": ["paques1.jpg", "paques2.jpg", "paques3.jpg"],
+    "affiche": "affiche-paques-2026.jpg"
+  }
+]
