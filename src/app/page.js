@@ -55,16 +55,10 @@ export default function Home() {
           </div>
         </section>
         <section className="p-8 bg-event">
-          <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Planning vacances de Pâques</h1>
+          <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Plannings avril et mai</h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/vacances paques 2.jpg" alt="planning vacances de Pâques" />
-            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/vacances paques.jpg" alt="planning vacances de Pâques 2" />
-          </div>
-        </section>
-        <section className="p-8 bg-event">
-          <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Événement</h1>
-          <div className="grid grid-cols-1 lg:grid-cols-1 gap-10">
-            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/affiche paques.jpg" alt="affiche Pâques" />
+            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/Planning avril.jpg" alt="Planning du mois d'avril" />
+            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/Planning mai.jpg" alt="Planning du mois de mai" />
           </div>
         </section>
         <section className="p-8 md:p-14" id="about">
