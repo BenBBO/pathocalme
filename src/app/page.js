@@ -55,9 +55,9 @@ export default function Home() {
           </div>
         </section>
         <section className="p-8 bg-event">
-          <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Planning août</h1>
+          <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Planning septembre</h1>
           <div className="grid grid-cols-1 gap-10">
-            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/planning aout 04.jpg" alt="Planning de la semaine du 24 au 30 août" />
+            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/planning septembre.jpg" alt="Planning du mois de septembre" />
           </div>
         </section>
         <section className="p-8 md:p-14" id="about">
