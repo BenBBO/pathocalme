@@ -144,6 +144,42 @@ export default function Evenements() {
               </motion.div>
             </div>
           </div>
+
+          <motion.div
+            className="mt-10 bg-white border-l-4 border-secondary rounded-xl p-6 md:p-8 shadow md:flex gap-8 items-center"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            viewport={{ once: true }}
+          >
+            <div className="md:w-1/2">
+              <h3 className="text-2xl font-bold text-secondary mb-4">Halloween à la ferme &middot; mercredi 28 octobre</h3>
+              <p className="text-gray-600 leading-relaxed mb-3">
+                Deux sessions au choix&nbsp;: <strong>9h30 - 11h30</strong> ou <strong>14h30 - 16h30</strong>.
+              </p>
+              <ul className="list-disc list-inside text-gray-600 leading-relaxed mb-3">
+                <li>Fabrique ta potion magique</li>
+                <li>Visite les animaux</li>
+                <li>Mange des bonbons</li>
+                <li>Défile dans ton beau costume</li>
+              </ul>
+              <p className="text-gray-600 leading-relaxed mb-3">
+                17&nbsp;€ par enfant + 1 accompagnant (3&nbsp;€ par accompagnant supplémentaire).
+                À partir de 2 ans, adapté aux petits.
+              </p>
+              <p className="font-semibold text-secondary">
+                Uniquement sur réservation au 06.52.86.71.60
+              </p>
+            </div>
+            <div className="md:w-1/2 mt-6 md:mt-0">
+              <img
+                loading="lazy"
+                src="/images/affiche halloween.jpg"
+                alt="Affiche Halloween à la ferme, mercredi 28 octobre"
+                className="w-full max-w-md mx-auto h-auto rounded-xl shadow-md"
+              />
+            </div>
+          </motion.div>
         </div>
       </motion.section>
 
