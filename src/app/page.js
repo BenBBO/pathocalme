@@ -55,9 +55,16 @@ export default function Home() {
           </div>
         </section>
         <section className="p-8 bg-event">
-          <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Planning octobre</h1>
-          <div className="grid grid-cols-1 gap-10">
-            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/planning octobre.jpg" alt="Planning du mois d'octobre" />
+          <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Planning vacances d&apos;octobre</h1>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/planning octobre 01.jpg" alt="Planning des vacances d'octobre, semaine du 19 au 25" />
+            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/planning octobre 02.jpg" alt="Planning des vacances d'octobre, semaine du 26 octobre au 1er novembre" />
+          </div>
+        </section>
+        <section className="p-8 bg-event">
+          <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Événement</h1>
+          <div className="grid grid-cols-1 lg:grid-cols-1 gap-10">
+            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/affiche halloween.jpg" alt="Affiche Halloween à la ferme, mercredi 28 octobre" />
           </div>
         </section>
         <section className="p-8 md:p-14" id="about">
