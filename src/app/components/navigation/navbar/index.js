@@ -53,6 +53,12 @@ const Navbar = ({ toggle }) => {
                 </Link>
               </li>
               <li>
+                <Link href="/services" className={`${pathname == "/services" ? styles.active : ""} flex items-center gap-1.5`}>
+                  <p>Services</p>
+                  <span className="px-1.5 py-0.5 text-[10px] font-bold uppercase leading-none tracking-wider rounded-full bg-yellow-400 text-secondary">Nouveau</span>
+                </Link>
+              </li>
+              <li>
                 <Link href="/association" className={pathname == "/association" ? styles.active : ""}>
                   <p>Association</p>
                 </Link>

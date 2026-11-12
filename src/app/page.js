@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { Clicker_Script } from "next/font/google";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import Prestation from './components/prestation';
 
 import logoImage from "../../public/images/logo.png";
@@ -9,6 +10,7 @@ import pensionImage from "../../public/images/pension.png";
 import associationImage from "../../public/images/miniferme.png";
 import organismeImage from "../../public/images/centre loisirs/centre loisir.jpg";
 import familleImage from "../../public/images/visites/visite1.jpg";
+import servicesImage from "../../public/images/ecoles/ecole2.jpg";
 
 
 const cookie = Clicker_Script({
@@ -63,8 +65,20 @@ export default function Home() {
         <section className="p-8 bg-event">
           <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Nouveautés</h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/affiche garderie periscolaire.jpg" alt="Garderie périscolaire à la mini ferme : prise en charge à la sortie de l'école de Trept, lundi et vendredi de 17h30 à 18h30, 13€/h, à partir de 3 ans, sur réservation au 06.52.86.71.60" />
-            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/affiche accompagnement devoirs.jpg" alt="Accompagnement aux devoirs avec les animaux, atelier Petit apprenti du CP au CM2, le jeudi de 16h45 à 18h15, 23€, inscriptions au 06.52.86.71.60" />
+            <Link href="/services#garderie" className="justify-self-center">
+              <img className="h-auto max-w-full rounded-lg transform duration-300 md:hover:-translate-y-2 hover:shadow-xl" loading="lazy" src="images/affiche garderie periscolaire.jpg" alt="Garderie périscolaire à la mini ferme : prise en charge à la sortie de l'école de Trept, lundi et vendredi de 17h30 à 18h30, 13€/h, à partir de 3 ans, sur réservation au 06.52.86.71.60" />
+            </Link>
+            <Link href="/services#devoirs" className="justify-self-center">
+              <img className="h-auto max-w-full rounded-lg transform duration-300 md:hover:-translate-y-2 hover:shadow-xl" loading="lazy" src="images/affiche accompagnement devoirs.jpg" alt="Accompagnement aux devoirs avec les animaux, atelier Petit apprenti du CP au CM2, le jeudi de 16h45 à 18h15, 23€, inscriptions au 06.52.86.71.60" />
+            </Link>
+          </div>
+          <div className="flex justify-center mt-8">
+            <Link href="/services" className="inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold rounded-full bg-secondary text-white hover:bg-text-nature shadow-md hover:shadow-lg transition-all duration-200">
+              Découvrir nos nouveaux services
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
           </div>
         </section>
         <section className="p-8 md:p-14" id="about">
@@ -109,7 +123,7 @@ export default function Home() {
         </section>
         <section className=" bg-primary p-8 md:p-14">
           <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Nos services</h1>
-          <div className="grid lg:grid-cols-2 2xl:grid-cols-4 grid-cols-1 gap-10 justify-items-center">
+          <div className="grid lg:grid-cols-2 2xl:grid-cols-5 grid-cols-1 gap-10 justify-items-center">
             <Prestation title="Famille"
               imageUrl={familleImage.src}
               onClick={() => router.push('/famille')}
@@ -125,6 +139,11 @@ export default function Home() {
               onClick={() => router.push('/pension')}
               description="Pension pour chats et NACS"
               color="rgb(14 165 233)" />
+            <Prestation title="Services"
+              imageUrl={servicesImage.src}
+              onClick={() => router.push('/services')}
+              description="Nouveau : garderie périscolaire et accompagnement aux devoirs"
+              color="rgb(250 204 21)" />
             <Prestation title="Association"
               imageUrl={associationImage.src}
               onClick={() => router.push('/association')}
