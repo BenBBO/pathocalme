@@ -55,16 +55,16 @@ export default function Home() {
           </div>
         </section>
         <section className="p-8 bg-event">
-          <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Planning vacances d&apos;octobre</h1>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/planning octobre 01.jpg" alt="Planning des vacances d'octobre, semaine du 19 au 25" />
-            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/planning octobre 02.jpg" alt="Planning des vacances d'octobre, semaine du 26 octobre au 1er novembre" />
+          <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Planning novembre</h1>
+          <div className="grid grid-cols-1 gap-10">
+            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/planning novembre.jpg" alt="Planning du mois de novembre" />
           </div>
         </section>
         <section className="p-8 bg-event">
-          <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Événement</h1>
-          <div className="grid grid-cols-1 lg:grid-cols-1 gap-10">
-            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/affiche halloween.jpg" alt="Affiche Halloween à la ferme, mercredi 28 octobre" />
+          <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Nouveautés</h1>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/affiche garderie periscolaire.jpg" alt="Garderie périscolaire à la mini ferme : prise en charge à la sortie de l'école de Trept, lundi et vendredi de 17h30 à 18h30, 13€/h, à partir de 3 ans, sur réservation au 06.52.86.71.60" />
+            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/affiche accompagnement devoirs.jpg" alt="Accompagnement aux devoirs avec les animaux, atelier Petit apprenti du CP au CM2, le jeudi de 16h45 à 18h15, 23€, inscriptions au 06.52.86.71.60" />
           </div>
         </section>
         <section className="p-8 md:p-14" id="about">
