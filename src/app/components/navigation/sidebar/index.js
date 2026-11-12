@@ -47,6 +47,12 @@ const Sidebar = ({ isOpen, toggle }) => {
                         </Link>
                     </li>
                     <li>
+                        <Link href="/services" onClick={toggle} className="inline-flex items-center gap-2">
+                            <p>Services</p>
+                            <span className="px-2 py-0.5 text-xs font-bold uppercase leading-none tracking-wider rounded-full bg-yellow-400 text-secondary">Nouveau</span>
+                        </Link>
+                    </li>
+                    <li>
                         <Link href="/association" onClick={toggle}>
                             <p>Association</p>
                         </Link>
