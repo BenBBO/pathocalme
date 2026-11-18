@@ -7,12 +7,10 @@ export default function Evenements() {
       {/* Hero */}
       <section className="bg-event py-14">
         <div className="px-4 mx-auto max-w-screen-xl text-center py-10 lg:py-8">
-          <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-text-nature md:text-6xl lg:text-7xl">
-            Événements
+          <h1 className="text-text-nature">
+            <span className="block mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-6xl lg:text-7xl">Événements</span>
+            <span className="block mb-6 text-2xl font-normal lg:text-3xl sm:px-16 lg:px-48">Des animations tout au long de l&apos;année&nbsp;!</span>
           </h1>
-          <p className="mb-6 text-2xl font-normal text-text-nature lg:text-3xl sm:px-16 lg:px-48">
-            Des animations tout au long de l&apos;année&nbsp;!
-          </p>
           <p className="text-base text-gray-600 max-w-2xl mx-auto">
             Tout au long de l&apos;année, Path&apos;O Calme organise des événements
             spéciaux pour petits et grands&nbsp;: chasses aux œufs à Pâques,
@@ -57,7 +55,7 @@ export default function Evenements() {
               >
                 <img
                   loading="lazy"
-                  src="/images/evenements/paques1.jpg"
+                  src="/images/evenements/paques1.webp"
                   alt="Événement de Pâques à Path'O Calme"
                   className="w-full h-48 object-cover"
                 />
@@ -69,7 +67,7 @@ export default function Evenements() {
               >
                 <img
                   loading="lazy"
-                  src="/images/evenements/paques2.jpg"
+                  src="/images/evenements/paques2.webp"
                   alt="Activités de Pâques à la ferme"
                   className="w-full h-48 object-cover"
                 />
@@ -81,7 +79,7 @@ export default function Evenements() {
               >
                 <img
                   loading="lazy"
-                  src="/images/evenements/paques3.jpg"
+                  src="/images/evenements/paques3.webp"
                   alt="Chasse aux œufs de Pâques"
                   className="w-full h-48 object-cover"
                 />
@@ -125,7 +123,7 @@ export default function Evenements() {
               >
                 <img
                   loading="lazy"
-                  src="/images/evenements/Halloween.jpg"
+                  src="/images/evenements/Halloween.webp"
                   alt="Événement Halloween à Path'O Calme"
                   className="w-full h-48 object-cover"
                 />
@@ -137,7 +135,7 @@ export default function Evenements() {
               >
                 <img
                   loading="lazy"
-                  src="/images/evenements/Halloween2.jpg"
+                  src="/images/evenements/Halloween2.webp"
                   alt="Activités Halloween à la ferme"
                   className="w-full h-48 object-cover"
                 />
@@ -174,7 +172,7 @@ export default function Evenements() {
             <div className="md:w-1/2 mt-6 md:mt-0">
               <img
                 loading="lazy"
-                src="/images/affiche halloween.jpg"
+                src="/images/affiche halloween.webp"
                 alt="Affiche Halloween à la ferme, mercredi 28 octobre"
                 className="w-full max-w-md mx-auto h-auto rounded-xl shadow-md"
               />

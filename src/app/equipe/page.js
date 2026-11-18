@@ -6,72 +6,72 @@ const animals = [
   {
     name: "Apollon",
     description: "Le cochon costaud qui adore les gratouilles",
-    images: ["images/equipe/appolon1.jpg", "images/equipe/appolon2.jpg"],
+    images: ["/images/equipe/appolon1.webp", "/images/equipe/appolon2.webp"],
   },
   {
     name: "T'choupi",
     description: "Le roi des conneries élevé au biberon, il croit qu'il est un humain",
-    images: ["images/equipe/Tchoupi.jpg"],
+    images: ["/images/equipe/Tchoupi.webp"],
   },
   {
     name: "Malin",
     description: "Le lapin qui sait réclamer des câlins",
-    images: ["images/equipe/Malin.jpg"]    
+    images: ["/images/equipe/Malin.webp"]    
   },
   {
     name: "Pouik",
     description: "Élevée par son humaine, elle aime manger avec vous un petit bout de sandwich",
-    images: ["images/equipe/Pouik1.jpg", "images/equipe/Pouik2.jpg"],
+    images: ["/images/equipe/Pouik1.webp", "/images/equipe/Pouik2.webp"],
   },
   {
     name: "Câline",
     description: "La poule aussi douce que gentille",
-    images: ["images/equipe/Caline.jpg"],
+    images: ["/images/equipe/Caline.webp"],
   },
   {
     name: "Zazou",
     description: "Fils d'Umi, que rien ne dérange et qui prend la vie comme un long fleuve tranquille",
-    images: ["images/equipe/Zazou1.jpg", "images/equipe/Zazou2.jpg"],
+    images: ["/images/equipe/Zazou1.webp", "/images/equipe/Zazou2.webp"],
   },
   {
     name: "Olaf",
     description: "Trop gentil, il vous lave dès que possible avec sa langue",
-    images: ["images/equipe/Olaf1.jpg", "images/equipe/Olaf2.jpg"],
+    images: ["/images/equipe/Olaf1.webp", "/images/equipe/Olaf2.webp"],
   },
   {
     name: "Zoom",
     description: "La chatte qui file plus vite que son ombre",
-    images: ["images/equipe/Zoom.jpg"]
+    images: ["/images/equipe/Zoom.webp"]
   },
   {
     name: "Rasta",
     description: "Aussi cool qu'adorable",
-    images: ["images/equipe/Rasta1.jpg", "images/equipe/Rasta2.jpg"],
+    images: ["/images/equipe/Rasta1.webp", "/images/equipe/Rasta2.webp"],
   },
   {
     name: "Tagada",
     description: "Elle donne des coups de tête aux autres pour avoir les plus grosses caresses",
-    images: ["images/equipe/Tagada.jpg"],
+    images: ["/images/equipe/Tagada.webp"],
   },
   {
     name: "Gros Coco",
     description: "Né à la ferme, il saura vous impressionner par sa douceur",
-    images: ["images/equipe/GrosCoco1.jpg", "images/equipe/GrosCoco2.jpg"],
+    images: ["/images/equipe/GrosCoco1.webp", "/images/equipe/GrosCoco2.webp"],
   },
   {
     name: "Szwen",
     description: "Tellement sensible que même les gouttes d'eau le dérangent",
-    images: ["images/equipe/Szwen .jpg"]
+    images: ["/images/equipe/Szwen .webp"]
   },
   {
     name: "Canail",
     description: "Qui aime trop les feuillages",
-    images: ["images/equipe/Canail.jpg"],
+    images: ["/images/equipe/Canail.webp"],
   },
   {
     name: "Lustucru",
     description: "Répond à son appel pour manger, sauf lors de son hibernation",
-    images: ["images/equipe/Lustucru.jpg"]
+    images: ["/images/equipe/Lustucru.webp"]
   },
 ];
 
@@ -190,12 +190,10 @@ export default function Equipe() {
 
       <section className="bg-primary py-14">
         <div className="px-4 mx-auto max-w-screen-xl text-center py-10 lg:py-8">
-          <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-secondary md:text-6xl lg:text-7xl">
-            Nos animaux
+          <h1 className="text-secondary">
+            <span className="block mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-6xl lg:text-7xl">Nos animaux</span>
+            <span className="block mb-8 text-xl font-normal text-gray-600 lg:text-2xl sm:px-16 lg:px-48">Venez rencontrer les résidents de la ferme pédagogique Path&apos;O Calme</span>
           </h1>
-          <p className="mb-8 text-xl font-normal text-gray-600 lg:text-2xl sm:px-16 lg:px-48">
-            Venez rencontrer les résidents de la ferme pédagogique Path&apos;O Calme
-          </p>
         </div>
       </section>
 
@@ -216,7 +214,7 @@ export default function Equipe() {
                     <img
                       key={i}
                       src={src}
-                      alt={animal.name}
+                      alt={`${animal.name} — ${animal.description}`}
                       loading="lazy"
                       className="w-full h-full object-cover cursor-pointer hover:brightness-90 transition-[filter]"
                       style={animal.objectPosition ? { objectPosition: animal.objectPosition } : undefined}

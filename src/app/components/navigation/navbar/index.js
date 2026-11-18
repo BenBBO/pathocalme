@@ -10,7 +10,7 @@ const Navbar = ({ toggle }) => {
 
   return (
     <>
-      <div className="w-full h-20 bg-secondary sticky top-0 z-10">
+      <nav aria-label="Navigation principale" className="w-full h-20 bg-secondary sticky top-0 z-10">
         <div className="container mx-auto px-4 h-full">
           <div className="flex justify-between items-center h-full">
             <Logo />
@@ -18,6 +18,7 @@ const Navbar = ({ toggle }) => {
               type="button"
               className="inline-flex items-center md:hidden"
               onClick={toggle}
+              aria-label="Ouvrir le menu"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +74,7 @@ const Navbar = ({ toggle }) => {
             </div>
           </div>
         </div>
-      </div>
+      </nav>
     </>
   );
 };

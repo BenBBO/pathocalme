@@ -1,16 +1,15 @@
 "use client"
 import { motion } from "framer-motion";
 import { Clicker_Script } from "next/font/google";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Prestation from './components/prestation';
 
-import logoImage from "../../public/images/logo.png";
-import pensionImage from "../../public/images/pension.png";
-import associationImage from "../../public/images/miniferme.png";
-import organismeImage from "../../public/images/centre loisirs/centre loisir.jpg";
-import familleImage from "../../public/images/visites/visite1.jpg";
-import servicesImage from "../../public/images/ecoles/ecole2.jpg";
+import logoImage from "../../public/images/logo.webp";
+import pensionImage from "../../public/images/pension.webp";
+import associationImage from "../../public/images/miniferme.webp";
+import organismeImage from "../../public/images/centre loisirs/centre loisir.webp";
+import familleImage from "../../public/images/visites/visite1.webp";
+import servicesImage from "../../public/images/ecoles/ecole2.webp";
 
 
 const cookie = Clicker_Script({
@@ -20,8 +19,6 @@ const cookie = Clicker_Script({
 })
 
 export default function Home() {
-
-  const router = useRouter();
 
   const transitionValues = {
     duration: 2,
@@ -35,9 +32,12 @@ export default function Home() {
         <section className="bg-contain bg-center bg-no-repeat bg-gray-700 bg-blend-multiply"
           style={{ backgroundImage: `url(${logoImage.src})` }}>
           <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-            <p className={`${cookie.className} mb-2 text-2xl font-normal text-gray-300 lg:text-3xl sm:px-16 lg:px-48`}>La mini-ferme</p>
-            <h1 className={`${cookie.className} mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-6xl lg:text-7xl`}>Path&apos;O Calme</h1>
-            <p className={`${cookie.className} mb-8 text-2xl font-normal text-gray-300 lg:text-3xl sm:px-16 lg:px-48`}>Médiation par l&apos;animal</p>
+            <h1 className={cookie.className}>
+              <span className="block mb-2 text-2xl font-normal text-gray-300 lg:text-3xl sm:px-16 lg:px-48">La mini-ferme</span>
+              <span className="block mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-6xl lg:text-7xl">Path&apos;O Calme</span>
+              <span className="block mb-4 text-2xl font-normal text-gray-300 lg:text-3xl sm:px-16 lg:px-48">Médiation par l&apos;animal</span>
+            </h1>
+            <p className="mb-8 text-sm font-medium uppercase tracking-widest text-gray-300">Ferme pédagogique à Trept, près de Bourgoin-Jallieu (Isère)</p>
             <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0"
             >
               <a href="#about" className="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
@@ -57,19 +57,19 @@ export default function Home() {
           </div>
         </section>
         <section className="p-8 bg-event">
-          <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Planning novembre</h1>
+          <h2 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Planning novembre</h2>
           <div className="grid grid-cols-1 gap-10">
-            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="images/planning novembre.jpg" alt="Planning du mois de novembre" />
+            <img className="h-auto max-w-full rounded-lg justify-self-center" loading="lazy" src="/images/planning novembre.webp" alt="Planning de novembre des visites, ateliers et animations de la mini-ferme Path'O Calme" />
           </div>
         </section>
         <section className="p-8 bg-event">
-          <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Nouveautés</h1>
+          <h2 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Nouveautés</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <Link href="/services#garderie" className="justify-self-center">
-              <img className="h-auto max-w-full rounded-lg transform duration-300 md:hover:-translate-y-2 hover:shadow-xl" loading="lazy" src="images/affiche garderie periscolaire.jpg" alt="Garderie périscolaire à la mini ferme : prise en charge à la sortie de l'école de Trept, lundi et vendredi de 17h30 à 18h30, 13€/h, à partir de 3 ans, sur réservation au 06.52.86.71.60" />
+              <img className="h-auto max-w-full rounded-lg transform duration-300 md:hover:-translate-y-2 hover:shadow-xl" loading="lazy" src="/images/affiche garderie periscolaire.webp" alt="Garderie périscolaire à la mini ferme : prise en charge à la sortie de l'école de Trept, lundi et vendredi de 17h30 à 18h30, 13€/h, à partir de 3 ans, sur réservation au 06.52.86.71.60" />
             </Link>
             <Link href="/services#devoirs" className="justify-self-center">
-              <img className="h-auto max-w-full rounded-lg transform duration-300 md:hover:-translate-y-2 hover:shadow-xl" loading="lazy" src="images/affiche accompagnement devoirs.jpg" alt="Accompagnement aux devoirs avec les animaux, atelier Petit apprenti du CP au CM2, le jeudi de 16h45 à 18h15, 23€, inscriptions au 06.52.86.71.60" />
+              <img className="h-auto max-w-full rounded-lg transform duration-300 md:hover:-translate-y-2 hover:shadow-xl" loading="lazy" src="/images/affiche accompagnement devoirs.webp" alt="Accompagnement aux devoirs avec les animaux, atelier Petit apprenti du CP au CM2, le jeudi de 16h45 à 18h15, 23€, inscriptions au 06.52.86.71.60" />
             </Link>
           </div>
           <div className="flex justify-center mt-8">
@@ -89,10 +89,10 @@ export default function Home() {
             viewport={{ once: true }}>
             <div className="md:flex">
               <div className="md:shrink-0">
-                <img className="h-72 w-full object-cover md:h-full md:w-80" src="images/bab.jpg" alt="Barbara Bouillet" />
+                <img className="h-72 w-full object-cover md:h-full md:w-80" src="/images/bab.webp" alt="Barbara Bouillet, fondatrice de la mini-ferme Path'O Calme" loading="lazy" />
               </div>
               <div className="p-6 md:p-8 flex flex-col justify-center">
-                <div className="uppercase tracking-wide text-lg text-secondary font-semibold">Barbara Bouillet</div>
+                <h2 className="uppercase tracking-wide text-lg text-secondary font-semibold">Barbara Bouillet</h2>
                 <p className="mt-1 text-sm text-secondary/70 font-medium italic">Diplômée du BAFA &middot; Formée à la médiation par l&apos;animal</p>
                 <div className="mt-4 space-y-3 text-slate-600 text-sm leading-relaxed">
                   <p>
@@ -122,37 +122,37 @@ export default function Home() {
           </motion.div>
         </section>
         <section className=" bg-primary p-8 md:p-14">
-          <h1 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Nos services</h1>
+          <h2 className="text-2xl font-semibold tracking-widest uppercase text-center mb-8">Nos services</h2>
           <div className="grid lg:grid-cols-2 2xl:grid-cols-5 grid-cols-1 gap-10 justify-items-center">
             <Prestation title="Famille"
               imageUrl={familleImage.src}
-              onClick={() => router.push('/famille')}
+              href="/famille"
               description="Activités et prestations pour toute la famille"
               color="rgb(168 85 247)" />
             <Prestation title="Organisme"
               imageUrl={organismeImage.src}
-              onClick={() => router.push('/organisme')}
+              href="/organisme"
               description="Animations et médiations pour vos structures"
               color="rgb(22 163 74)" />
             <Prestation title="Pension"
               imageUrl={pensionImage.src}
-              onClick={() => router.push('/pension')}
+              href="/pension"
               description="Pension pour chats et NACS"
               color="rgb(14 165 233)" />
             <Prestation title="Services"
               imageUrl={servicesImage.src}
-              onClick={() => router.push('/services')}
+              href="/services"
               description="Nouveau : garderie périscolaire et accompagnement aux devoirs"
               color="rgb(250 204 21)" />
             <Prestation title="Association"
               imageUrl={associationImage.src}
-              onClick={() => router.push('/association')}
+              href="/association"
               description="Les pattes de l&apos;isle — loi 1901"
               color="rgb(202 138 4)" />
           </div>
         </section>
 
-        <a className="back-to-top fixed bottom-24 right-4 text-red-500 hover:text-red-600 focus:text-red-600" href="#intro" role="button" aria-label="Back to top">
+        <a className="back-to-top fixed bottom-24 right-4 text-red-500 hover:text-red-600 focus:text-red-600" href="#intro" aria-label="Retour en haut de la page">
           <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
             <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.58l5.995 5.988-1.416 1.414-4.579-4.574-4.59 4.574-1.416-1.414 6.006-5.988z" />
           </svg>
