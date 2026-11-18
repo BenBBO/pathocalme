@@ -22,6 +22,8 @@ const OrganismeCard = ({ images, title, summary, description, footer }) => {
                     className="h-full w-full object-cover cursor-pointer transition-transform duration-500 hover:scale-105"
                     src={images[0].src}
                     alt={images[0].alt || title}
+                    loading="lazy"
+                    decoding="async"
                     onClick={() => setLightboxIndex(0)}
                 />
                 {/* Gradient overlay for smooth image-to-content transition */}
@@ -37,7 +39,7 @@ const OrganismeCard = ({ images, title, summary, description, footer }) => {
                                 aria-label={`Voir photo ${index + 1}`}
                                 aria-current={index === 0 ? "true" : undefined}
                             >
-                                <img className="h-full w-full object-cover" src={img.src} alt={img.alt || ""} />
+                                <img className="h-full w-full object-cover" src={img.src} alt="" loading="lazy" decoding="async" />
                             </button>
                         ))}
                         <span className="flex items-center text-white text-xs font-medium ml-auto pr-1">
@@ -54,9 +56,9 @@ const OrganismeCard = ({ images, title, summary, description, footer }) => {
             <div className="flex flex-col flex-grow p-5">
                 {/* Title badge */}
                 <div className="flex justify-center -mt-9 mb-3 relative z-10">
-                    <h2 className="text-lg font-bold text-white bg-secondary px-6 py-2 rounded-full shadow-md">
+                    <h3 className="text-lg font-bold text-white bg-secondary px-6 py-2 rounded-full shadow-md">
                         {title}
-                    </h2>
+                    </h3>
                 </div>
 
                 {/* Summary — always visible */}

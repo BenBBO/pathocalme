@@ -3,8 +3,9 @@ const Footer = () => {
         <footer className="bg-white lg:grid lg:grid-cols-4">
             <div className="relative block h-32 lg:col-span-2 lg:h-full">
                 <img
-                    src="images/logo.png"
+                    src="/images/logo.webp"
                     alt="Logo Path'O Calme - Ferme pédagogique"
+                    loading="lazy"
                     className="absolute inset-0 h-full w-full object-contain"
                 />
             </div>
@@ -32,11 +33,11 @@ const Footer = () => {
                         </ul>
                         <a
                             href="https://www.facebook.com/PathOCalme"
-                            rel="noreferrer"
+                            rel="noopener noreferrer"
                             target="_blank"
                             className="text-gray-700 transition hover:opacity-75 mt-4 grid justify-center lg:block"
                         >
-                            <span className="sr-only">Facebook</span>
+                            <span className="sr-only">Path&apos;O Calme sur Facebook</span>
 
                             <svg className="h-10 w-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path
@@ -56,8 +57,9 @@ const Footer = () => {
                                 <span className="block text-sm">La mini ferme PATH&apos;O CALME</span>
                                 <span className="block text-sm">185 Rte de Bourgoin</span>
                                 <span className="block text-sm">38460 Trept</span>
-                                <a href="https://maps.app.goo.gl/56bzLyiwiwL3FCNK9" className="grid justify-center lg:block text-sm text-gray-700 transition hover:opacity-75" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-10 h-10">
+                                <a href="https://maps.app.goo.gl/56bzLyiwiwL3FCNK9" className="grid justify-center lg:block text-sm text-gray-700 transition hover:opacity-75" target="_blank" rel="noopener noreferrer">
+                                    <span className="sr-only">Itinéraire vers la mini-ferme Path&apos;O Calme sur Google Maps</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-10 h-10" aria-hidden="true">
                                         <path fillRule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clipRule="evenodd" />
                                     </svg>
 
@@ -70,7 +72,7 @@ const Footer = () => {
                 <div className="mt-4 border-t border-gray-100 pt-4">
                     <div className="sm:flex sm:items-center sm:justify-between">
                         <p className="mt-2 text-xs text-gray-500 sm:mt-0">
-                            &copy; 2025. Path&apos;O calme.
+                            &copy; {new Date().getFullYear()}. Path&apos;O Calme — mini-ferme pédagogique à Trept (Isère).
                         </p>
                     </div>
                 </div>

@@ -29,12 +29,10 @@ export default function Services() {
           <span className="inline-block mb-4 px-3 py-1 text-xs font-bold uppercase tracking-widest rounded-full bg-yellow-400 text-secondary">
             Nouveau
           </span>
-          <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-text-nature md:text-6xl lg:text-7xl">
-            Services
+          <h1 className="text-text-nature">
+            <span className="block mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-6xl lg:text-7xl">Services</span>
+            <span className="block mb-6 text-2xl font-normal lg:text-3xl sm:px-16 lg:px-48">Après l&apos;école, à la mini-ferme</span>
           </h1>
-          <p className="mb-6 text-2xl font-normal text-text-nature lg:text-3xl sm:px-16 lg:px-48">
-            Après l&apos;école, à la mini-ferme
-          </p>
           <p className="text-base text-gray-600 max-w-xl mx-auto">
             Deux nouveaux services pour les enfants scolarisés à Trept : une garderie périscolaire et un accompagnement aux devoirs, entourés des animaux de la ferme.
           </p>

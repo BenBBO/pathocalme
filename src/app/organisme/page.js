@@ -1,41 +1,39 @@
 import OrganismeCard from '../components/organismeCard';
+import { pageMetadata } from "../seo";
 
-import petiteEnfance1 from "../../../public/images/professionnel petite enfance/professionnel petite enfance1.jpg";
-import petiteEnfance2 from "../../../public/images/professionnel petite enfance/professionnel petite enfance2.jpg";
-import petiteEnfance3 from "../../../public/images/professionnel petite enfance/professionnel petite enfance3.jpg";
-import petiteEnfance4 from "../../../public/images/professionnel petite enfance/professionnel petite enfance4.jpg";
+import petiteEnfance1 from "../../../public/images/professionnel petite enfance/professionnel petite enfance1.webp";
+import petiteEnfance2 from "../../../public/images/professionnel petite enfance/professionnel petite enfance2.webp";
+import petiteEnfance3 from "../../../public/images/professionnel petite enfance/professionnel petite enfance3.webp";
+import petiteEnfance4 from "../../../public/images/professionnel petite enfance/professionnel petite enfance4.webp";
 
-import instituts1 from "../../../public/images/instituts/instituts1.jpg";
-import instituts2 from "../../../public/images/instituts/instituts2.png";
+import instituts1 from "../../../public/images/instituts/instituts1.webp";
+import instituts2 from "../../../public/images/instituts/instituts2.webp";
 
-import centreLoisir from "../../../public/images/centre loisirs/centre loisir.jpg";
+import centreLoisir from "../../../public/images/centre loisirs/centre loisir.webp";
 
-import ecole1 from "../../../public/images/ecoles/ecole1.jpg";
-import ecole2 from "../../../public/images/ecoles/ecole2.jpg";
-import ecole3 from "../../../public/images/ecoles/ecole3.png";
-import ecole4 from "../../../public/images/ecoles/ecole4.png";
+import ecole1 from "../../../public/images/ecoles/ecole1.webp";
+import ecole2 from "../../../public/images/ecoles/ecole2.webp";
+import ecole3 from "../../../public/images/ecoles/ecole3.webp";
+import ecole4 from "../../../public/images/ecoles/ecole4.webp";
 
-export const metadata = {
-  title: "Organismes",
-  description: "Découvrez nos prestations pour les organismes : professionnels de la petite enfance, instituts spécialisés, centres de loisirs et écoles. Animations et médiations animales adaptées à vos projets.",
-  keywords: ["organismes", "ferme pédagogique", "petite enfance", "instituts spécialisés", "centre de loisirs", "écoles", "médiation animale", "Bourgoin-Jallieu", "Trept", "Isère"],
-  alternates: {
-    canonical: "/organisme",
-  },
-  openGraph: {
-    title: "Organismes — Animations et médiations | Path'O Calme",
-    description: "Prestations pour professionnels de la petite enfance, instituts spécialisés, centres de loisirs et écoles. Animations et médiations animales à la ferme pédagogique Path'O Calme.",
-    url: "https://pathocalme.fr/organisme",
-  },
-};
+export const metadata = pageMetadata({
+  title: "Animations à la ferme pour écoles et structures",
+  socialTitle: "Organismes — Animations et médiations | Path'O Calme",
+  description: "Écoles, crèches, RAM, MAM, centres de loisirs, IME, EHPAD : animations et médiation par l'animal à la ferme pédagogique Path'O Calme de Trept (Isère) ou dans votre structure. Sur devis.",
+  socialDescription: "Prestations pour professionnels de la petite enfance, instituts spécialisés, centres de loisirs et écoles. Animations et médiations animales à la ferme pédagogique Path'O Calme.",
+  path: "/organisme",
+  keywords: ["organismes", "ferme pédagogique", "sortie scolaire", "petite enfance", "crèche", "instituts spécialisés", "IME", "EHPAD", "centre de loisirs", "écoles", "médiation animale", "Bourgoin-Jallieu", "Trept", "Isère"],
+});
 
 export default function Organisme() {
   return (<>
     {/* Header — same pattern as événements page */}
     <section className="bg-organisme py-10">
       <div className="px-4 mx-auto max-w-screen-xl text-center py-6 lg:py-4">
-        <h1 className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-text-nature md:text-6xl lg:text-7xl">Organismes</h1>
-        <p className="mb-4 text-2xl font-normal text-text-nature lg:text-3xl sm:px-16 lg:px-24">Animations et médiations pour vos structures</p>
+        <h1 className="text-text-nature">
+          <span className="block mb-3 text-4xl font-extrabold tracking-tight leading-none md:text-6xl lg:text-7xl">Organismes</span>
+          <span className="block mb-4 text-2xl font-normal lg:text-3xl sm:px-16 lg:px-24">Animations et médiations pour vos structures</span>
+        </h1>
         <div className="text-base text-gray-600 max-w-5xl mx-auto space-y-2">
           <p>
             À la ferme, plusieurs animations sont proposées sur place en fonction de votre projet et votre demande. Rencontrons-nous.

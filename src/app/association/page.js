@@ -22,7 +22,7 @@ export default function Association() {
       {/* ── HERO ─────────────────────────────────────────────────── */}
       <section
         className="relative bg-cover bg-center bg-no-repeat bg-gray-700 bg-blend-multiply"
-        style={{ backgroundImage: "url(images/miniferme.png)" }}
+        style={{ backgroundImage: "url(/images/miniferme.webp)" }}
       >
         <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-40">
           <motion.p
@@ -117,13 +117,13 @@ export default function Association() {
                 <img
                   className="w-full h-full object-cover rounded-lg"
                   loading="lazy"
-                  src="/images/visites/visite1.jpg"
+                  src="/images/visites/visite1.webp"
                   alt="Visite de la ferme - vue de la mini-ferme"
                 />
                 <img
                   className="w-full h-full object-cover rounded-lg"
                   loading="lazy"
-                  src="/images/visites/visite2.png"
+                  src="/images/visites/visite2.webp"
                   alt="Visite de la ferme - activités avec les animaux"
                 />
               </div>

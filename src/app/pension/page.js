@@ -7,12 +7,10 @@ export default function Pension() {
       {/* Hero */}
       <section className="bg-pension py-14">
         <div className="px-4 mx-auto max-w-screen-xl text-center py-10 lg:py-8">
-          <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-text-nature md:text-6xl lg:text-7xl">
-            Pension
+          <h1 className="text-text-nature">
+            <span className="block mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-6xl lg:text-7xl">Pension</span>
+            <span className="block mb-6 text-2xl font-normal lg:text-3xl sm:px-16 lg:px-48">Chats &amp; Nouveaux Animaux de Compagnie (NACS)</span>
           </h1>
-          <p className="mb-6 text-2xl font-normal text-text-nature lg:text-3xl sm:px-16 lg:px-48">
-            Chats &amp; Nouveaux Animaux de Compagnie (NACS)
-          </p>
           <p className="text-base text-gray-600 max-w-xl mx-auto">
             Je suis passionnée, formée, diplômée et assurée en tant que professionnelle pour rendre service à vos animaux.
           </p>

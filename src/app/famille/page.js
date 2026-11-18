@@ -1,56 +1,54 @@
 import OrganismeCard from '../components/organismeCard';
+import { pageMetadata } from "../seo";
 
-import visite1 from "../../../public/images/visites/visite1.jpg";
-import visite2 from "../../../public/images/visites/visite2.png";
-import visite3 from "../../../public/images/visites/visites3.jpeg";
-import visites4 from "../../../public/images/visites/visites4.jpeg";
+import visite1 from "../../../public/images/visites/visite1.webp";
+import visite2 from "../../../public/images/visites/visite2.webp";
+import visite3 from "../../../public/images/visites/visites3.webp";
+import visites4 from "../../../public/images/visites/visites4.webp";
 
-import atelierEveil1 from "../../../public/images/atelier eveil/atelier.jpeg";
-import atelierEveil2 from "../../../public/images/atelier eveil/atelier 2.jpg";
-import atelierEveil3 from "../../../public/images/atelier eveil/atelier 3.jpg";
-import atelierEveil4 from "../../../public/images/atelier eveil/atelier 4.jpg";
-import atelierEveil5 from "../../../public/images/atelier eveil/atelier 5.jpg";
+import atelierEveil1 from "../../../public/images/atelier eveil/atelier.webp";
+import atelierEveil2 from "../../../public/images/atelier eveil/atelier 2.webp";
+import atelierEveil3 from "../../../public/images/atelier eveil/atelier 3.webp";
+import atelierEveil4 from "../../../public/images/atelier eveil/atelier 4.webp";
+import atelierEveil5 from "../../../public/images/atelier eveil/atelier 5.webp";
 
-import atelierPetit1 from "../../../public/images/atelier petits/atelier petit.png";
-import atelierPetit2 from "../../../public/images/atelier petits/atelier petit 3.jpg";
-import atelierPetit3 from "../../../public/images/atelier petits/atelier petit 4.jpg";
-import atelierPetit4 from "../../../public/images/atelier petits/atelier petit 5.jpg";
-import atelierPetit5 from "../../../public/images/atelier petits/atelier petit 6.jpg";
-import atelierPetit6 from "../../../public/images/atelier petits/atelier petit 7.png";
-import atelierPetit7 from "../../../public/images/atelier petits/atelier petit 8.jpg";
+import atelierPetit1 from "../../../public/images/atelier petits/atelier petit.webp";
+import atelierPetit2 from "../../../public/images/atelier petits/atelier petit 3.webp";
+import atelierPetit3 from "../../../public/images/atelier petits/atelier petit 4.webp";
+import atelierPetit4 from "../../../public/images/atelier petits/atelier petit 5.webp";
+import atelierPetit5 from "../../../public/images/atelier petits/atelier petit 6.webp";
+import atelierPetit6 from "../../../public/images/atelier petits/atelier petit 7.webp";
+import atelierPetit7 from "../../../public/images/atelier petits/atelier petit 8.webp";
 
-import anniversaire1 from "../../../public/images/anniversaires/anniversaire.jpg";
-import anniversaire2 from "../../../public/images/anniversaires/anniversaire2.jpg";
-import anniversaire3 from "../../../public/images/anniversaires/anniversaire3.jpg";
+import anniversaire1 from "../../../public/images/anniversaires/anniversaire.webp";
+import anniversaire2 from "../../../public/images/anniversaires/anniversaire2.webp";
+import anniversaire3 from "../../../public/images/anniversaires/anniversaire3.webp";
 
-import stage1 from "../../../public/images/stages/stage1.jpg";
+import stage1 from "../../../public/images/stages/stage1.webp";
 
-import fragile1 from "../../../public/images/personne fragile/Personne fragile1.jpg";
-import fragile2 from "../../../public/images/personne fragile/Personne fragile2.jpg";
-import fragile3 from "../../../public/images/personne fragile/Personne fragile3.jpg";
-import fragile4 from "../../../public/images/personne fragile/accompagnement.jpeg";
+import fragile1 from "../../../public/images/personne fragile/Personne fragile1.webp";
+import fragile2 from "../../../public/images/personne fragile/Personne fragile2.webp";
+import fragile3 from "../../../public/images/personne fragile/Personne fragile3.webp";
+import fragile4 from "../../../public/images/personne fragile/accompagnement.webp";
 
-export const metadata = {
-  title: "Famille",
-  description: "Découvrez nos prestations pour les familles : visites des animaux, ateliers éveil bébé, ateliers petits et grands, anniversaires, stages et accompagnement des personnes fragiles.",
-  keywords: ["famille", "enfants", "adultes", "ferme pédagogique", "visite animaux", "atelier éveil", "anniversaire", "stages", "personne fragile", "médiation animale", "Bourgoin-Jallieu", "Trept", "Isère"],
-  alternates: {
-    canonical: "/famille",
-  },
-  openGraph: {
-    title: "Famille — Activités et prestations | Path'O Calme",
-    description: "Visites des animaux, ateliers éveil bébé, ateliers petits et grands, anniversaires, stages et accompagnement des personnes fragiles à la ferme pédagogique Path'O Calme.",
-    url: "https://pathocalme.fr/famille",
-  },
-};
+export const metadata = pageMetadata({
+  title: "Visites, ateliers et anniversaires à la ferme",
+  socialTitle: "Famille — Visites, ateliers et anniversaires à la ferme | Path'O Calme",
+  description: "En famille à la mini-ferme Path'O Calme de Trept (Isère) : visite des animaux, atelier éveil bébé, ateliers petits fermiers et soigneurs, anniversaires, stages et médiation par l'animal.",
+  socialDescription: "Visites des animaux, ateliers éveil bébé, ateliers petits et grands, anniversaires, stages et accompagnement des personnes fragiles à la ferme pédagogique Path'O Calme.",
+  path: "/famille",
+  keywords: ["famille", "enfants", "adultes", "ferme pédagogique", "visite animaux", "atelier éveil", "anniversaire à la ferme", "stages", "personne fragile", "médiation animale", "Bourgoin-Jallieu", "Trept", "Isère"],
+});
 
 export default function Famille() {
   return (<>
     {/* Header */}
     <section className="bg-famille py-10">
       <div className="px-4 mx-auto max-w-screen-xl text-center py-6 lg:py-4">
-        <h1 className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-text-nature md:text-6xl lg:text-7xl">Famille</h1>
-        <p className="mb-4 text-2xl font-normal text-text-nature lg:text-3xl sm:px-16 lg:px-24">Activités et prestations pour toute la famille</p>
+        <h1 className="text-text-nature">
+          <span className="block mb-3 text-4xl font-extrabold tracking-tight leading-none md:text-6xl lg:text-7xl">Famille</span>
+          <span className="block mb-4 text-2xl font-normal lg:text-3xl sm:px-16 lg:px-24">Activités et prestations pour toute la famille</span>
+        </h1>
         <div className="text-base text-gray-600 max-w-5xl mx-auto space-y-2">
           <p>
             Toutes les animations et privatisations sont ouvertes de <strong className="text-text-nature">0 à 99+ ans</strong>.

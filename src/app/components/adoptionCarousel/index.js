@@ -1,15 +1,15 @@
 const columns = [
   [
-    { src: "/images/adoption/adoption1.jpg", alt: "Animal de la ferme disponible à l'adoption" },
-    { src: "/images/adoption/adoption4.jpg", alt: "Animal de la ferme disponible à l'adoption" },
+    { src: "/images/adoption/adoption1.webp", alt: "Animal de la ferme disponible à l'adoption" },
+    { src: "/images/adoption/adoption4.webp", alt: "Animal de la ferme disponible à l'adoption" },
   ],
   [
-    { src: "/images/adoption/adoption3.jpg", alt: "Animal de la ferme disponible à l'adoption" },
-    { src: "/images/adoption/adoption6.jpg", alt: "Animal de la ferme disponible à l'adoption" },
+    { src: "/images/adoption/adoption3.webp", alt: "Animal de la ferme disponible à l'adoption" },
+    { src: "/images/adoption/adoption6.webp", alt: "Animal de la ferme disponible à l'adoption" },
   ],
   [
-    { src: "/images/adoption/adoption5.jpg", alt: "Animal de la ferme disponible à l'adoption" },
-    { src: "/images/adoption/adoption7.jpg", alt: "Animal de la ferme disponible à l'adoption" },
+    { src: "/images/adoption/adoption5.webp", alt: "Animal de la ferme disponible à l'adoption" },
+    { src: "/images/adoption/adoption7.webp", alt: "Animal de la ferme disponible à l'adoption" },
   ],
 ];
 

@@ -10,7 +10,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                     top: ` ${isOpen ? "0" : "-100%"}`,
                 }}
             >
-                <button className="absolute right-0 p-5" onClick={toggle}>
+                <button className="absolute right-0 p-5" onClick={toggle} aria-label="Fermer le menu">
                     {/* Close icon */}
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
